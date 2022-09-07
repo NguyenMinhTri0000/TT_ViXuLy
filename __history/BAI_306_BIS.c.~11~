@@ -1,0 +1,62 @@
+#include <tv_pickit2_shift_1.c>
+unsigned int32 YT, YP;
+unsigned int8 SLT, SLP;
+void delay_tuy_y(unsigned int8 d12)
+{
+   unsigned int8 d1;
+   for (d1 = 0; d1 <d12; d1++) delay_ms(10);
+}
+void STD_TSP_16LED(unsigned int8 d1)   //Phai
+{
+   if( SLP < 16)
+   {
+      xuat_32led_don_2word( 0, YP);
+      YP = (YP>>1)+0x8000;
+      delay_tuy_y (d1);
+      SLP++;
+   }
+   else 
+   {
+      SLP = 0;
+      YP = 0;
+      xuat_32led_don_2word( 0, YP);      
+//!      YP = YP >> 1 ; 
+      delay_tuy_y (d1);      
+   }
+}   
+
+
+void STD_PST_10LED(unsigned int8 d1)   //Trai
+{
+   if( SLT < 10)
+   {
+      xuat_32led_don_2word( YT, 0);
+      YT = (YT<<1)+1;
+      delay_tuy_y (d1);
+      SLT++;
+   }
+   else 
+   {
+      SLT = 0;
+      YT = 0;
+      xuat_32led_don_2word( YT, 0);      
+//!      YT = YT << 1 ; 
+      delay_tuy_y (d1);      
+   }
+}   
+
+
+void main()
+{
+   set_up_port_ic_chot();
+   YT = 0;
+   YP = 0;
+   SLT = 0;
+   SLP = 0;
+   
+   while(true)
+   {
+   STD_TSP_16LED(2);
+   STD_PST_10LED(2);   
+   }
+}

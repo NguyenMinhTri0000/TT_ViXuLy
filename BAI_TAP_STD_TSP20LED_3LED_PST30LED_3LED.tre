@@ -1,0 +1,32 @@
+ÀÄBAI_TAP_STD_TSP20LED_3LED_PST30LED_3LED
+   ÀÄMAIN  0/310  Ram=5
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ÀÄXUAT_32LED_DON_2WORD  0/38  Ram=8
+      ³     ÀÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³        ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ÀÄ*
+      ÀÄ@delay_ms1  0/38  Ram=1

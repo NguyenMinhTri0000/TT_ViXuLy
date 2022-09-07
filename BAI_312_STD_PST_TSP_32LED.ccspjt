@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_312_STD_PST_TSP_32LED.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_312_STD_PST_TSP_32LED.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_312_STD_PST_TSP_32LED.c]
+Type=4
+[mru-list]
+1=BAI_312_STD_PST_TSP_32LED.c
+[Opened Files]
+1=BAI_311_STD_PST_32LED_NO_LOOP.c
+2=BAI_312_STD_PST_TSP_32LED.c
+3=BAI_314_TONGHOP_32LED.c
+4=BAI_310_TONGHOP_32LED.c
+5=
+[Units]
+Count=1
+1=BAI_312_STD_PST_TSP_32LED (main)

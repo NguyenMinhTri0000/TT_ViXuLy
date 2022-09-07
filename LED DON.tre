@@ -1,0 +1,33 @@
+ÀÄLED DON
+   ÀÄMAIN  0/66  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄsang_tat_32led_5lan  0/46  Ram=0
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/42  Ram=4
+      ³  ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ³  ÀÄMO_IC_74573_A_THONG_DL  0/48  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/42  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄsang_tat_dan_pst_32led_2lan  0/140  Ram=5
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄXUAT_32LED_DON_2WORD  0/38  Ram=8
+      ³  ³     ÀÄXUAT_32LED_DON_4BYTE  0/42  Ram=4
+      ³  ³        ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄsang_tat_32led_5lan  0/46  Ram=0
+      ³  ÀÄ*
+      ÀÄsang_tat_dan_tsp_32led_2lan  0/138  Ram=5
+         ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+         ³  ÀÄ*
+         ÃÄ@delay_ms1  0/38  Ram=1
+         ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+         ³  ÀÄ*
+         ÀÄ@delay_ms1  0/38  Ram=1

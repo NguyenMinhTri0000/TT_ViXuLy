@@ -1,0 +1,95 @@
+
+ROM used:   4474/32768 (14%)
+            4474/32768 (14%) including unused fragments
+
+            2.1 Average locations per line
+            7.0 Average locations per statement
+
+RAM used:   118/2048 (6%) at main() level
+            143/2048 (7%) worst case
+
+Stack used: 8 worst case (7 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  189   148  23  LED 7 DOAN QUET - TONG HOP.c
+  705   244  38  tv_pickit2_shift_1.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18F4550.H
+  395   247  39  tv_pickit2_shift_32led_don.c
+----- -----
+ 2126   639 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     44   0    2   181  4.3  PHIM_BT0
+0     44   0    2   181  4.3  PHIM_BT1
+0     44   0    2   181  4.3  PHIM_BT2
+0     42   0    0             @const686
+0     42   0    3   271  4.3  XUAT_1BYTE
+0     44   0    4   231  2.3  XUAT_32LED_DON_4BYTE
+0     36   0    8   245  3.1  XUAT_32LED_DON_2WORD
+0     36   0    9   123  3.2  XUAT_32LED_DON_1DW
+0     30   0    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   1    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     46   1    0   119  1.7  MO_IC_74573_B_THONG_DL
+0     44   0    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0    294   3    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
+0     66   1    5             @DIV1616
+0     44   0    3   172  2.7  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   0    0             @const753
+0     60   1    3   190  3.1  XUAT_8LED_7DOAN_QUET_2
+0     50   1    1   136  3.9  HIEN_THI_8LED_7DOAN_QUET_ALL
+0    162   2    0   632  2.9  RESET_TOAN_BO_BIEN
+0     20   0    2   117  3.5  TANG_DEM_LED_DELAY_1
+0     16   0    1    68  2.4  TANG_DEM_LED_DELAY_0
+0     20   0    2    82  3.1  DELAY_CHON
+0    136   2    3   413  6.6  DIEM_SANG_DICH_TRAI_MAT_DAN_32LED
+0    136   2    3   413  6.6  DIEM_SANG_DICH_PHAI_MAT_DAN_32LED
+0     28   0    0    37  2.0  DAO_DL_32BIT_VA_XUAT
+0    102   1    2   315  3.7  SANG_TAT_32LED
+0    128   1    4   447  5.2  SANG_TAT_DAN_NGOAI_VAO_32LED
+0    128   1    4   447  5.2  SANG_TAT_DAN_TRONG_RA_32LED
+0    100   1    4   341  4.7  SANG_TAT_DAN_PHAI_SANG_TRAI_2X16LED
+0    106   1    4   341  4.7  SANG_TAT_DAN_TRAI_SANG_PHAI_2X16LED
+0    130   1    7   315  4.6  SANG_TAT_DAN_PST_32LED
+0    120   1    7   315  4.6  SANG_TAT_DAN_TSP_32LED
+0    106   1    3   328  4.7  DIEM_SANG_DI_CHUYEN_PST_32LED
+0    106   1    3   328  4.7  DIEM_SANG_DI_CHUYEN_TSP_32LED
+0    132   1    3   381  6.6  SANG_DON_PST_32LED
+0    132   1    3   381  6.6  SANG_DON_TSP_32LED
+0    136   2    2   533  7.2  SANG_DON_TNT_32LED
+0    140   2    2   533  7.2  SANG_DON_TTR_32LED
+0     16   0    0    29  1.2  interrupt_timer1
+0    170   2    1   328  3.3  giai_ma_gan_cho_8led_quet
+0     72   1    4             @DIVS88
+0     36   0    0   295  3.7  tat_2led_chinh
+0     32   0    0   100  2.9  phim_mod
+0     78   1    0   407  6.0  phim_up
+0     78   1    0   407  6.0  phim_dw
+0    668   7    0  2922  8.4  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               43
+    Statements              639
+    Comments                380
+    Volume (V)              27266
+    Difficulty (D)          179.5
+    Effort to implement (E) 4892858
+    Time to implement (T)   75 hours, 30 minutes
+    Est Delivered Bugs (B)  10
+    Cyclomatic Complexity   98
+    Maintainability (MI)    43
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  4328  28290  
+
+
+

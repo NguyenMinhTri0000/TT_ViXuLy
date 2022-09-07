@@ -1,0 +1,22 @@
+[PROJECT]
+Target=DONG CO BUOC.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DONG CO BUOC.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DONG CO BUOC.c]
+Type=4
+[mru-list]
+1=DONG CO BUOC.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=LM35 - LED 7 DOAN.c
+3=DONG CO BUOC.c
+4=DONG CO DC.c
+5=
+[Units]
+Count=1
+1=DONG CO BUOC (main)

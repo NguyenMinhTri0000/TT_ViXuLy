@@ -1,0 +1,15 @@
+ÀÄBAI_306_STD_TSP_16LED_2NHOM
+   ÀÄMAIN  0/172  Ram=2
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ÀÄXUAT_32LED_DON_4BYTE  0/44  Ram=4
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÀÄMO_IC_74573_A_THONG_DL  0/48  Ram=0
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ÀÄ*
+      ÀÄ@delay_ms1  0/38  Ram=1

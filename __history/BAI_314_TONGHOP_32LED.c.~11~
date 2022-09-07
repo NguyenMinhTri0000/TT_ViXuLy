@@ -1,0 +1,46 @@
+#include<tv_pickit2_shift_1.c>
+
+unsigned int32 y;
+   unsigned int8 d1;
+unsigned int8 dem_led;
+
+void delay_tuy_y(unsigned int8 d12)
+{
+
+   for (d1 = 0; d1 <d12; d1++) delay_ms(10);
+}
+void sang_tat_32led_5lan()
+{
+
+   if(dem_led <5)
+   {
+      xuat_32led_don_4byte(0,0,0,0);
+      delay_tuy_y (100);
+      xuat_32led_don_4byte(0xff,0xff,0xff,0xff);
+      delay_tuy_y (100);
+      dem_led ++; 
+   }   
+   
+}
+
+
+
+
+
+
+void main()
+{
+   set_up_port_ic_chot();
+   y=0x00000000;
+
+   sang_tat_32led_5lan();   
+   while (true)
+   {
+
+    //  sang_tat_dan_ngoai_vao_32led_2lan();
+    //  sang_tat_32led_5lan();
+    // sang_tat_dan_trong_ra_32led_2lan();
+      
+   }
+
+}

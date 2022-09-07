@@ -1,0 +1,23 @@
+ÀÄDONG CO DC
+   ÀÄMAIN  0/92  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄDC_MOTOR_ENABLE  0/8  Ram=0
+      ³  ÀÄXUAT_BUZZER_RELAY  0/40  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÀÄMO_IC_74573_B_THONG_DL  0/48  Ram=0
+      ÃÄDC_MOTOR_STOP  0/10  Ram=0
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄDC_MOTOR_CONTROL  0/20  Ram=1
+      ³  ÃÄDC_MOTOR_QUAY_THUAN  0/12  Ram=0
+      ³  ÃÄDC_MOTOR_QUAY_NGHICH  0/12  Ram=0
+      ³  ÀÄDC_MOTOR_STOP  0/10  Ram=0
+      ÃÄphim_inv  0/48  Ram=1
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄDC_MOTOR_STOP  0/10  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄDC_MOTOR_CONTROL  0/20  Ram=1
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÀÄDC_MOTOR_STOP  0/10  Ram=0

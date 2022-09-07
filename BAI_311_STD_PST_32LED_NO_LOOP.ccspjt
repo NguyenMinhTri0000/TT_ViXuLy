@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_311_STD_PST_32LED_NO_LOOP.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_311_STD_PST_32LED_NO_LOOP.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_311_STD_PST_32LED_NO_LOOP.c]
+Type=4
+[mru-list]
+1=BAI_311_STD_PST_32LED_NO_LOOP.c
+[Opened Files]
+1=BAI_304_BIS_SANGDAN.c
+2=BAI_304_BIS2.c
+3=BAI_305_BIS_SANGDAN10LEDGIUA32LED.c
+4=BAI_307_STD_PST_32LED.c
+5=BAI_311_STD_PST_32LED_NO_LOOP.c
+6=
+[Units]
+Count=1
+1=BAI_311_STD_PST_32LED_NO_LOOP (main)

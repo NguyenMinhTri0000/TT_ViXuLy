@@ -1,0 +1,5 @@
+>>> Warning 202 "G:\Other computers\My MacBook Pro (1)\TT VXL\3 - THU VIEN VA MO PHONG - 2021\TV_PICKIT2_SHIFT_LCD.c" Line 66(21,30): Variable never used:   LCD_SO_XX
+>>> Warning 202 "DS1307.c" Line 6(16,17): Variable never used:   k
+      Memory usage:   ROM=6%      RAM=2% - 2%
+      0 Errors,  2 Warnings.
+Build Successful.

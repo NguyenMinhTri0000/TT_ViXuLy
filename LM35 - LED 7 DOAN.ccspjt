@@ -1,0 +1,24 @@
+[PROJECT]
+Target=LM35 - LED 7 DOAN.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=LM35 - LED 7 DOAN.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[LM35 - LED 7 DOAN.c]
+Type=4
+[mru-list]
+1=LM35 - LED 7 DOAN.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=LM35 - LED 7 DOAN.c
+3=
+4=LM35 - LED 7 DOAN.c
+5=tv_pickit2_shift_1.c
+6=LED DON - COUNTER.c
+7=
+[Units]
+Count=1
+1=LM35 - LED 7 DOAN (main)

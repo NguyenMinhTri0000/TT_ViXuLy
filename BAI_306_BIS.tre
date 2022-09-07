@@ -1,0 +1,40 @@
+ÀÄBAI_306_BIS
+   ÀÄMAIN  0/100  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄSTD_TSP_16LED  0/140  Ram=6
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄXUAT_32LED_DON_4BYTE  0/36  Ram=4
+      ³  ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄdelay_tuy_y  0/20  Ram=2
+      ³  ³  ÀÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÀÄdelay_tuy_y  0/20  Ram=2
+      ³     ÀÄ*
+      ÀÄSTD_PST_10LED  0/146  Ram=6
+         ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+         ³  ÀÄ*
+         ÃÄdelay_tuy_y  0/20  Ram=2
+         ³  ÀÄ*
+         ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+         ³  ÀÄ*
+         ÀÄdelay_tuy_y  0/20  Ram=2
+            ÀÄ*

@@ -1,0 +1,22 @@
+[PROJECT]
+Target=3_NUT NHAN ROI.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=3_NUT NHAN ROI.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[3_NUT NHAN ROI.c]
+Type=4
+[mru-list]
+1=3_NUT NHAN ROI.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=3_NUT NHAN ROI.c
+3=tv_pickit2_shift_key4x4_138.c
+4=LM35 - LED 7 DOAN.c
+5=
+[Units]
+Count=1
+1=3_NUT NHAN ROI (main)

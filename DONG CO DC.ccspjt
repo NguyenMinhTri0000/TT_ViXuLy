@@ -1,0 +1,22 @@
+[PROJECT]
+Target=DONG CO DC.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DONG CO DC.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DONG CO DC.c]
+Type=4
+[mru-list]
+1=DONG CO DC.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=tv_pickit2_shift_key4x4_138.c
+3=
+4=DONG CO DC.c
+5=
+[Units]
+Count=1
+1=DONG CO DC (main)

@@ -1,0 +1,55 @@
+
+ROM used:   464/32768 (1%)
+            464/32768 (1%) including unused fragments
+
+            0.3 Average locations per line
+            1.6 Average locations per statement
+
+RAM used:   41/2048 (2%) at main() level
+            46/2048 (2%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   50    24   8  DONG CO BUOC.c
+  703   244  83  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+   49    26   9  tv_pickit2_shift_step_motor.c
+----- -----
+ 1639   294 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   4    1             @delay_ms1
+0     42   5    3   271  4.3  XUAT_1BYTE
+0     30   3    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     48   5    0   119  1.7  MO_IC_74573_B_THONG_DL
+0     38   4    2   226  2.8  XUAT_BUZZER_RELAY
+0     34   4    0   125  3.4  STEP_MOTOR_QUAY_THUAN_FS
+0     34   4    0   125  3.4  STEP_MOTOR_QUAY_NGHICH_FS
+0     12   1    0    38  1.9  MOTOR_STEP_RUN_FS
+0     38   4    0   193  3.9  phim_inv
+0    146  16    0   226  2.7  MAIN
+ Inline         0   295  4.1  @cinit1
+
+Program metrics:
+    Functions               10
+    Statements              294
+    Comments                331
+    Volume (V)              2986
+    Difficulty (D)          30.4
+    Effort to implement (E) 90699
+    Time to implement (T)   1 hours, 24 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   8
+    Maintainability (MI)    111
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   460  32304  
+
+
+

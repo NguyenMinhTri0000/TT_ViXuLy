@@ -1,0 +1,20 @@
+[PROJECT]
+Target=BAI_309_TONGHOP_32LED.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_309_TONGHOP_32LED.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_309_TONGHOP_32LED.c]
+Type=4
+[mru-list]
+1=BAI_309_TONGHOP_32LED.c
+[Opened Files]
+1=BAI_308_SDTA_PST_TSP_32LED.c
+2=BAI_309_TONGHOP_32LED.c
+3=
+[Units]
+Count=1
+1=BAI_309_TONGHOP_32LED (main)

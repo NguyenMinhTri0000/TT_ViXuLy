@@ -1,0 +1,62 @@
+#include <tv_pickit2_shift_1.c>
+unsigned int8 dem_led;
+unsigned int32 y;
+unsigned int16 zt,zp;
+void delay_tuy_y(unsigned int8 d12)
+{
+   unsigned int8 d1;
+   for (d1 = 0; d1 <d12; d1++) delay_ms(10);
+}
+void sang_tat_dan_ngoai_vao_32led_2lan(unsigned int8 d1)
+{
+   if(dem_led<10)
+   {
+      xuat_32led_don_4byte(0,0,0,0);
+      delay_ms(100);
+      xuat_32led_don_4byte(0xff,0xff,0xff,0xff);
+      delay_ms(100);   
+   }
+   if(dem_led <26)
+   {
+      xuat_32led_don_2word(zp,zt);
+      delay_ms(30);
+      zp= (zp<<1)+1;
+      zt= (zt>>1)+0x8000;
+   }
+   else if(dem_led<42)
+   {
+      xuat_32led_don_2word(zp,zt);
+      delay_ms(30);
+      zp= (zp<<1);
+      zt= (zt>>1);
+   }
+//!   if(dem_led <48)
+//!   {
+//!      xuat_32led_don_2word(zp,zt);
+//!      delay_ms(30);
+//!      zt= (zt<<1)+1;
+//!      zp= (zp>>1)+0x8000;
+//!   }
+//!   else if(dem_led<64)
+//!   {
+//!      xuat_32led_don_2word(zp,zt);
+//!      delay_ms(30);
+//!      zp= (zp>>1);
+//!      zt= (zt<<1);
+//!   }
+ 
+ 
+   else
+   {
+      dem_led = 0;
+      y = 0;
+   }
+      dem_led ++;
+}   
+void main()
+{
+   set_up_port_ic_chot();
+   y = 0;
+   while(true)
+   sang_tat_dan_ngoai_vao_32led_2lan(2);
+}

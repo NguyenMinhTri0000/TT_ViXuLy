@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_306_STD_TSP_16LED_2NHOM.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_306_STD_TSP_16LED_2NHOM.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_306_STD_TSP_16LED_2NHOM.c]
+Type=4
+[mru-list]
+1=BAI_306_STD_TSP_16LED_2NHOM.c
+[Opened Files]
+1=E:\VXL_TUNGA\N\BAI_303bis_CHOPTAT_32LED.c
+2=BAI_306_STD_TSP_16LED_2NHOM.c
+3=
+4=BAI_307_STD_PST_32LED.c
+5=
+[Units]
+Count=1
+1=BAI_306_STD_TSP_16LED_2NHOM (main)

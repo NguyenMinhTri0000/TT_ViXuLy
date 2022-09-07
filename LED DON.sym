@@ -1,0 +1,134 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     TIN_HIEU_DK_74573_A
+004.2   G_LCDA
+004.4   G_32A
+004.6   G_4A
+005     TIN_HIEU_DK_74573_B
+005.2   G_RBDCB
+005.4   G_8B
+005.6   G_MTB
+006     DL_BTN
+007-008 RBDC
+007.0   STEP_MOTOR_ENABLE
+007.1   STEP_MOTOR_IN1
+007.2   STEP_MOTOR_IN2
+007.3   STEP_MOTOR_IN3
+007.4   STEP_MOTOR_IN4
+007.5   DC_ENABLE
+007.6   PWRKEY
+008.0   BUZZER
+008.1   TRIAC_1
+008.2   TRIAC_2
+008.3   RELAY_1
+008.4   RELAY_2
+009     DONVI4
+00A     CHUC4
+00B     TRAM4
+00C     NGAN4
+00D     LCDDATA
+00E     LCDCONTROL
+00F     GLCDDATA
+010     GLCDCONTROL
+011-018 LED_7DQ
+019     TT8LED
+01A     I
+01B     j
+01C-01F y
+020-023 XUAT_32LED_DON_1DW.DWLD
+020     sang_tat_dan_pst_32led_2lan.@SCRATCH1
+020     sang_tat_dan_tsp_32led_2lan.@SCRATCH1
+021     @delay_ms1.P1
+021     sang_tat_dan_pst_32led_2lan.@SCRATCH2
+021     sang_tat_dan_tsp_32led_2lan.@SCRATCH2
+022     sang_tat_dan_pst_32led_2lan.@SCRATCH3
+022     sang_tat_dan_tsp_32led_2lan.@SCRATCH3
+023     sang_tat_dan_pst_32led_2lan.@SCRATCH4
+023     sang_tat_dan_tsp_32led_2lan.@SCRATCH4
+024-025 XUAT_32LED_DON_1DW.WD1
+024     sang_tat_dan_pst_32led_2lan.@SCRATCH5
+024     sang_tat_dan_tsp_32led_2lan.@SCRATCH5
+026-027 XUAT_32LED_DON_1DW.WD0
+028-029 XUAT_32LED_DON_2WORD.WLD1
+028     XUAT_32LED_DON_1DW.@SCRATCH1
+02A-02B XUAT_32LED_DON_2WORD.WLD0
+02C     XUAT_32LED_DON_2WORD.B3
+02D     XUAT_32LED_DON_2WORD.B2
+02E     XUAT_32LED_DON_2WORD.B1
+02F     XUAT_32LED_DON_2WORD.B0
+030     XUAT_32LED_DON_4BYTE.BLD3
+031     XUAT_32LED_DON_4BYTE.BLD2
+032     XUAT_32LED_DON_4BYTE.BLD1
+033     XUAT_32LED_DON_4BYTE.BLD0
+034     XUAT_1BYTE.BYTEXUAT
+035     XUAT_1BYTE.SB
+036     XUAT_1BYTE.x
+036.7   XUAT_1BYTE.BSERI
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  SET_UP_PORT_IC_CHOT
+000022  XUAT_1BYTE
+00004C  MO_IC_74573_A_THONG_DL
+00007C  XUAT_32LED_DON_4BYTE
+0000A6  @delay_ms1
+0000CC  sang_tat_32led_5lan
+0000FA  XUAT_32LED_DON_2WORD
+000120  XUAT_32LED_DON_1DW
+000144  sang_tat_dan_pst_32led_2lan
+0001D0  sang_tat_dan_tsp_32led_2lan
+00025A  @cinit1
+00025A  MAIN
+000276  @cinit2
+
+Project Directory:
+    C:\Users\Truong Ngoc Anh\Desktop\3 - THU VIEN VA MO PHONG\
+
+Project Files:
+    LED DON.c                                               [21-Aug-21 23:30  CRC=1B769D9A]
+    tv_pickit2_shift_1.c                                    [15-Sep-16 10:43  CRC=CEACCAA6]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [13-Nov-13 04:35  CRC=5337E248]
+
+Source signature=90932CD0
+
+Units:
+    LED DON (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   LED DON.xsym
+    Errors:      LED DON.err
+    Ext Symbols: LED DON.esym
+    INHX32:      LED DON.hex
+    Symbols:     LED DON.sym
+    List:        LED DON.lst
+    Debug/COFF:  LED DON.cof
+    Project:     LED DON.ccspjt
+    Call Tree:   LED DON.tre
+    Statistics:  LED DON.STA

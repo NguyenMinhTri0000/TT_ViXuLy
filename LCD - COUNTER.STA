@@ -1,0 +1,69 @@
+
+ROM used:   1618/32768 (5%)
+            1618/32768 (5%) including unused fragments
+
+            1.0 Average locations per line
+            5.5 Average locations per statement
+
+RAM used:   35/2048 (2%) at main() level
+            49/2048 (2%) worst case
+
+Stack used: 7 worst case (7 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   47    25   9  LCD - COUNTER.c
+  705   244  83  tv_pickit2_shift_1.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18F4550.H
+  100    25   9  tv_pickit2_shift_lcd.c
+----- -----
+ 1689   294 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     32   1    0             @const686
+0     42   1    3   271  4.3  XUAT_1BYTE
+0     30   1    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   1    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   1    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0    296   9    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
+0     66   2    5             @DIV1616
+0     44   1    0   172  1.8  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     26   1    1   102  2.1  LCD_XUAT_8BIT
+0     22   1    1    61  1.6  LCD_COMMAND
+0     22   1    1    61  1.6  LCD_DATA
+0     72   2    0   245  1.8  SETUP_LCD
+0     82   3    0   413  6.6  @const813
+0     80   2    0    37  2.0  @const821
+0     20   1    0   315  3.7  @const827
+0     26   1    3   147  3.7  LCD_GOTO_XY
+0    110   3    5   255  5.5  lcd_hienthi_so_z_toado_xy
+0     76   2    2   341  4.7  @MUL88
+0    252   8    2   589  7.0  MAIN
+0     22   1    0   315  4.6  @const845
+0     34   1    2   328  4.7  @PSTRINGC_810
+0    116   4    6   328  4.7  @DIVS1616
+ Inline         0   381  6.6  @cinit1
+
+Program metrics:
+    Functions               22
+    Statements              294
+    Comments                363
+    Volume (V)              9922
+    Difficulty (D)          80.0
+    Effort to implement (E) 793655
+    Time to implement (T)   12 hours, 15 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   26
+    Maintainability (MI)    97
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1614  31150  
+
+
+

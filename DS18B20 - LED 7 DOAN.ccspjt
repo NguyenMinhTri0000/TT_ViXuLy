@@ -1,0 +1,27 @@
+[PROJECT]
+Target=DS18B20 - LED 7 DOAN.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DS18B20 - LED 7 DOAN.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DS18B20 - LED 7 DOAN.c]
+Type=4
+[mru-list]
+1=DS18B20 - LED 7 DOAN.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=3_NUT NHAN ROI.c
+3=tv_pickit2_shift_key4x4_138.c
+4=LM35 - LED 7 DOAN.c
+5=tv_pickit2_shift_1.c
+6=LED DON - COUNTER - NUT NHAN ROI.c
+7=LCD - COUNTER.c
+8=DS18B20 - LED 7 DOAN.c
+9=tv_pickit2_shift_ds18b20.c
+10=
+[Units]
+Count=1
+1=DS18B20 - LED 7 DOAN (main)

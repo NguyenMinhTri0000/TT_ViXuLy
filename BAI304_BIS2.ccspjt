@@ -1,0 +1,24 @@
+[PROJECT]
+Target=BAI304_BIS2.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI304_BIS2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI304_BIS2.c]
+Type=4
+[mru-list]
+1=BAI304_BIS2.c
+[Opened Files]
+1=BAI_303_BIS_CHOPTAT10GIUA32LED.c
+2=BAI_303_CHOPTAT_32LED.c
+3=BAI_304_STD_PST_8LED.c
+4=BAI_304_BIS_SANGDAN.c
+5=E:\VXL_TUNGA\N\BAI_304bis2_STD_PST_4LED.c
+6=BAI304_BIS2.c
+7=
+[Units]
+Count=1
+1=BAI304_BIS2 (main)

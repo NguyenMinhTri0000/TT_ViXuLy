@@ -1,0 +1,160 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     TIN_HIEU_DK_74573_A
+004.2   G_LCDA
+004.4   G_32A
+004.6   G_4A
+005     TIN_HIEU_DK_74573_B
+005.2   G_RBDCB
+005.4   G_8B
+005.6   G_MTB
+006     DL_BTN
+007-008 RBDC
+007.0   STEP_MOTOR_ENABLE
+007.1   STEP_MOTOR_IN1
+007.2   STEP_MOTOR_IN2
+007.3   STEP_MOTOR_IN3
+007.4   STEP_MOTOR_IN4
+007.5   DC_ENABLE
+007.6   PWRKEY
+008.0   BUZZER
+008.1   TRIAC_1
+008.2   TRIAC_2
+008.3   RELAY_1
+008.4   RELAY_2
+009     DONVI4
+00A     CHUC4
+00B     TRAM4
+00C     NGAN4
+00D     LCDDATA
+00E     LCDCONTROL
+00F     GLCDDATA
+010     GLCDCONTROL
+011-018 LED_7DQ
+019     TT8LED
+01A     LCD_CONTROL
+01A.0   LCD_E
+01A.1   LCD_RW
+01A.2   LCD_RS
+01A.3   LCD_P
+01B     NAM_DS13
+01C     THANG_DS13
+01D     NGAY_DS13
+01E     THU_DS13
+01F     GIO_DS13
+020     PHUT_DS13
+021     GIAY_DS13
+022     MA_DS13
+023     CONTROL_DS13
+024     GIAYTAM
+025-026 k
+027     giatri_mod
+028     @I2C_READ_1.P1
+028     hieu_chinh_so_bcd_tang.x
+028     @I2C_WRITE_1.P1
+028     hieu_chinh_so_bcd_giam.x
+028     LCD_COMMAND.LCD_DATA_X
+028     HIEN_THI_THOI_GIAN_DS13B07.@SCRATCH1
+028     hien_thi_gia_tri_mod.@SCRATCH1
+028     MAIN.@SCRATCH1
+028     @PSTRINGC_810.@SCRATCH1
+029     hieu_chinh_so_bcd_giam.Y
+029     @delay_ms1.P1
+029     hieu_chinh_so_bcd_tang.Y
+029     @I2C_READ_1.@SCRATCH1
+029     @PSTRINGC_810.@SCRATCH2
+02A     LCD_DATA.LCD_DATA_X
+02A     @I2C_READ_1.@SCRATCH2
+02B     LCD_XUAT_8BIT.LCD_DATA_X
+02C     XUAT_LCD20X4.LCD_SIGNAL
+02D     XUAT_LCD20X4.LCD_INS_HTHI
+02E     XUAT_1BYTE.BYTEXUAT
+02F     XUAT_1BYTE.SB
+030     XUAT_1BYTE.x
+030.7   XUAT_1BYTE.BSERI
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @const864.call
+00000C  SET_UP_PORT_IC_CHOT
+00002A  XUAT_1BYTE
+000054  MO_IC_74573_A_THONG_DL
+000084  XUAT_GLCD_LCD
+0000B0  XUAT_LCD20X4
+0000C0  LCD_XUAT_8BIT
+0000DA  LCD_COMMAND
+0000F0  @delay_ms1
+000116  SETUP_LCD
+00015E  LCD_DATA
+000174  @PSTRINGC_810
+000196  @I2C_WRITE_1
+000202  @I2C_READ_1
+000268  DOC_THOI_GIAN_TU_REALTIME
+00033E  THIET_LAP_THOI_GIAN_HIEN_TAI
+000364  NAP_THOI_GIAN_HTAI_VAO_DS13B07
+0003EA  hien_thi_gia_tri_mod
+0003FC  HIEN_THI_THOI_GIAN_DS13B07
+0004D6  phim_mod
+000500  hieu_chinh_so_bcd_tang
+000518  luu_giai_ma_hien_thi_sau_khi_chinh
+00051E  phim_up
+0005F6  hieu_chinh_so_bcd_giam
+00060E  phim_dw
+0006E2  nhap_nhay_con_tro
+000732  MAIN
+000732  @cinit1
+00074E  @cinit2
+
+Project Directory:
+    G:\Other computers\My MacBook Pro (1)\TT VXL\3 - THU VIEN VA MO PHONG - 2021\
+
+Project Files:
+    DS1307.c                                                [22-Aug-21 19:03  CRC=B41DA98A]
+    tv_pickit2_shift_1.c                                    [22-Aug-21 17:45  CRC=CBC49623]
+    C:\Program Files (x86)\PICC\Devices\18F4550.H           [12-Nov-13 14:35  CRC=5337E248]
+    TV_PICKIT2_SHIFT_DS1307_I2C.c                           [22-Aug-15 11:00  CRC=9863CA74]
+    TV_PICKIT2_SHIFT_LCD.c                                  [17-Oct-16 17:34  CRC=5F0E73F7]
+
+Source signature=299AD457
+
+Units:
+    DS1307 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   DS1307.xsym
+    Errors:      DS1307.err
+    Ext Symbols: DS1307.esym
+    INHX32:      DS1307.hex
+    Symbols:     DS1307.sym
+    List:        DS1307.lst
+    Debug/COFF:  DS1307.cof
+    Project:     DS1307.ccspjt
+    Call Tree:   DS1307.tre
+    Statistics:  DS1307.STA

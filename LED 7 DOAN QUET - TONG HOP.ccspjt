@@ -1,0 +1,25 @@
+[PROJECT]
+Target=LED 7 DOAN QUET - TONG HOP.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=LED 7 DOAN QUET - TONG HOP.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[LED 7 DOAN QUET - TONG HOP.c]
+Type=4
+[mru-list]
+1=LED 7 DOAN QUET - TONG HOP.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=LM35 - LED 7 DOAN.c
+3=5_LED QUET.c
+4=tv_pickit2_shift_1.c
+5=LED 7 DOAN QUET - TONG HOP.c
+6=
+7=LED 7 DOAN QUET - TONG HOP.c
+8=
+[Units]
+Count=1
+1=LED 7 DOAN QUET - TONG HOP (main)

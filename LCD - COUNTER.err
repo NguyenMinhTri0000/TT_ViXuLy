@@ -1,0 +1,5 @@
+>>> Warning 202 "G:\Other computers\My MacBook Pro (1)\TT VXL\3 - THU VIEN VA MO PHONG - 2021\tv_pickit2_shift_lcd.c" Line 66(21,30): Variable never used:   LCD_SO_XX
+>>> Warning 202 "LCD - COUNTER.c" Line 5(19,22): Variable never used:   dem
+      Memory usage:   ROM=5%      RAM=2% - 2%
+      0 Errors,  2 Warnings.
+Build Successful.

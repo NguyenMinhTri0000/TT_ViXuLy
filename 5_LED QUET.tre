@@ -1,0 +1,25 @@
+ÀÄ5_LED QUET
+   ÀÄMAIN  0/68  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÀÄhienthi_delay  0/114  Ram=1
+         ÃÄ@DIVS88  0/72  Ram=4
+         ÃÄ@const686  0/32  Ram=0
+         ÃÄXUAT_8LED_7DOAN_QUET_2  0/58  Ram=3
+         ³  ÃÄ@const753  0/24  Ram=0
+         ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+         ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+         ³  ÀÄMO_IC_74573_B_THONG_DL  0/46  Ram=0
+         ÃÄ@delay_ms1  0/38  Ram=1
+         ÃÄXUAT_8LED_7DOAN_QUET_TAT_LED  0/8  Ram=0
+         ³  ÀÄXUAT_8LED_7DOAN_QUET_1  0/44  Ram=3
+         ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+         ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+         ³     ÀÄMO_IC_74573_B_THONG_DL  0/46  Ram=0
+         ÃÄ@DIVS88  0/72  Ram=4
+         ÃÄ@const686  0/32  Ram=0
+         ÃÄXUAT_8LED_7DOAN_QUET_2  0/58  Ram=3
+         ³  ÀÄ*
+         ÃÄ@delay_ms1  0/38  Ram=1
+         ÀÄXUAT_8LED_7DOAN_QUET_TAT_LED  0/8  Ram=0
+            ÀÄ*

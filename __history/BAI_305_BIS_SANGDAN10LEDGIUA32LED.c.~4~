@@ -1,0 +1,45 @@
+#include <tv_pickit2_shift_1.c>
+
+unsigned int32 y;
+unsigned int8 i;
+void main()
+{
+   set_up_port_ic_chot();
+   y=0;
+   while (true)
+//!   {
+//!      Y=0;
+//!      for(i=0;i<4;i++)
+//!       {
+//!       y=((y<<3)|0x38)&0X1FF8;
+//!       xuat_32led_don_4byte(0,y>>8,y,0);
+//!       delay_ms(300); 
+//!       } 
+//!       y=0;
+//!       for(i=0;i<4;i++)
+//!       {
+//!       y=((y>>3)|0x1C00)&0X1FF8;
+//!       xuat_32led_don_4byte(0,y>>8,y,0);
+//!       delay_ms(300); 
+//!       //y= (y<<1);
+//!       }
+      
+       
+      //cach 2 bien led 32 bit
+      y=0;
+      for (i=0;i<4;i++)
+      {
+      y=((y<<3)|0x3800)&0X001FF800;
+      //xuat_32led_don_4byte(y>>24,y>>16,y>>8,y);
+      xuat_32led_don_1dw(y);
+      delay_ms(300);
+      }
+      y=0;
+     for (i=0;i<10;i++)
+      {
+      y=((y<<4)|0x1C0000)&0X001FF800;
+      xuat_32led_don_1dw(y);
+      delay_ms(300);
+      }
+   }
+}

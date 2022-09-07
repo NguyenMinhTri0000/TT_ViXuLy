@@ -1,0 +1,73 @@
+
+ROM used:   1974/32768 (6%)
+            1974/32768 (6%) including unused fragments
+
+            1.0 Average locations per line
+            3.9 Average locations per statement
+
+RAM used:   41/2048 (2%) at main() level
+            49/2048 (2%) worst case
+
+Stack used: 8 worst case (8 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  295   170  34  DS1307.c
+  705   244  49  tv_pickit2_shift_1.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18F4550.H
+   88    62  12  TV_PICKIT2_SHIFT_DS1307_I2C.c
+  100    25   5  TV_PICKIT2_SHIFT_LCD.c
+----- -----
+ 2025   501 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0    102   3    3             @I2C_READ_1
+0    108   3    1             @I2C_WRITE_1
+0     42   1    3   271  4.3  XUAT_1BYTE
+0     30   1    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     48   1    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   1    0   172  1.8  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     26   1    1   102  2.1  LCD_XUAT_8BIT
+0     22   1    1    61  1.6  LCD_COMMAND
+0     22   1    1    61  1.6  LCD_DATA
+0     72   2    0   245  1.8  SETUP_LCD
+0     38   1    0   174  1.8  THIET_LAP_THOI_GIAN_HIEN_TAI
+0    134   3    0   253  1.4  NAP_THOI_GIAN_HTAI_VAO_DS13B07
+0    214   5    0   351  1.9  DOC_THOI_GIAN_TU_REALTIME
+0    218   6    1   743  2.9  HIEN_THI_THOI_GIAN_DS13B07
+0     18   0    1    42  1.4  hien_thi_gia_tri_mod
+0     42   1    0   207  4.4  phim_mod
+0     24   1    2   160  4.5  hieu_chinh_so_bcd_tang
+0     24   1    2   160  4.5  hieu_chinh_so_bcd_giam
+0      6   0    0    21  1.0  luu_giai_ma_hien_thi_sau_khi_chinh
+0    216   5    0  1305  7.3  phim_up
+0    212   5    0  1305  7.3  phim_dw
+0     80   2    0   311  3.6  nhap_nhay_con_tro
+0    132   3    1   488  3.2  MAIN
+0      8   0    0   100  2.9  @const864
+0     34   1    2   407  6.0  @PSTRINGC_810
+ Inline         0   407  6.0  @cinit1
+
+Program metrics:
+    Functions               25
+    Statements              501
+    Comments                371
+    Volume (V)              13747
+    Difficulty (D)          80.3
+    Effort to implement (E) 1104314
+    Time to implement (T)   17 hours, 3 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   64
+    Maintainability (MI)    74
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1970  30794  
+
+
+

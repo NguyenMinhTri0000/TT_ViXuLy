@@ -1,0 +1,38 @@
+#include <tv_pickit2_shift_1.c>
+unsigned int16 y;
+unsigned int8 i;
+
+void main()
+{
+   set_up_port_ic_chot();
+   y = 0;
+   while(TRUE)
+   {
+   For(i = 0; i<16; i= i+1)
+      {
+         xuat_32led_don_2word( y, 0);
+         delay_ms(300);
+         y = (y<<1)+1;
+      }
+   for(i = 0; i < 16; i++)
+      {
+         xuat_32led_don_2word( y, 0);
+         delay_ms(300);
+         y = y <<1 ;
+      }
+      
+   For(i = 0; i<16; i= i+1)
+      {
+         xuat_32led_don_2word( 0, y);
+         delay_ms(300);
+         y = (y>>1)+0x80;
+      }
+   for(i = 0; i < 16; i++)
+      {
+         xuat_32led_don_2word( 0, y);
+         delay_ms(300);
+         y = y >>1 ;
+      }      
+   }
+}
+

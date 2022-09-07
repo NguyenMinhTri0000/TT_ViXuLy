@@ -1,0 +1,24 @@
+[PROJECT]
+Target=5_LED QUET.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=5_LED QUET.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\DriversC:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[5_LED QUET.c]
+Type=4
+[mru-list]
+1=5_LED QUET.c
+[Opened Files]
+1=3_MA TRAN PHIM.c
+2=LM35 - LED 7 DOAN.c
+3=5_LED QUET.c
+4=tv_pickit2_shift_1.c
+5=LED 7 DOAN QUET - TONG HOP.c
+6=LCD - COUNTER.c
+7=
+[Units]
+Count=1
+1=5_LED QUET (main)

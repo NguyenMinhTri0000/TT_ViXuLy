@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_306_BIS.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_306_BIS.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_306_BIS.c]
+Type=4
+[mru-list]
+1=BAI_306_BIS.c
+[Opened Files]
+1=BAI_TAP_STD_TSP20LED_3LED_PST30LED_3LED.c
+2=BAI_306_STD_TTR_TrongSlide.c
+3=BAI_311_STD_PST_32LED_NO_LOOP.c
+4=BAI_306_BIS.c
+5=BAI_308_SDTA_PST_TSP_32LED.c
+6=
+[Units]
+Count=1
+1=BAI_306_BIS (main)

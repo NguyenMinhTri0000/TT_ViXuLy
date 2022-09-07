@@ -1,0 +1,60 @@
+
+ROM used:   818/32768 (2%)
+            818/32768 (2%) including unused fragments
+
+            0.5 Average locations per line
+            3.1 Average locations per statement
+
+RAM used:   46/2048 (2%) at main() level
+            53/2048 (3%) worst case
+
+Stack used: 5 worst case (4 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   44    21   8  LED 7 DOAN QUET - NGAT TIMER 1.c
+  705   244  92  tv_pickit2_shift_1.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18F4550.H
+----- -----
+ 1586   265 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   2    1             @delay_ms1
+0     42   3    0             @const686
+0     42   3    3   271  4.3  XUAT_1BYTE
+0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   3    0   119  1.7  MO_IC_74573_B_THONG_DL
+0     44   3    3   172  2.7  XUAT_8LED_7DOAN_QUET_1
+0     10   1    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   2    0             @const753
+0     60   4    3   190  3.1  XUAT_8LED_7DOAN_QUET_2
+0     72   4    1   178  4.9  HIEN_THI_8LED_7DOAN_QUET
+0     16   1    0    29  1.2  interrupt_timer1
+0     60   4    1    93  2.9  giai_ma_gan_cho_8led_quet
+0     72   4    4   100  3.2  @DIVS88
+0    104   6    0   354  5.6  MAIN
+ Inline         0   254  4.0  @cinit1
+
+Program metrics:
+    Functions               12
+    Statements              265
+    Comments                333
+    Volume (V)              3331
+    Difficulty (D)          36.9
+    Effort to implement (E) 123022
+    Time to implement (T)   1 hours, 54 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   7
+    Maintainability (MI)    139
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE   672  31946  
+
+
+
