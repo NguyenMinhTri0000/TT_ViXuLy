@@ -1,123 +1,65 @@
 #include <tv_pickit2_shift_1.c>
 unsigned int8 dem_led;
-unsigned int32 y;
+unsigned int8 i;
 unsigned int16 zt,zp;
 
 void chop_tat_5_lan()
 {
-   xuat_32led_don_4byte(0,0,0,0);
-   delay_ms(100);
-   xuat_32led_don_4byte(0xff,0xff,0xff,0xff);
-   delay_ms(100);  
-}
-void S_NVT()
-{
-   xuat_32led_don_2word(zt,zp);
-   delay_ms(30);
-   zp= (zp<<1)+1;
-   zt= (zt>>1)+0x8000; 
-}
-void T_NVT()
-{
-   xuat_32led_don_2word(zt,zp);
-   delay_ms(30);
-   zp= (zp<<1);
-   zt= (zt>>1); 
-}
-void S_TRN()
-{
-   xuat_32led_don_2word(zp,zt);
-   delay_ms(30);
-   zp= (zp<<1)+1;
-   zt= (zt>>1)+0x8000; 
-}
-void T_TRN()
-{
-   xuat_32led_don_2word(zp,zt);
-   delay_ms(30);
-   zp= (zp<<1);
-   zt= (zt>>1);
-}
-void sang_tat_dan_ngoai_vao_32led_2lan(unsigned int8 d1)
-{
-   if(dem_led<5)     //chop tat 5 lan
+   if(dem_led<5)
    {
-//!   chop_tat_5_lan();
+      xuat_32led_don_4byte(0,0,0,0);
+      delay_ms(200);
+      xuat_32led_don_4byte(0xff,0xff,0xff,0xff);
+      delay_ms(200); 
    }
-   if(dem_led <21)   //sang trong ra lan 1
+   dem_led++;
+}
+void NVT()
+{
+   if(dem_led <16)
    {
-   S_TRN();
+      xuat_32led_don_2word(zt,zp);
+      delay_ms(30);
+      zp= (zp<<1)+1;
+      zt= (zt>>1)+0x8000; 
    }
-   else if(dem_led<37)
+   else if(dem_led <32)
    {
-   T_TRN();
+      xuat_32led_don_2word(zt,zp);
+      delay_ms(30);
+      zp= (zp<<1);
+      zt= (zt>>1);    
    }
-   if(dem_led <53)   //sang trong ra lan 2
+      dem_led++;   
+}
+void TRN()
+{
+   if(dem_led <16)
    {
-   S_TRN();
+      xuat_32led_don_2word(zp,zt);
+      delay_ms(30);
+      zp= (zp<<1)+1;
+      zt= (zt>>1)+0x8000; 
    }
-   else if(dem_led<69)
+   else if(dem_led <32)
    {
-   T_TRN();
-   }   
+      xuat_32led_don_2word(zp,zt);
+      delay_ms(30);
+      zp= (zp<<1);
+      zt= (zt>>1);
+   }
+}
 
-   if(dem_led <85)   //sang ngoai vao lan 1
-   {
-   S_NVT();
-   }
-   else if(dem_led<101)
-   {
-   T_NVT();
-   }
-   if(dem_led <117)   //sang ngoai vao lan 1
-   {
-   S_NVT();
-   }
-   else if(dem_led<133)
-   {
-   T_NVT();
-   }
-
-   else
-   {
-      dem_led = 0;
-      y = 0;
-   }
-      dem_led ++;
-}   
 void main()
 {
-   set_up_port_ic_chot();
-   y = 0;
-   while(true)
-   {
-//!      if(dem_led<5)     //chop tat 5 lan
-//!   {
-//!   chop_tat_5_lan();
-//!   }
-   if(dem_led <16)   //sang trong ra lan 1
-   {
-   S_TRN();
-   }
-   else if(dem_led<32)
-   {
-   T_TRN();
-   }  
-   if(dem_led <48)   //sang trong ra lan 2
-   {
-   S_TRN();
-   }
-   else if(dem_led<64)
-   {
-   T_TRN();
-   } 
-   
-   
+   i = 0;
+   if(i < 1)
+   chop_tat_5_lan();
+   else if (i<3)
+   NVT();
+   else if (i <5)
+   TRN();
    else
-   {
-      dem_led = 0;
-      y = 0;
-   }
-      dem_led ++;  
-   }
+   xuat_32led_don_2word(0,0);
+   i++;
 }

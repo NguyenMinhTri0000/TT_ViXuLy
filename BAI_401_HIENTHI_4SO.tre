@@ -1,0 +1,23 @@
+ÀÄBAI_401_HIENTHI_4SO
+   ÀÄMAIN  0/86  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÀÄXUAT_1BYTE  0/38  Ram=2

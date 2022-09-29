@@ -1,0 +1,129 @@
+//chua xong
+#include <tv_pickit2_shift_1_proteus.c>
+unsigned int32  i, y, zp, zt, TT;
+void ST()
+{
+   xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+   delay_ms(50);
+   y = ~y; 
+}   
+void PST()
+{
+   for(i = 0; i<32; i++)
+   {
+      xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+      delay_ms(50);
+      Y = (Y<<1)|0x00000001; 
+   }
+   for(i = 0; i<32; i++)
+   {
+      xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+      delay_ms(50);
+      Y = (Y<<1); 
+   }
+}
+void TSP()
+{
+   for(i = 0; i<32; i++)
+   {
+      xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+      delay_ms(50);
+      Y = (Y>>1)|0x80000000; 
+   }
+   for(i = 0; i<32; i++)
+   {
+      xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+      delay_ms(50);
+      Y = (Y>>1); 
+   }    
+}
+void TRN()
+{
+     for (i=0;i<16;i++)
+      {
+         xuat_32led_don_2word(zt,zp);
+         delay_ms(50);
+         zt= (zt<<1)+1;
+         zp= (zp>>1)+0x8000;
+         
+      }
+      for (i=0;i<16;i++)
+      {
+         xuat_32led_don_2word(zt,zp);
+         delay_ms(50);
+         zt= (zt<<1);
+         zp= (zp>>1);
+      }
+  
+}
+void NVT()
+{
+     for (i=0;i<16;i++)
+      {
+         xuat_32led_don_2word(zt,zp);
+         delay_ms(50);
+         zt= (zt>>1)+0x8000;
+         zp= (zp<<1)+1;
+         
+      }
+      for (i=0;i<16;i++)
+      {
+         xuat_32led_don_2word(zt,zp);
+         delay_ms(50);
+         zt= (zt>>1);
+         zp= (zp<<1);
+      }
+  
+}
+
+void btn_up()
+{
+   if(input(UP)==0)    //kiem tra lan 1
+   {
+      delay_ms(50);
+      {
+         if(input(UP)==0)    //kiem tra lan 2
+         {
+         //lenh chuong trinh
+         TT++;
+            while(input(UP)==0);   //cho nha phim
+         }
+      }
+   }
+}
+
+void btn_dn()
+{
+   if(input(DW)==0)    //kiem tra lan 1
+   {
+      delay_ms(50);
+      {
+         if(input(DW)==0)    //kiem tra lan 2
+         {
+         //lenh chuong trinh
+         TT--;
+            while(input(DW)==0);   //cho nha phim
+         }
+      }
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot();
+   set_tris_b(0x3c);    //0011   1100
+   y = 0x00;
+   xuat_32led_don_4byte(0, 0, 0, 0);
+   TT = 0;
+   while (true)
+   {
+      while(TT != 1)    ST();
+      while(TT != 2)    PST();
+      while(TT != 3)    TSP();
+      while(TT != 4)    NVT();   
+      while(TT != 5)    TRN();       
+      while(input(CLR)==1)       xuat_32led_don_4byte(0, 0, 0, 0);
+   }
+}
+
+

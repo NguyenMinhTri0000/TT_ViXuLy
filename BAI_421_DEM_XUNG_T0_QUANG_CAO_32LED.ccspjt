@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_421_DEM_XUNG_T0_QUANG_CAO_32LED.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_421_DEM_XUNG_T0_QUANG_CAO_32LED.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_421_DEM_XUNG_T0_QUANG_CAO_32LED.c]
+Type=4
+[mru-list]
+1=BAI_421_DEM_XUNG_T0_QUANG_CAO_32LED.c
+[Opened Files]
+1=BAI_415_DEM_XUNG_T0.c
+2=BAI_421_DEM_XUNG_T0_QUANG_CAO_32LED.c
+3=BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT.c
+4=BAI_337_TONGHOP_UP_DN_CLR.c
+5=
+[Units]
+Count=1
+1=BAI_421_DEM_XUNG_T0_QUANG_CAO_32LED (main)

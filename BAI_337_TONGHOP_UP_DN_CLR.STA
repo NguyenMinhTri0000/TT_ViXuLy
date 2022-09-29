@@ -1,0 +1,77 @@
+
+ROM used:   2192/32768 (7%)
+            2192/32768 (7%) including unused fragments
+
+            1.1 Average locations per line
+            4.2 Average locations per statement
+
+RAM used:   92/2048 (4%) at main() level
+            115/2048 (6%) worst case
+
+Stack used: 7 worst case (7 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   59    42   8  BAI_337_TONGHOP_UP_DN_CLR.c
+  627   233  45  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  395   247  47  tv_pickit2_shift_32led_don.c
+----- -----
+ 1918   522 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     32   1    0             @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     36   1    4   160  1.8  XUAT_32LED_DON_4BYTE
+0     36   1    8   245  3.1  XUAT_32LED_DON_2WORD
+0     36   1    9   123  3.2  XUAT_32LED_DON_1DW
+0     22   1    4   131  2.8  xuat_1word
+0     88   2    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   1    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0     16   0    1    57  1.6  XUAT_4LED_7DOAN_1SO
+0     36   1    3   106  2.1  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     24   1    0             @const755
+0     52   1    3   123  2.6  XUAT_8LED_7DOAN_QUET_2
+0     56   1    1   136  3.9  HIEN_THI_8LED_7DOAN_QUET_ALL
+0    162   4    0   632  2.9  RESET_TOAN_BO_BIEN
+0     20   0    2   117  3.5  TANG_DEM_LED_DELAY_1
+0     16   0    1    68  2.4  TANG_DEM_LED_DELAY_0
+0     20   0    2    82  3.1  DELAY_CHON
+0     28   1    0    37  2.0  DAO_DL_32BIT_VA_XUAT
+0    102   2    2   315  3.7  SANG_TAT_32LED
+0    128   3    4   447  5.2  SANG_TAT_DAN_NGOAI_VAO_32LED
+0    128   3    4   447  5.2  SANG_TAT_DAN_TRONG_RA_32LED
+0    130   3    7   315  4.6  SANG_TAT_DAN_PST_32LED
+0    120   3    7   315  4.6  SANG_TAT_DAN_TSP_32LED
+0    132   3    3   381  6.6  SANG_DON_PST_32LED
+0    132   3    3   381  6.6  SANG_DON_TSP_32LED
+0     40   1    0   156  3.8  phim_up
+0     40   1    0   156  3.8  phim_dw
+0     26   1    0    86  3.1  phim_clr
+0    350   8    1   607  3.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               29
+    Statements              522
+    Comments                332
+    Volume (V)              12773
+    Difficulty (D)          98.7
+    Effort to implement (E) 1260462
+    Time to implement (T)   19 hours, 27 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   36
+    Maintainability (MI)    49
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2188  30576  
+
+
+

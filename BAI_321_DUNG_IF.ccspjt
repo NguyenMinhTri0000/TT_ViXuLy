@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_321_DUNG_IF.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_321_DUNG_IF.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_321_DUNG_IF.c]
+Type=4
+[mru-list]
+1=BAI_321_DUNG_IF.c
+[Units]
+Count=1
+1=BAI_321_DUNG_IF (main)

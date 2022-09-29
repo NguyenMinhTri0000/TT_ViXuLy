@@ -1,0 +1,124 @@
+ÀÄBAI_421_DEM_XUNG_T0_QUANG_CAO_32LED
+   ÀÄMAIN  0/388  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/294  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/294  Ram=5
+      ³  ÀÄ*
+      ÃÄSANG_TAT_32LED  0/102  Ram=2
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³     ÀÄXUAT_32LED_DON_4BYTE  0/36  Ram=4
+      ³  ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³        ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄDAO_DL_32BIT_VA_XUAT  0/28  Ram=0
+      ³  ³  ÀÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³     ÀÄ*
+      ³  ÃÄDAO_DL_32BIT_VA_XUAT  0/28  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄDAO_DL_32BIT_VA_XUAT  0/28  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ³  ÀÄDELAY_CHON  0/20  Ram=2
+      ³     ÃÄTANG_DEM_LED_DELAY_0  0/16  Ram=1
+      ³     ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄTANG_DEM_LED_DELAY_1  0/20  Ram=2
+      ³        ÀÄHIEN_THI_8LED_7DOAN_QUET_ALL  0/56  Ram=1
+      ³           ÃÄXUAT_8LED_7DOAN_QUET_2  0/52  Ram=3
+      ³           ³  ÃÄ@const755  0/24  Ram=0
+      ³           ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³           ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³           ÀÄXUAT_8LED_7DOAN_QUET_TAT_LED  0/10  Ram=0
+      ³              ÀÄXUAT_8LED_7DOAN_QUET_1  0/36  Ram=3
+      ³                 ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³                 ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÃÄSANG_TAT_DAN_PST_32LED  0/130  Ram=7
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ÃÄSANG_TAT_DAN_TSP_32LED  0/120  Ram=7
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ÃÄSANG_TAT_DAN_NGOAI_VAO_32LED  0/128  Ram=4
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ÃÄSANG_TAT_DAN_TRONG_RA_32LED  0/128  Ram=4
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ÃÄSANG_DON_PST_32LED  0/132  Ram=3
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ÃÄSANG_DON_TSP_32LED  0/132  Ram=3
+      ³  ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄDELAY_CHON  0/20  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0
+      ÃÄphim_dw  0/40  Ram=0
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄphim_up  0/40  Ram=0
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÀÄphim_clr  0/26  Ram=0
+         ÀÄRESET_TOAN_BO_BIEN  0/162  Ram=0

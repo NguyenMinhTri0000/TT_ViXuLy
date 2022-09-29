@@ -1,0 +1,27 @@
+[PROJECT]
+Target=BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT.c]
+Type=4
+[mru-list]
+1=BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT.c
+[Opened Files]
+1=BAI_409_DEM_PHUT_GIAY.c
+2=BAI_326_TONGHOP_UP_DN_CLR.c
+3=BAI_337_TONGHOP_UP_DN_CLR.c
+4=BAI_411_DEM_XUNG_T0.c
+5=BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+6=BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT.c
+7=tv_pickit2_shift_1.c
+8=BAI_414_DEM_XUNG_T0_240_255.c
+9=TV_PICKIT2_SHIFT_KEY4X4_138.c
+10=
+[Units]
+Count=1
+1=BAI_413_DEM_XUNG_T0_XOA_SO0_VN_CT (main)

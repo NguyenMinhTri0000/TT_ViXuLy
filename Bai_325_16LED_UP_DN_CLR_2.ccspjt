@@ -1,0 +1,24 @@
+[PROJECT]
+Target=Bai_325_16LED_UP_DN_CLR_2.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=Bai_325_16LED_UP_DN_CLR_2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[Bai_325_16LED_UP_DN_CLR_2.c]
+Type=4
+[mru-list]
+1=Bai_325_16LED_UP_DN_CLR_2.c
+[Opened Files]
+1=BAI_321_ON_OF_8LED.c
+2=BAI_321_DUNG_IF.c
+3=BAI_324_16LED_UP_DW_CLR_1.c
+4=Bai_325_16LED_UP_DN_CLR_2.c
+5=
+6=Bai_325_16LED_UP_DN_CLR_2.c
+7=
+[Units]
+Count=1
+1=Bai_325_16LED_UP_DN_CLR_2 (main)

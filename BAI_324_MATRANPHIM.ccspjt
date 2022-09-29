@@ -1,0 +1,25 @@
+[PROJECT]
+Target=BAI_324_MATRANPHIM.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_324_MATRANPHIM.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_324_MATRANPHIM.c]
+Type=4
+[mru-list]
+1=BAI_324_MATRANPHIM.c
+[Opened Files]
+1=Bai_325_16LED_UP_DN_CLR_2.c
+2=BAI_332_MATRANPHIM_LEDDON.c
+3=BAI_324_16LED_UP_DW_CLR_1.c
+4=BAI_324_MATRANPHIM.c
+5=BAI_325_MATRANPHIM.c
+6=BAI_401_HIENTHI_4SO.c
+7=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c
+8=
+[Units]
+Count=1
+1=BAI_324_MATRANPHIM (main)

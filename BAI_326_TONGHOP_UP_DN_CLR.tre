@@ -1,0 +1,58 @@
+ÀÄBAI_326_TONGHOP_UP_DN_CLR
+   ÀÄMAIN  0/224  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÃÄST  0/72  Ram=15
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄPST  0/258  Ram=15
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄTSP  0/254  Ram=15
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄNVT  0/270  Ram=5
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ³  ³     ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄTRN  0/270  Ram=5
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄXUAT_32LED_DON_2WORD  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÀÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+         ÀÄ*

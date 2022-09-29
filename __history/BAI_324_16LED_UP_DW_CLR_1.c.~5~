@@ -1,0 +1,106 @@
+
+#include <tv_pickit2_shift_1.c>
+
+unsigned INT8 i,j;
+unsigned INT16 y;
+
+void phim_clr()
+{
+   IF (!input (clr))
+   {
+      delay_ms (20);
+      {
+         IF (!input (clr))
+         {
+            y = 0x0000;
+            xuat_32led_don_4byte (0, 0, 0, 0);
+            WHILE ( ! input (clr)) ;
+         }
+      }
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot () ;
+   set_tris_b (0x3c);
+   y = 0x0000;
+   xuat_32led_don_4byte (0, 0, 0, 0);
+   i = 0; j = 0;
+   WHILE (true)
+   {
+      //nhan up sáng dan pst
+      
+      IF (!input (up))
+      {
+         delay_ms (20);
+         {
+            IF (!input (up))
+            {
+               //FOR (i = 0; i < 16; i++)
+               IF (i < 16)
+               {
+                  y = (y<<1)|0x0001;
+                  xuat_32led_don_4byte (0, 0, y>>8, y);
+                  WHILE ( ! input (up)) ;
+                  i++;
+               }
+
+               ELSE
+               {
+                  i = 0;
+                  y = 0;
+                  xuat_32led_don_4byte (0, 0, y>>8, y);
+               }
+
+               
+               
+               //!            DO{ phim_clr (); }
+               //!            WHILE (input (clr));
+            }
+         }
+      }
+
+      //nhan dw tat dan tsp
+      ELSE IF (!input (dw))
+         {
+            delay_ms (20);
+            {
+               IF (!input (dw))
+               {
+                  
+                  IF (j < 16)
+                  {
+                     y = y>>1;
+                     xuat_32led_don_4byte (0, 0, y>>8, y);
+                     WHILE ( ! input (dw)) ;
+                     j++;
+                  }
+
+                  ELSE
+                  {
+                     j = 0;
+                     y = 0xffff;
+                     xuat_32led_don_4byte (0, 0, y>>8, y);
+                  }
+
+                  //!            DO{ phim_clr (); }
+                  //!            WHILE (input (clr));
+
+                  //!
+               }
+            }
+         }
+
+      
+      else phim_clr ();
+
+      //!      WHILE (input (on)) ;
+      //!      y = 0x0f;
+      //!      xuat_32led_don_4byte (0, 0, 0, y) ;
+      //!      DO{ phim_inv (); }
+      //!      WHILE (input (off));
+      //!      xuat_32led_don_4byte (0, 0, 0, 0) ;
+   }
+}
+

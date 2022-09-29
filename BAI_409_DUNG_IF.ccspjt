@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_409_DUNG_IF.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_409_DUNG_IF.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_409_DUNG_IF.c]
+Type=4
+[mru-list]
+1=BAI_409_DUNG_IF.c
+[Opened Files]
+1=BAI_409_DEM_PHUT_GIAY.c
+2=BAI_415_DEM_XUNG_T0.c
+3=BAI_416_DEM_XUNG_T0.c
+4=BAI_417_DEM_XUNG_T0_START_STOP_32LED.c
+5=BAI_409_DUNG_IF.c
+6=
+[Units]
+Count=1
+1=BAI_409_DUNG_IF (main)

@@ -1,0 +1,51 @@
+#include <tv_pickit2_shift_1_proteus.c>
+unsigned int8 dem_led;
+unsigned int32 y;
+unsigned int16 zt,zp;
+
+void chop_tat_5_lan()
+{
+   if(dem_led<5)
+   {
+      xuat_32led_don_4byte(0,0,0,0);
+      delay_ms(200);
+      xuat_32led_don_4byte(0xff,0xff,0xff,0xff);
+      delay_ms(200); 
+      dem_led++;
+   }
+}
+void S_NVT()
+{
+   xuat_32led_don_2word(zt,zp);
+   delay_ms(30);
+   zp= (zp<<1)+1;
+   zt= (zt>>1)+0x8000; 
+}
+void T_NVT()
+{
+   xuat_32led_don_2word(zt,zp);
+   delay_ms(30);
+   zp= (zp<<1);
+   zt= (zt>>1); 
+}
+void S_TRN()
+{
+   xuat_32led_don_2word(zp,zt);
+   delay_ms(30);
+   zp= (zp<<1)+1;
+   zt= (zt>>1)+0x8000; 
+}
+void T_TRN()
+{
+   xuat_32led_don_2word(zp,zt);
+   delay_ms(30);
+   zp= (zp<<1);
+   zt= (zt>>1);
+}
+
+void main()
+{
+dem_led = 0;
+chop_tat_5_lan();
+
+}

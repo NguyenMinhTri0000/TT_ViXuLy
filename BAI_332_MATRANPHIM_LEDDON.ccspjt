@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_332_MATRANPHIM_LEDDON.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_332_MATRANPHIM_LEDDON.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_332_MATRANPHIM_LEDDON.c]
+Type=4
+[mru-list]
+1=BAI_332_MATRANPHIM_LEDDON.c
+[Opened Files]
+1=Bai_325_16LED_UP_DN_CLR_2.c
+2=BAI_326_TONGHOP_UP_DN_CLR.c
+3=BAI_332_MATRANPHIM_LEDDON.c
+4=BAI_324_16LED_UP_DW_CLR_1.c
+5=
+[Units]
+Count=1
+1=BAI_332_MATRANPHIM_LEDDON (main)

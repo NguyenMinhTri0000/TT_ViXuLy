@@ -6,10 +6,10 @@ UNSIGNED INT KEY_NHAN()
       FOR(COT=0;COT<4;COT++)
             {   
                OUTPUT_B(MAQUETKEY[COT]);
-               IF         (!INPUT(PIN_B2))      {HANG=0;   BREAK;}
-               ELSE    IF (!INPUT(PIN_B3))      {HANG=1;   BREAK;}
-               ELSE    IF (!INPUT(PIN_B4))      {HANG=2;   BREAK;}
-               ELSE    IF (!INPUT(PIN_B5))      {HANG=3;   BREAK;}
+               IF         (!INPUT(PIN_B2))      {HANG=3;   BREAK;}
+               ELSE    IF (!INPUT(PIN_B3))      {HANG=2;   BREAK;}
+               ELSE    IF (!INPUT(PIN_B4))      {HANG=1;   BREAK;}
+               ELSE    IF (!INPUT(PIN_B5))      {HANG=0;   BREAK;}
                DELAY_MS(30); //THEM VAO DE XU LY LOI QUA TAI CPU
             }          
          IF (HANG!=0XFF)   MAPHIM   = COT*4 + HANG;

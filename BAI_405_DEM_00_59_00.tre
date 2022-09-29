@@ -1,0 +1,23 @@
+ÀÄBAI_405_DEM_00_59_00
+   ÀÄMAIN  0/224  Ram=2
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄ@DIVS88  0/72  Ram=4
+      ÃÄ@const686  0/32  Ram=0
+      ÃÄ@DIVS88  0/72  Ram=4
+      ÃÄ@const686  0/32  Ram=0
+      ÃÄXUAT_4LED_7DOAN_2SO  0/16  Ram=2
+      ³  ÀÄXUAT_4LED_7DOAN_4SO  0/44  Ram=4
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÀÄMO_IC_74573_A_THONG_DL  0/48  Ram=0
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄ@DIVS88  0/72  Ram=4
+      ÃÄ@const686  0/32  Ram=0
+      ÃÄ@DIVS88  0/72  Ram=4
+      ÃÄ@const686  0/32  Ram=0
+      ÃÄXUAT_4LED_7DOAN_2SO  0/16  Ram=2
+      ³  ÀÄ*
+      ÀÄ@delay_ms1  0/38  Ram=1

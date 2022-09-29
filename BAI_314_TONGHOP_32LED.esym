@@ -1,7 +1,7 @@
-D G "__PCH__" 0 125 ""5.015""
-D G "__DEVICE__" 0 125 "4550"
-D G "__DATE__" 0 125 ""06-Sep-22""
-D G "__TIME__" 0 125 ""10:39:37"" "Standard Header file for the PIC18F4550 device ////////////////"
+D G "__PCH__" 0 67 ""5.015""
+D G "__DEVICE__" 0 67 "4550"
+D G "__DATE__" 0 67 ""13-Sep-22""
+D G "__TIME__" 0 67 ""09:11:32"" "Standard Header file for the PIC18F4550 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 
@@ -1111,26 +1111,13 @@ C L "GGMMAA" 1 7 1 "FUNCTION"
 F G "GGMMAA" 1 622 "void()" `802 
 V L "x" 1 623 "int8" `803 
 V G "dem_led" 0 2 "int8" `804 
-V G "y" 0 3 "int32" `805 
+V G "I" 0 3 "int8" `805 
 V G "zt" 0 4 "int16" `806 
 V G "zp" 0 4 "int16" `807 
 F G "chop_tat_5_lan" 0 7 "void()" `808 
-F G "S_NVT" 0 14 "void()" `809 
-F G "T_NVT" 0 21 "void()" `810 
-F G "S_TRN" 0 28 "void()" `811 
-F G "T_TRN" 0 35 "void()" `812 
-V L "d1" 0 41 "int8" `814 
-F G "sang_tat_dan_ngoai_vao_32led_2lan" 0 42 "void(int8 d1)" `813 
-C L "sang_tat_dan_ngoai_vao_32led_2lan" 0 43 1 "FUNCTION"
-C L "sang_tat_dan_ngoai_vao_32led_2lan" 0 43 1 "FUNCTION"
-C L "sang_tat_dan_ngoai_vao_32led_2lan" 0 43 1 "FUNCTION"
-C L "sang_tat_dan_ngoai_vao_32led_2lan" 0 43 1 "FUNCTION"
-C L "sang_tat_dan_ngoai_vao_32led_2lan" 0 43 1 "FUNCTION"
-C L "sang_tat_dan_ngoai_vao_32led_2lan" 0 43 1 "FUNCTION"
-F G "MAIN" 0 89 "void()" `815 
-C L "MAIN" 0 43 4 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
+F G "NVT" 0 18 "void()" `809 
+F G "TRN" 0 36 "void()" `810 
+F G "MAIN" 0 54 "void()" `811 
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

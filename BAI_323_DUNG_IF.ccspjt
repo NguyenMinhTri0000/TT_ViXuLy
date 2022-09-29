@@ -1,0 +1,21 @@
+[PROJECT]
+Target=BAI_323_DUNG_IF.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_323_DUNG_IF.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_323_DUNG_IF.c]
+Type=4
+[mru-list]
+1=BAI_323_DUNG_IF.c
+[Opened Files]
+1=Bai_325_16LED_UP_DN_CLR_2.c
+2=BAI_323_DUNG_IF.c
+3=BAI_323_ON_OFF_INV_CDOI_8LED.c
+4=
+[Units]
+Count=1
+1=BAI_323_DUNG_IF (main)

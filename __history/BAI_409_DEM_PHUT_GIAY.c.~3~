@@ -1,0 +1,17 @@
+#include <tv_pickit2_shift_1_proteus.c>
+signed int16 i, j;
+void main()
+{
+   set_up_port_ic_chot();
+   while(true)
+   {
+      for(j = 0; j<60; j++)
+      {
+         for(i = 0; i<60; i++)
+         {
+            xuat_4led_7doan_4so(ma7doan[j/10], ma7doan[j%10], ma7doan[i/10], ma7doan[i%10]);
+            delay_ms(1000);
+         }      
+      }  
+   }
+}

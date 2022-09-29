@@ -1,0 +1,36 @@
+//chua xong
+#include <tv_pickit2_shift_1.c>
+unsigned int32  y;
+void ST()
+{
+   xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+   delay_ms(200);
+   y = ~y; 
+}   
+void PST()
+{
+   xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+   delay_ms(200);
+   Y = (Y<<1)|0x00000001;     
+}
+void TSP()
+{
+   xuat_32led_don_4byte(y>>24, y>>16, y>>8, y);
+   delay_ms(200);
+   Y = (Y>>1);     
+}
+void main()
+{
+   set_up_port_ic_chot();
+   set_tris_b(0x3c);    //0011   1100
+   y = 0x00;
+   xuat_32led_don_4byte(0, 0, 0, 0);
+   while (true)
+   {
+  
+   xuat_32led_don_4byte(0xff, 0xff, 0xff, 0xff);
+   //TSP();
+   }
+}
+
+

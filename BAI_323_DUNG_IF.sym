@@ -1,0 +1,105 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     DL_BTN
+005.0   STEP_MOTOR_ENABLE
+005-006 RBDC
+005.1   STEP_MOTOR_IN1
+005.2   STEP_MOTOR_IN2
+005.3   STEP_MOTOR_IN3
+005.4   STEP_MOTOR_IN4
+005.5   DC_ENABLE
+005.6   PWRKEY
+006.0   BUZZER
+006.1   TRIAC_1
+006.2   TRIAC_2
+006.3   RELAY_1
+006.4   RELAY_2
+007     DONVI4
+008     CHUC4
+009     TRAM4
+00A     NGAN4
+00B     LCDDATA
+00C     LCDCONTROL
+00D     GLCDDATA
+00E     GLCDCONTROL
+00F-016 LED_7DQ
+017     TT8LED
+018     y
+019     @delay_ms1.P1
+019-01A xuat_1word.w
+019     XUAT_32LED_DON_4BYTE.BLD3
+019     phim_inv.@SCRATCH1
+019     MAIN.@SCRATCH1
+01A     XUAT_32LED_DON_4BYTE.BLD2
+01B     XUAT_32LED_DON_4BYTE.BLD1
+01B     xuat_1word.B1
+01C     xuat_1word.B0
+01C     XUAT_32LED_DON_4BYTE.BLD0
+01D     XUAT_1BYTE.x
+01D.7   XUAT_1BYTE.BSERI
+01E     XUAT_1BYTE.SB
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  XUAT_1BYTE
+00002A  xuat_1word
+000040  xoa_tat_6module
+000098  SET_UP_PORT_IC_CHOT
+0000D2  XUAT_32LED_DON_4BYTE
+0000F4  @delay_ms1
+00011C  phim_inv
+000146  MAIN
+000146  @cinit1
+000174  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    BAI_323_DUNG_IF.c                                       [13-Sep-22 11:14  CRC=2360319A]
+    tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+
+Source signature=70A449E8
+
+Units:
+    BAI_323_DUNG_IF (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   BAI_323_DUNG_IF.xsym
+    Errors:      BAI_323_DUNG_IF.err
+    Ext Symbols: BAI_323_DUNG_IF.esym
+    INHX32:      BAI_323_DUNG_IF.hex
+    Symbols:     BAI_323_DUNG_IF.sym
+    List:        BAI_323_DUNG_IF.lst
+    Debug/COFF:  BAI_323_DUNG_IF.cof
+    Project:     BAI_323_DUNG_IF.ccspjt
+    Call Tree:   BAI_323_DUNG_IF.tre
+    Statistics:  BAI_323_DUNG_IF.STA

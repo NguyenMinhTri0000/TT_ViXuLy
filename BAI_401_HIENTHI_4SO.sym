@@ -1,0 +1,99 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     DL_BTN
+005.0   STEP_MOTOR_ENABLE
+005-006 RBDC
+005.1   STEP_MOTOR_IN1
+005.2   STEP_MOTOR_IN2
+005.3   STEP_MOTOR_IN3
+005.4   STEP_MOTOR_IN4
+005.5   DC_ENABLE
+005.6   PWRKEY
+006.0   BUZZER
+006.1   TRIAC_1
+006.2   TRIAC_2
+006.3   RELAY_1
+006.4   RELAY_2
+007     DONVI4
+008     CHUC4
+009     TRAM4
+00A     NGAN4
+00B     LCDDATA
+00C     LCDCONTROL
+00D     GLCDDATA
+00E     GLCDCONTROL
+00F-016 LED_7DQ
+017     TT8LED
+018     XUAT_4LED_7DOAN_4SO.BL743
+018-019 xuat_1word.w
+019     XUAT_4LED_7DOAN_4SO.BL742
+01A     XUAT_4LED_7DOAN_4SO.BL741
+01A     xuat_1word.B1
+01B     xuat_1word.B0
+01B     XUAT_4LED_7DOAN_4SO.BL740
+01C     XUAT_1BYTE.x
+01C.7   XUAT_1BYTE.BSERI
+01D     XUAT_1BYTE.SB
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  XUAT_1BYTE
+00002A  xuat_1word
+000040  xoa_tat_6module
+000098  SET_UP_PORT_IC_CHOT
+0000D2  XUAT_4LED_7DOAN_4SO
+0000F6  @cinit1
+0000F6  MAIN
+000124  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    BAI_401_HIENTHI_4SO.c                                   [20-Sep-22 10:46  CRC=D872A938]
+    tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+
+Source signature=25B6C186
+
+Units:
+    BAI_401_HIENTHI_4SO (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   BAI_401_HIENTHI_4SO.xsym
+    Errors:      BAI_401_HIENTHI_4SO.err
+    Ext Symbols: BAI_401_HIENTHI_4SO.esym
+    INHX32:      BAI_401_HIENTHI_4SO.hex
+    Symbols:     BAI_401_HIENTHI_4SO.sym
+    List:        BAI_401_HIENTHI_4SO.lst
+    Debug/COFF:  BAI_401_HIENTHI_4SO.cof
+    Project:     BAI_401_HIENTHI_4SO.ccspjt
+    Call Tree:   BAI_401_HIENTHI_4SO.tre
+    Statistics:  BAI_401_HIENTHI_4SO.STA

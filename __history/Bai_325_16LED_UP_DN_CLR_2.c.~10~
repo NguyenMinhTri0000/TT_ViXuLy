@@ -1,0 +1,97 @@
+//chua lam duoc
+#include <tv_pickit2_shift_1.c>
+unsigned int8 y, TT;
+
+void Nut_up()
+{
+   if(input(UP)==0)    //kiem tra lan 1
+   {
+      delay_ms(20);
+      {
+         if(input(UP)==0)    //kiem tra lan 2
+         {
+            //lenh chuong trinh
+            if(TT ==0)
+            {
+                  xuat_32led_don_2word( 0, y);
+                  delay_ms(200);
+                  y = (y<<1)+1;      
+            }
+            else if(TT == 1)
+            {
+                  xuat_32led_don_2word( 0, y);
+                  delay_ms(200);
+                  y = (y>>1)+0x80;         
+            }            
+            while(input(UP)==0);   //cho nha phim
+         }
+      }
+   }
+}
+void Nut_dw()
+{
+   if(input(DW)==0)    //kiem tra lan 1
+   {
+      delay_ms(20);
+      {
+         if(input(DW)==0)    //kiem tra lan 2
+         {
+            //lenh chuong trinh
+            if(TT == 0)
+            {
+                  xuat_32led_don_2word( 0, y);
+                  delay_ms(200);
+                  y = (y>>1);      
+            }
+            else if(TT == 1)
+            {
+                  xuat_32led_don_2word( 0, y);
+                  delay_ms(200);
+                  y = (y<<1);      
+            }            
+            while(input(DW)==0);   //cho nha phim
+         }
+      }
+   }
+}
+void Nut_clr()
+{
+   if(input(CLR)==0)    //kiem tra lan 1
+   {
+      delay_ms(20);
+      {
+         if(input(CLR)==0)    //kiem tra lan 2
+         {
+         //lenh chuong trinh
+
+         TT  = ~TT;
+         xuat_32led_don_2word( 0, 0);          
+            while(input(CLR)==0);   //cho nha phim
+         }
+      }
+   }
+
+}
+
+void main()
+{
+   set_up_port_ic_chot();
+   set_tris_b(0xff);    //0011   1100
+   y = 0x00;
+   TT = 0;
+   xuat_32led_don_2word( 0, 0);
+   while (true)
+   {
+//!      do
+//!      {
+//!      Nut_up();
+//!      Nut_dw();      
+//!      }
+//!      while(Nut_clr()==1) ;
+      Nut_clr();
+      Nut_up();
+      Nut_dw();       
+   }
+}
+
+

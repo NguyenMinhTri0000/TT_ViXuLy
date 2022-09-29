@@ -1,0 +1,108 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     DL_BTN
+005.0   STEP_MOTOR_ENABLE
+005-006 RBDC
+005.1   STEP_MOTOR_IN1
+005.2   STEP_MOTOR_IN2
+005.3   STEP_MOTOR_IN3
+005.4   STEP_MOTOR_IN4
+005.5   DC_ENABLE
+005.6   PWRKEY
+006.0   BUZZER
+006.1   TRIAC_1
+006.2   TRIAC_2
+006.3   RELAY_1
+006.4   RELAY_2
+007     DONVI4
+008     CHUC4
+009     TRAM4
+00A     NGAN4
+00B     LCDDATA
+00C     LCDCONTROL
+00D     GLCDDATA
+00E     GLCDCONTROL
+00F-016 LED_7DQ
+017     TT8LED
+018-019 y
+01A     @delay_ms1.P1
+01A-01B xuat_1word.w
+01A     Nut_up.@SCRATCH1
+01A     Nut_dw.@SCRATCH1
+01B     Nut_up.@SCRATCH2
+01B     Nut_dw.@SCRATCH2
+01C     xuat_1word.B1
+01C     XUAT_32LED_DON_4BYTE.BLD3
+01D     xuat_1word.B0
+01D     XUAT_32LED_DON_4BYTE.BLD2
+01E     XUAT_32LED_DON_4BYTE.BLD1
+01F     XUAT_32LED_DON_4BYTE.BLD0
+020     XUAT_1BYTE.x
+020.7   XUAT_1BYTE.BSERI
+021     XUAT_1BYTE.SB
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  XUAT_1BYTE
+00002A  xuat_1word
+000040  xoa_tat_6module
+000098  SET_UP_PORT_IC_CHOT
+0000D2  XUAT_32LED_DON_4BYTE
+0000F4  @delay_ms1
+00011A  Nut_up
+000164  Nut_dw
+0001A0  MAIN
+0001A0  @cinit1
+0001CE  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    BAI_324_16LED_UP_DW_CLR_1.c                             [20-Sep-22 11:04  CRC=48106FCA]
+    tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+
+Source signature=95548818
+
+Units:
+    BAI_324_16LED_UP_DW_CLR_1 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   BAI_324_16LED_UP_DW_CLR_1.xsym
+    Errors:      BAI_324_16LED_UP_DW_CLR_1.err
+    Ext Symbols: BAI_324_16LED_UP_DW_CLR_1.esym
+    INHX32:      BAI_324_16LED_UP_DW_CLR_1.hex
+    Symbols:     BAI_324_16LED_UP_DW_CLR_1.sym
+    List:        BAI_324_16LED_UP_DW_CLR_1.lst
+    Debug/COFF:  BAI_324_16LED_UP_DW_CLR_1.cof
+    Project:     BAI_324_16LED_UP_DW_CLR_1.ccspjt
+    Call Tree:   BAI_324_16LED_UP_DW_CLR_1.tre
+    Statistics:  BAI_324_16LED_UP_DW_CLR_1.STA

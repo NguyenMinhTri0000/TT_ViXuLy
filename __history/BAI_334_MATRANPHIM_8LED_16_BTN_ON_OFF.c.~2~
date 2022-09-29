@@ -1,0 +1,83 @@
+#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_key4x4_138.c>
+signed int8 mp, y;      //signed là bao nhieu den bao nhieu
+void main()
+{
+set_up_port_ic_chot();
+set_tris_b(0x3c); //RB2 - RB5
+   while(true)
+   {
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 0);
+      y = 0x00;
+      xuat_32led_don_4byte(0, 0, 0, y);
+      
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 1);
+      y = 0x01;   //0000   0001
+      xuat_32led_don_4byte(0, 0, 0, y);     
+      
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 2);
+      y = 0x02;    //0000   0010
+      xuat_32led_don_4byte(0, 0, 0, y);    
+      
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 3);
+      y = 0x04;    //0000   0100
+      xuat_32led_don_4byte(0, 0, 0, y);   
+      
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 4);
+      y = 0x08;    //0000   1000
+      xuat_32led_don_4byte(0, 0, 0, y);  
+      
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 5);
+      y = 0x10;    //0001   0000
+      xuat_32led_don_4byte(0, 0, 0, y);    
+      
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 6);
+      y = 0x20;    //0010   0000
+      xuat_32led_don_4byte(0, 0, 0, y);   
+
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 7);
+      y = 0x40;    //0100   0000
+      xuat_32led_don_4byte(0, 0, 0, y);   
+
+      do
+      {
+         mp = key_nhan();
+      }
+      while(mp != 8);
+      y = 0x80;    //1000   0000
+      xuat_32led_don_4byte(0, 0, 0, y);      
+   }
+}
+

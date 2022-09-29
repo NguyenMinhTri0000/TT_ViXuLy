@@ -1,0 +1,38 @@
+//chua làm
+#include <tv_pickit2_shift_1_proteus.c>
+unsigned int8 y, i;
+
+void main()
+{
+   set_up_port_ic_chot();
+   set_tris_b(0x3c);    //0011   1100
+   y = 0x00;
+   xuat_32led_don_2word( 0, 0);
+   while (true)
+   {
+      while(input(UP))
+      {
+         for(i = 0; i<16; i++)
+         {
+            xuat_32led_don_2word( 0, y);
+            delay_ms(300);
+            y = (y<<1)+1;
+         }
+      }
+      while(input(DW))
+      {
+         for(i = 0; i<16; i++)
+         {
+            xuat_32led_don_2word( 0, y);
+            delay_ms(300);
+            y = (y>>1);
+         }
+      }      
+      while(input(CLR)) 
+      {
+         xuat_32led_don_2word( 0, 0);         
+      }  
+   }
+}
+
+

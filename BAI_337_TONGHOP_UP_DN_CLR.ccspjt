@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_337_TONGHOP_UP_DN_CLR.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_337_TONGHOP_UP_DN_CLR.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_337_TONGHOP_UP_DN_CLR.c]
+Type=4
+[mru-list]
+1=BAI_337_TONGHOP_UP_DN_CLR.c
+[Units]
+Count=1
+1=BAI_337_TONGHOP_UP_DN_CLR (main)

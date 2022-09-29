@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_332_DUNGIF.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_332_DUNGIF.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_332_DUNGIF.c]
+Type=4
+[mru-list]
+1=BAI_332_DUNGIF.c
+[Units]
+Count=1
+1=BAI_332_DUNGIF (main)

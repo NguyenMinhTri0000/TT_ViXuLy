@@ -1,0 +1,26 @@
+[PROJECT]
+Target=BAI_409_DEM_PHUT_GIAY.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_409_DEM_PHUT_GIAY.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_409_DEM_PHUT_GIAY.c]
+Type=4
+[mru-list]
+1=BAI_409_DEM_PHUT_GIAY.c
+[Opened Files]
+1=BAI_402_DEM_0_9.c
+2=BAI_403_DEM_00_99.c
+3=BAI_404_DEM_GIAY_00_59.c
+4=BAI_405_DEM_00_59_00.c
+5=BAI_406_DEM_00_59_3S_00_3S.c
+6=BAI_407_DEM_000_999.c
+7=BAI_408_DEM_0000_9999.c
+8=BAI_409_DEM_PHUT_GIAY.c
+9=
+[Units]
+Count=1
+1=BAI_409_DEM_PHUT_GIAY (main)

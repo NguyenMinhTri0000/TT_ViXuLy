@@ -1,0 +1,65 @@
+//chua làm duoc
+#include <tv_pickit2_shift_1.c>
+unsigned int8 y, i;
+
+void Nut_up()
+{
+   if(input(UP)==0)    //kiem tra lan 1
+   {
+      delay_ms(20);
+      {
+         if(input(UP)==0)    //kiem tra lan 2
+         {
+            //lenh chuong trinh
+            for(i = 0; i<16; i++)
+            {
+               xuat_32led_don_2word( 0, y);
+               delay_ms(300);
+               y = (y<<1)+1;
+            }         
+            while(input(UP)==0);   //cho nha phim
+         }
+      }
+   }
+}
+void Nut_dw()
+{
+   if(input(DW)==0)    //kiem tra lan 1
+   {
+      delay_ms(20);
+      {
+         if(input(DW)==0)    //kiem tra lan 2
+         {
+            //lenh chuong trinh
+            for(i = 0; i<16; i++)
+            {
+               xuat_32led_don_2word( 0, y);
+               delay_ms(300);
+               y = (y>>1);
+            }         
+            while(input(DW)==0);   //cho nha phim
+         }
+      }
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot();
+   set_tris_b(0xff);    //0011   1100
+   y = 0x00;
+   xuat_32led_don_2word( 0, 0);
+   while (true)
+   {
+      do
+      {
+      Nut_up();
+      Nut_dw();      
+      }
+      while(input(CLR)) ;
+      xuat_32led_don_2word( 0, 0);         
+      
+   }
+}
+
+

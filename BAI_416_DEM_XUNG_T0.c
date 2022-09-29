@@ -1,0 +1,45 @@
+#include <tv_pickit2_shift_1.c>
+
+unsigned INT16 t0;      
+
+
+
+
+void main()
+{
+   set_up_port_ic_chot();
+   //setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);
+   setup_timer_0 (t0_ext_l_to_h|t0_div_1);   // xóa t0_8_bit thì mac dinh nó là 16 bit, nho sua bien t0 thanh int16
+   set_timer0 (0);
+
+   WHILE (true)
+   {
+      t0 = get_timer0 () ;
+      XUAT_4LED_7DOAN_GIAIMA_XOA_SO0 (t0);
+      IF ((t0 >= 16) && (t0 < 94)) 
+      {
+         set_timer0 (95);
+//!         t0 = get_timer0 () ;         
+//!         giai_ma_hien_thi (t0);   
+      }   
+      else if ((t0 >= 106) && (t0 < 994))
+      {
+         set_timer0 (995);
+//!         t0 = get_timer0 () ;                 
+//!         giai_ma_hien_thi (t0);       
+      }         
+      else if ((t0 >= 1006) && (t0 < 9994))
+      {
+         set_timer0 (9995);   
+//!         t0 = get_timer0 () ;                 
+//!         giai_ma_hien_thi (t0);       
+      }   
+      else if (t0>=10000)
+      {
+         set_timer0 (1);  
+//!         t0 = get_timer0 () ;                 
+//!         giai_ma_hien_thi (t0);       
+      }   
+   }
+}
+
