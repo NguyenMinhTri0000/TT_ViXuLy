@@ -1,0 +1,39 @@
+ÀÄBAI_423_KEY_4X4_4LED_DICH
+   ÀÄMAIN  0/186  Ram=4
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄKEY_4X4_DW  0/50  Ram=0
+      ³  ÃÄKEY_NHAN  0/128  Ram=4
+      ³  ³  ÃÄ@const804  0/20  Ram=0
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@MUL88  0/76  Ram=2
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄKEY_NHAN  0/128  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄKEY_NHAN  0/128  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄdich7led  0/20  Ram=0
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@const681  0/32  Ram=0
+      ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÀÄXUAT_1BYTE  0/38  Ram=2

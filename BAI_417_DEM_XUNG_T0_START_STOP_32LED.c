@@ -1,4 +1,3 @@
-//on off nó bi nguoc??
 #include <tv_pickit2_shift_1.c>
 unsigned INT8 t0, t0_tam, y;
 

@@ -1,0 +1,51 @@
+
+#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+unsigned INT8 t0,t0_tam;
+unsigned INT8 donvi, chuc, tram;
+
+void giai_ma_hien_thi (UNSIGNED int16 tam)
+{
+   donvi = ma7doan[tam % 10];
+   chuc = ma7doan[tam / 10 % 10];
+   tram = ma7doan[tam / 100];
+   IF (tram == 0xc0)    //ma 7 doan cua so 0
+   {
+      tram = 0xff;      //tat het led 7 doan (anode chung)
+      IF (chuc == 0xc0) chuc = 0xff;
+   }
+
+   xuat_4led_7doan_3so (tram, chuc, donvi);
+}
+
+VOID xuat_sp_lcd  ()
+{
+ lcd_GOTO_xy (0, 12);
+ //delay_us (20);
+ lcd_data (t0 / 100 + 0x30) ;
+ lcd_data (t0 / 10 % 10 + 0x30);
+ lcd_data (t0 % 10 + 0x30) ;
+}
+
+VOID main ()
+{
+ set_up_port_ic_chot ();
+ setup_lcd ();
+ lcd_goto_xy (0, 0) ;
+ lcd_data ("san pham");
+ setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);
+ set_timer0 (0);
+ WHILE (true)
+ {
+    xuat_sp_lcd ();
+    t0 = get_timer0();
+    IF (t0 != t0_tam)
+    {
+       t0_tam = t0;
+       giai_ma_hien_thi (t0);
+       IF (t0 >= 100) set_timer0(1) ;
+    }
+ }
+}
+
+

@@ -1,0 +1,27 @@
+[PROJECT]
+Target=BAI_601_LCD_HIENTHI_4HANG.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_601_LCD_HIENTHI_4HANG.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_601_LCD_HIENTHI_4HANG.c]
+Type=4
+[mru-list]
+1=BAI_601_LCD_HIENTHI_4HANG.c
+[Opened Files]
+1=BAI_601_LCD_HIENTHI_4HANG.c
+2=BAI_602_LCD_HIENTHI_4HANG.c
+3=
+4=
+5=BAI_422_DEM_XUNG_T0_QUANG_CAO_32LED.c
+6=BAI_409_DEM_PHUT_GIAY.c
+7=BAI_417_DEM_XUNG_T0_START_STOP_32LED.c
+8=BAI_601_LCD_HIENTHI_4HANG.c
+9=tv_pickit2_shift_lcd.c
+10=
+[Units]
+Count=1
+1=BAI_601_LCD_HIENTHI_4HANG (main)

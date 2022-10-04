@@ -1,0 +1,5 @@
+>>> Warning 207 "BAI_622_LCD_KEY4X4_DICH.c" Line 15(1,1): Code has no effect
+>>> Warning 202 "C:\Users\NguyenMinhTri\Desktop\TT VXL\tv_pickit2_shift_lcd.c" Line 66(21,30): Variable never used:   LCD_SO_XX
+      Memory usage:   ROM=3%      RAM=2% - 3%
+      0 Errors,  2 Warnings.
+Build Successful.

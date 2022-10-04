@@ -1,0 +1,32 @@
+#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_key4x4_138.c>
+#include <tv_pickit2_shift_lcd.c>
+signed int8 mp, n, tam;      
+void main()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+   set_tris_b(0x3c); //RB2 - RB5
+   lcd_GOTO_xy (0, 0) ;
+   lcd_data ("HAY NHAN PHIM:"); 
+   n = 20;     //de xuong hang 21 la n+1 vua bang 0
+   while(true)
+   {
+      mp = key_4x4_dw();      //kiem tra ma tran phim
+      if(mp != 0xff)
+      {
+         if(mp <10)
+         {
+            lcd_GOTO_xy (1, n-1);
+            lcd_data (mp + 0x30);              
+         }  
+         else 
+         {
+            lcd_GOTO_xy (1, n-1);
+            lcd_data (mp + 0x37);   
+         } 
+         n++;    
+      }
+   }
+}
+

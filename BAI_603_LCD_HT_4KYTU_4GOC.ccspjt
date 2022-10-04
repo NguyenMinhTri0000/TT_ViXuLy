@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_603_LCD_HT_4KYTU_4GOC.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_603_LCD_HT_4KYTU_4GOC.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_603_LCD_HT_4KYTU_4GOC.c]
+Type=4
+[mru-list]
+1=BAI_603_LCD_HT_4KYTU_4GOC.c
+[Units]
+Count=1
+1=BAI_603_LCD_HT_4KYTU_4GOC (main)

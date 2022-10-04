@@ -1,0 +1,35 @@
+#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+unsigned CHAR hang1[] = {"                    NGUYEN MINH TRI                    "};   //20+15+20 = 55 (55-20+1=36):vitri1
+unsigned CHAR hang2[] = {"                    19161306                    "};
+unsigned INT8 i, vitri1;
+void main()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+   vitri1 = 0;
+   WHILE (true)
+   {
+      lcd_command(lcd_addr_line1);       
+      FOR (i = vitri1; i < 20 +vitri1; i++)
+      {     
+         LCD_DATA (hang1[i]);       
+      }
+
+      delay_ms (100) ;
+      vitri1++;
+      IF (vitri1 == 36) vitri1 = 0;
+      
+      lcd_command(lcd_addr_line2);       
+      FOR (i = vitri1; i < 20 +vitri1; i++)
+      {     
+         LCD_DATA (hang2[i]);       
+      }
+
+      delay_ms (100) ;
+      vitri1++;
+      IF (vitri1 == 36) vitri1 = 0;
+   }
+}
+
+

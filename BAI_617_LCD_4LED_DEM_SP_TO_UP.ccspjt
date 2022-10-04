@@ -1,0 +1,21 @@
+[PROJECT]
+Target=BAI_617_LCD_4LED_DEM_SP_TO_UP.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_617_LCD_4LED_DEM_SP_TO_UP.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_617_LCD_4LED_DEM_SP_TO_UP.c]
+Type=4
+[mru-list]
+1=BAI_617_LCD_4LED_DEM_SP_TO_UP.c
+[Opened Files]
+1=BAI_617_LCD_4LED_DEM_SP_TO_UP.c
+2=BAI_604_LCD_HT_2HANG_DICH_TRAI_1HANG.c
+3=BAI_605_LCD_HT_2HANG_DICH_PHAI_1HANG.c
+4=
+[Units]
+Count=1
+1=BAI_617_LCD_4LED_DEM_SP_TO_UP (main)

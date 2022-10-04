@@ -1,7 +1,8 @@
-D G "__PCH__" 0 131 ""5.015""
-D G "__DEVICE__" 0 131 "4550"
-D G "__DATE__" 0 131 ""27-Sep-22""
-D G "__TIME__" 0 131 ""11:18:41"" "use do while"
+D G "RCK_MATRANLED" 1 41 "PIN_D7" "B - 3 BYTE DAO"
+D G "__PCH__" 1 70 ""5.015""
+D G "__DEVICE__" 1 70 "4550"
+D G "__DATE__" 1 70 ""03-Oct-22""
+D G "__TIME__" 1 70 ""14:02:59"" "use do while"
 c L "set_tris_a" 2 1 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 

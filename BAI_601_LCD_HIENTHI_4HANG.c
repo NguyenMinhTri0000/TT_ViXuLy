@@ -1,0 +1,25 @@
+#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+
+unsigned CHAR hang1[]={"1hien thi lcd 20x4** "};
+unsigned CHAR hang2[]={"2dai hoc su pham kt "};
+unsigned CHAR hang3[]={"3bo thi nghiem vdk "};
+unsigned CHAR hang4[]={"0123456789abcdefghij"};
+signed INT8 i;
+
+void main()
+{
+   set_up_port_ic_chot();
+   setup_lcd ();
+   lcd_command (lcd_addr_line1) ;
+   FOR (i = 0; i < 20; i++) { lcd_data (hang1[i]);  }
+   lcd_command (lcd_addr_line2);
+   FOR (i = 0; i < 20; i++) { lcd_data (hang2[i]);  }
+   lcd_command (lcd_addr_line3);
+   FOR (i = 0; i < 20; i++) { lcd_data (hang3[i]);  }
+   lcd_command (lcd_addr_line4);
+   FOR (i = 0; i < 20; i++) { lcd_data (hang4[i]);  }
+   WHILE (true) ;
+}
+
+

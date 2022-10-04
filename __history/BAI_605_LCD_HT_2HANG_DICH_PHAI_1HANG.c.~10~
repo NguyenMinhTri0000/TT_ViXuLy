@@ -1,0 +1,38 @@
+//chua xong
+#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_lcd.c>
+unsigned CHAR hang1[] = {"                    NGUYEN MINH TRI                    "};   //20+15+20 = 55 (55-20+1=36):vitri1
+unsigned CHAR hang2[] = {"                    19161306                    "};    //20+6+20=46 (46-20+1=27):vitri2
+unsigned INT8 i, j, vitri1, vitri2;
+void main()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+   vitri1 = 36;
+   vitri2 = 27;
+   WHILE (true)
+   {
+      //lcd_command (0x80); //chua hieu
+      lcd_command(lcd_addr_line1);
+      FOR (i = vitri1; i > 0; i--)
+      {
+         LCD_DATA (hang1[i]);
+      }
+
+      delay_ms (100) ;
+      vitri1++;
+      IF (vitri1 == 36) vitri1 = 0;
+
+      lcd_command(lcd_addr_line2);     
+      FOR (j = vitri2; j > 0; j--)
+      {
+         LCD_DATA (hang2[j]);
+      }
+
+      delay_ms (100) ;
+      vitri2++;
+      IF (vitri2 == 27) vitri2 = 0;      
+   }
+}
+
+

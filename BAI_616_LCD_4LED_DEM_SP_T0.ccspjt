@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_616_LCD_4LED_DEM_SP_T0.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_616_LCD_4LED_DEM_SP_T0.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_616_LCD_4LED_DEM_SP_T0.c]
+Type=4
+[mru-list]
+1=BAI_616_LCD_4LED_DEM_SP_T0.c
+[Opened Files]
+1=BAI_614_LCD_GIO_PHUT_GIAY.c
+2=BAI_615_LCD_8LED_GIO_PHUT_GIAY.c
+3=BAI_616_LCD_4LED_DEM_SP_T0.c
+4=BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+5=
+[Units]
+Count=1
+1=BAI_616_LCD_4LED_DEM_SP_T0 (main)

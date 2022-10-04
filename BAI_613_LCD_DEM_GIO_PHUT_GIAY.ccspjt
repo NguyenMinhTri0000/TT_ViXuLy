@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_613_LCD_DEM_GIO_PHUT_GIAY.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_613_LCD_DEM_GIO_PHUT_GIAY.c]
+Type=4
+[mru-list]
+1=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+[Opened Files]
+1=BAI_611_LCD_DEM_GIAY.c
+2=BAI_604_LCD_HT_2HANG_DICH_TRAI.c
+3=BAI_612_LCD_DEM_PHUT_GIAY.c
+4=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+5=
+[Units]
+Count=1
+1=BAI_613_LCD_DEM_GIO_PHUT_GIAY (main)

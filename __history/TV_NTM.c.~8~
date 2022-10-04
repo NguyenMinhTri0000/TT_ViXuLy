@@ -1,0 +1,31 @@
+#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_lcd.c>
+
+unsigned int8 m;
+//!void LCD_shift_left(unsigned char chuoi[])
+//!{
+//!   //cong 20 kí tu trong o dau va o cuoi 
+//!   hang[] = "                    " + chuoi[] + "                    ";     //??
+//!   unsigned INT8 vitri = 0, i;
+//!   
+//!   lcd_command(lcd_addr_line1);
+//!   FOR (i = vitri; i < 20 +vitri; i++)
+//!   {
+//!      LCD_DATA (hang[i]);
+//!   }
+//!
+//!   delay_ms (100) ;
+//!   vitri++;
+//!   IF (vitri == lengt(hang[])-20+1) vitri = 0;   //?
+//!}
+m =0;
+void main()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+      WHILE (true)
+      {
+      lcd_command(lcd_addr_line2); 
+         LCD_DATA (m);      
+      }
+}
