@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_624_LCD_KEY_4X4_DICH.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_624_LCD_KEY_4X4_DICH.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_624_LCD_KEY_4X4_DICH.c]
+Type=4
+[mru-list]
+1=BAI_624_LCD_KEY_4X4_DICH.c
+[Opened Files]
+1=BAI_423_KEY_4X4_4LED_DICH.c
+2=BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c
+3=BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c
+4=BAI_624_LCD_KEY_4X4_DICH.c
+5=
+[Units]
+Count=1
+1=BAI_624_LCD_KEY_4X4_DICH (main)

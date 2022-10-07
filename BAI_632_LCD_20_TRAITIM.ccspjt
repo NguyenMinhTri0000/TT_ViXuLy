@@ -1,0 +1,21 @@
+[PROJECT]
+Target=BAI_632_LCD_20_TRAITIM.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_632_LCD_20_TRAITIM.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_632_LCD_20_TRAITIM.c]
+Type=4
+[mru-list]
+1=BAI_632_LCD_20_TRAITIM.c
+[Opened Files]
+1=BAI_617_LCD_4LED_DEM_SP_TO_UP.c
+2=BAI_631_LCD_TRAITIM.c
+3=BAI_632_LCD_20_TRAITIM.c
+4=
+[Units]
+Count=1
+1=BAI_632_LCD_20_TRAITIM (main)

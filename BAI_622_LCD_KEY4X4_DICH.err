@@ -1,4 +1,5 @@
->>> Warning 202 "C:\Users\NguyenMinhTri\Desktop\TT VXL\tv_pickit2_shift_lcd.c" Line 66(21,30): Variable never used:   LCD_SO_XX
-      Memory usage:   ROM=3%      RAM=2% - 3%
-      0 Errors,  1 Warnings.
-Build Successful.
+*** Error 51 "BAI_622_LCD_KEY4X4_DICH.c" Line 7(128,130): A numeric expression must appear here
+*** Error 1 "BAI_622_LCD_KEY4X4_DICH.c" Line 7(1,2): Illegal C character in input file  0x80
+*** Error 1 "BAI_622_LCD_KEY4X4_DICH.c" Line 7(1,2): Illegal C character in input file  0x00
+*** Error 1 "BAI_622_LCD_KEY4X4_DICH.c" Line 7(1,2): Illegal C character in input file  0xF7
+*** Error 27 "BAI_622_LCD_KEY4X4_DICH.c" Line 8(3,11): Expression must evaluate to a constant

@@ -1,6 +1,7 @@
-#include <tv_pickit2_shift_1.c>
+//#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_1_proteus.c>
 #include <tv_pickit2_shift_key4x4_138.c>
-unsigned int8 led[] = {0, 0, 0, 0};
+unsigned int8 led[] = {0x7F, 0x7F, 0x7F, 0x7F}; //ma 7 doan cua dau cham mà sao mô phong khong phai dau cham
 unsigned int8 mp;
 void dich7led()
 {

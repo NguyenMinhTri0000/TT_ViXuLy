@@ -1,0 +1,141 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     TIN_HIEU_DK_74573_A
+004.2   G_LCDA
+004.4   G_32A
+004.6   G_4A
+005     TIN_HIEU_DK_74573_B
+005.2   G_RBDCB
+005.4   G_8B
+005.6   G_MTB
+006     DL_BTN
+007-008 RBDC
+007.0   STEP_MOTOR_ENABLE
+007.1   STEP_MOTOR_IN1
+007.2   STEP_MOTOR_IN2
+007.3   STEP_MOTOR_IN3
+007.4   STEP_MOTOR_IN4
+007.5   DC_ENABLE
+007.6   PWRKEY
+008.0   BUZZER
+008.1   TRIAC_1
+008.2   TRIAC_2
+008.3   RELAY_1
+008.4   RELAY_2
+009     DONVI4
+00A     CHUC4
+00B     TRAM4
+00C     NGAN4
+00D     LCDDATA
+00E     LCDCONTROL
+00F     GLCDDATA
+010     GLCDCONTROL
+011-018 LED_7DQ
+019     TT8LED
+01A     LCD_CONTROL
+01A.0   LCD_E
+01A.1   LCD_RW
+01A.2   LCD_RS
+01A.3   LCD_P
+01B     I
+01C     @delay_ms1.P1
+01C     LCD_GOTO_XY.x
+01C     show_heart.@SCRATCH1
+01C     hien_hinh_thoi.@SCRATCH1
+01C     hien_hinh_vuong.@SCRATCH1
+01C     @PSTRINGC_810.@SCRATCH1
+01D     LCD_GOTO_XY.Y
+01D     @PSTRINGC_810.@SCRATCH2
+01E     LCD_DATA.LCD_DATA_X
+01E     LCD_GOTO_XY.@SCRATCH1
+01F     LCD_COMMAND.LCD_DATA_X
+020     LCD_XUAT_8BIT.LCD_DATA_X
+021     XUAT_LCD20X4.LCD_SIGNAL
+022     XUAT_LCD20X4.LCD_INS_HTHI
+023     XUAT_1BYTE.BYTEXUAT
+024     XUAT_1BYTE.SB
+025     XUAT_1BYTE.x
+025.7   XUAT_1BYTE.BSERI
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_VITRI.call
+000014  LCD_VITRI.data
+000018  hang2.call
+000028  hang2.data
+000030  hang3.call
+000040  hang3.data
+000048  hang4.call
+000058  hang4.data
+000060  @const848.call
+000074  SET_UP_PORT_IC_CHOT
+000092  XUAT_1BYTE
+0000BC  MO_IC_74573_A_THONG_DL
+0000EC  XUAT_GLCD_LCD
+000118  XUAT_LCD20X4
+000128  LCD_XUAT_8BIT
+000142  LCD_COMMAND
+000158  @delay_ms1
+000180  SETUP_LCD
+0001C8  LCD_GOTO_XY
+0001E2  LCD_DATA
+0001F8  @PSTRINGC_810
+00021A  show_heart
+000258  hien_hinh_thoi
+000298  hien_hinh_vuong
+0002D8  MAIN
+0002D8  @cinit1
+0002F4  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    BAI_633_LCD_3KYTU.c                                     [06-Oct-22 14:57  CRC=3FE2F4C5]
+    tv_pickit2_shift_1_proteus.c                            [22-Aug-21 17:45  CRC=CBC49623]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+    tv_pickit2_shift_lcd.c                                  [03-Oct-22 14:26  CRC=3316A17B]
+
+Source signature=C50CB026
+
+Units:
+    BAI_633_LCD_3KYTU (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   BAI_633_LCD_3KYTU.xsym
+    Errors:      BAI_633_LCD_3KYTU.err
+    Ext Symbols: BAI_633_LCD_3KYTU.esym
+    INHX32:      BAI_633_LCD_3KYTU.hex
+    Symbols:     BAI_633_LCD_3KYTU.sym
+    List:        BAI_633_LCD_3KYTU.lst
+    Debug/COFF:  BAI_633_LCD_3KYTU.cof
+    Project:     BAI_633_LCD_3KYTU.ccspjt
+    Call Tree:   BAI_633_LCD_3KYTU.tre
+    Statistics:  BAI_633_LCD_3KYTU.STA

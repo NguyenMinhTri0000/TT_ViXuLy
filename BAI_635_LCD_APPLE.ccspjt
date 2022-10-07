@@ -1,0 +1,24 @@
+[PROJECT]
+Target=BAI_635_LCD_APPLE.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_635_LCD_APPLE.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_635_LCD_APPLE.c]
+Type=4
+[mru-list]
+1=BAI_635_LCD_APPLE.c
+[Opened Files]
+1=BAI_617_LCD_4LED_DEM_SP_TO_UP.c
+2=BAI_631_LCD_TRAITIM.c
+3=BAI_632_LCD_20_TRAITIM.c
+4=BAI_633_LCD_3KYTU.c
+5=BAI_635_LCD_APPLE.c
+6=BAI_636_LCD_APPLE_DICHUYEN.c
+7=
+[Units]
+Count=1
+1=BAI_635_LCD_APPLE (main)

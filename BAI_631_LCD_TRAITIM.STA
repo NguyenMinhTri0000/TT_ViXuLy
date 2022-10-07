@@ -1,0 +1,61 @@
+
+ROM used:   614/32768 (2%)
+            614/32768 (2%) including unused fragments
+
+            0.4 Average locations per line
+            2.2 Average locations per statement
+
+RAM used:   29/2048 (1%) at main() level
+            38/2048 (2%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   21    12   4  BAI_631_LCD_TRAITIM.c
+  705   244  87  tv_pickit2_shift_1_proteus.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  112    25   9  tv_pickit2_shift_lcd.c
+----- -----
+ 1675   281 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   3    1             @delay_ms1
+0     42   3    3   271  4.3  XUAT_1BYTE
+0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     48   4    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   4    0   172  1.8  XUAT_GLCD_LCD
+0     16   1    2    80  2.7  XUAT_LCD20X4
+0     26   2    1   102  2.1  LCD_XUAT_8BIT
+0     22   2    1    61  1.6  LCD_COMMAND
+0     22   2    1    61  1.6  LCD_DATA
+0     72   6    0   245  1.8  SETUP_LCD
+0     20   2    0             @const827
+0     26   2    3   147  3.7  LCD_GOTO_XY
+0     24   2    0   147  3.7  @const832
+0    124  10    1   284  4.4  MAIN
+0     20   2    0             @const839
+0     34   3    2   284  4.4  @PSTRINGC_810
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               13
+    Statements              281
+    Comments                377
+    Volume (V)              3757
+    Difficulty (D)          35.1
+    Effort to implement (E) 131886
+    Time to implement (T)   2 hours, 2 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   3
+    Maintainability (MI)    136
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   610  32154  
+
+
+

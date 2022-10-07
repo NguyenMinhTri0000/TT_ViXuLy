@@ -1,0 +1,48 @@
+#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+unsigned INT16 t0,DV,CH,TR;
+// GIAI MA HIEN THI XOA SO 0 VO NGHIA
+VOID GM_LCD()
+{
+   DV = T0 % 10 + 0X30;
+   CH = T0 / 10 % 10 + 0X30;
+   TR = T0 / 100 + 0X30;
+   IF (TR == 0X30)   //0x30 là so 0
+   {
+      TR = 32; //0X20 là khoang trong
+      IF (CH == 0X30) CH = 0X20;
+   }
+}
+
+VOID HT_LCD()
+{
+   lcd_GOTO_xy(0,17);
+   lcd_data (TR);
+   lcd_data (CH);
+   lcd_data (DV);
+}
+
+void main()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+   lcd_GOTO_xy (0, 0) ;
+   lcd_data ("dem san pham:");
+   setup_timer_0 (t0_ext_l_to_h|t0_div_1);
+   set_timer0 (0);
+   t0 = 0;
+   WHILE (true)
+   {
+   lcd_GOTO_xy(0,0);
+   lcd_data("**DEM SAN PHAM ** ");
+      t0 = get_timer0 ();
+         lcd_command (0x40) ;
+         FOR (i = 0; i < 64; i++) { lcd_data (lcd_ma_8doan[i]);  }
+         lcd_hienthi_so_z_toado_xy (j/100, 2, 0);      //tram             
+         lcd_hienthi_so_z_toado_xy (j/10, 2, 4);      //chuc
+         lcd_hienthi_so_z_toado_xy (j%10, 2, 8);      //don vi
+      IF (t0 >= 100) set_timer0 (1) ;
+   }
+}
+
+

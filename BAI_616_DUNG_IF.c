@@ -38,7 +38,7 @@ void main()
       t0 = get_timer0 ();
       
       xuat_4led_7doan_giaima_xoa_so0 (t0);
-      IF (t0 >= 100) set_timer0 (1) ;
+      IF (t0 >= 1000) set_timer0 (1) ;
    }
 }
 

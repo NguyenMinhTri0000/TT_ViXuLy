@@ -1,58 +1,57 @@
 
-ROM used:   796/32768 (2%)
-            796/32768 (2%) including unused fragments
+ROM used:   702/32768 (2%)
+            702/32768 (2%) including unused fragments
 
-            0.5 Average locations per line
-            2.7 Average locations per statement
+            0.4 Average locations per line
+            2.3 Average locations per statement
 
-RAM used:   35/2048 (2%) at main() level
-            41/2048 (2%) worst case
+RAM used:   37/2048 (2%) at main() level
+            44/2048 (2%) worst case
 
-Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack used: 3 worst case (3 in main + 0 for interrupts)
 Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   27    13   4  BAI_423_KEY_4X4_4LED_DICH.c
-  627   233  78  tv_pickit2_shift_1.c
+   28    13   4  BAI_423_KEY_4X4_4LED_DICH.c
+  705   244  79  tv_pickit2_shift_1_proteus.c
   837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
    62    52  17  tv_pickit2_shift_key4x4_138.c
 ----- -----
- 1553   298 Total
+ 1632   309 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
-0     38   2    1             @delay_ms1
-0     32   2    0             @const681
-0     38   2    2   234  4.3  XUAT_1BYTE
-0     22   1    4   131  2.8  xuat_1word
-0     88   6    0   396  1.4  xoa_tat_6module
-0     58   4    0   253  2.3  SET_UP_PORT_IC_CHOT
-0     36   2    4   160  1.8  XUAT_4LED_7DOAN_4SO
-0     20   1    0   108  2.9  @const804
-0    128   8    4   656  8.1  KEY_NHAN
-0     76   5    2   233  3.9  @MUL88
-0     50   3    0   204  4.4  KEY_4X4_DW
+0     38   3    1             @delay_ms1
+0     32   2    0             @const686
+0     42   3    3   271  4.3  XUAT_1BYTE
+0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     48   3    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   3    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0     20   1    0             @const801
+0    128   9    4   656  8.1  KEY_NHAN
+0     76   5    2             @MUL88
+0     50   4    0   204  4.4  KEY_4X4_DW
 0     20   1    0   143  2.2  dich7led
-0    186  12    4   267  4.1  MAIN
- Inline         0    61  1.6  @cinit1
+0    170  12    4   267  4.1  MAIN
+ Inline         0             @cinit1
 
 Program metrics:
-    Functions               12
-    Statements              298
-    Comments                289
-    Volume (V)              4781
-    Difficulty (D)          40.0
-    Effort to implement (E) 191026
-    Time to implement (T)   2 hours, 57 minutes
+    Functions               8
+    Statements              309
+    Comments                345
+    Volume (V)              3198
+    Difficulty (D)          28.2
+    Effort to implement (E) 90236
+    Time to implement (T)   1 hours, 24 minutes
     Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   12
-    Maintainability (MI)    136
+    Cyclomatic Complexity   10
+    Maintainability (MI)    46
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-07FFE   792  31972  
+00004-07FFE   698  32066  
 
 
 
