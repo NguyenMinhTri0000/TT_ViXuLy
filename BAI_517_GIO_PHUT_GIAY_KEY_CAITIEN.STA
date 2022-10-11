@@ -1,0 +1,67 @@
+
+ROM used:   1414/32768 (4%)
+            1414/32768 (4%) including unused fragments
+
+            0.9 Average locations per line
+            4.1 Average locations per statement
+
+RAM used:   48/2048 (2%) at main() level
+            54/2048 (3%) worst case
+
+Stack used: 5 worst case (4 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  151   109  32  BAI_517_GIO_PHUT_GIAY_KEY_CAITIEN.c
+  627   233  68  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+----- -----
+ 1615   342 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     42   1    2   195  4.8  PHIM_BT0
+0     42   1    2   195  4.8  PHIM_BT1
+0     42   1    2   195  4.8  PHIM_BT2
+0     42   1    0             @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     22   1    4   131  2.8  xuat_1word
+0     88   3    0   396  1.4  xoa_tat_6module
+0     58   2    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   1    3   106  2.1  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   1    0             @const755
+0     52   2    3   123  2.6  XUAT_8LED_7DOAN_QUET_2
+0     56   2    1   136  3.9  HIEN_THI_8LED_7DOAN_QUET_ALL
+0     16   1    0    29  1.2  interrupt_timer1
+0    196   7    1   654  5.3  giai_ma_gan_cho_8led_quet
+0     72   3    4   100  3.2  @DIVS88
+0     36   1    0   295  3.7  tat_2led_chinh
+0     32   1    0   100  2.9  phim_mod
+0     78   3    0   407  6.0  phim_up
+0     78   3    0   407  6.0  phim_dw
+0    198   7    0   999  6.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               19
+    Statements              342
+    Comments                286
+    Volume (V)              8740
+    Difficulty (D)          71.8
+    Effort to implement (E) 627215
+    Time to implement (T)   9 hours, 41 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   44
+    Maintainability (MI)    78
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  1268  31350  
+
+
+

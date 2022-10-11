@@ -1,0 +1,25 @@
+[PROJECT]
+Target=BAI_417_GOM_NUT_NHAN.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_417_GOM_NUT_NHAN.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_417_GOM_NUT_NHAN.c]
+Type=4
+[mru-list]
+1=BAI_417_GOM_NUT_NHAN.c
+[Opened Files]
+1=BAI_641_LCD_SO_0.c
+2=BAI_642_LCD_SO_0123.c
+3=BAI_616_DUNG_IF.c
+4=BAI_644_LCD_DEM_SP_KTL.c
+5=BAI_643_LCD_DEM_00_99.c
+6=BAI_417_DEM_XUNG_T0_START_STOP_32LED.c
+7=BAI_417_GOM_NUT_NHAN.c
+8=
+[Units]
+Count=1
+1=BAI_417_GOM_NUT_NHAN (main)

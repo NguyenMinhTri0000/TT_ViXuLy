@@ -1,0 +1,37 @@
+ÀÄBAI_511_DEM_GIAY
+   ÀÄMAIN  0/86  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÀÄhienthi_delay  0/114  Ram=1
+         ÃÄ@DIVS88  0/72  Ram=4
+         ÃÄ@const681  0/32  Ram=0
+         ÃÄXUAT_8LED_7DOAN_QUET_2  0/50  Ram=3
+         ³  ÃÄ@const755  0/24  Ram=0
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄ@delay_us1  0/26  Ram=1
+         ÃÄXUAT_8LED_7DOAN_QUET_TAT_LED  0/8  Ram=0
+         ³  ÀÄXUAT_8LED_7DOAN_QUET_1  0/36  Ram=3
+         ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄ@DIVS88  0/72  Ram=4
+         ÃÄ@const681  0/32  Ram=0
+         ÃÄXUAT_8LED_7DOAN_QUET_2  0/50  Ram=3
+         ³  ÀÄ*
+         ÃÄ@delay_us1  0/26  Ram=1
+         ÀÄXUAT_8LED_7DOAN_QUET_TAT_LED  0/8  Ram=0
+            ÀÄ*

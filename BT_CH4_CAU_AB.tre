@@ -1,0 +1,29 @@
+ÀÄBT_CH4_CAU_AB
+   ÀÄMAIN  0/114  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÀÄgiai_ma_hien_thi  0/146  Ram=5
+         ÃÄ@DIV1616  0/66  Ram=5
+         ÃÄ@const681  0/32  Ram=0
+         ÃÄ@DIV1616  0/66  Ram=5
+         ÃÄ@DIV1616  0/66  Ram=5
+         ÃÄ@const681  0/32  Ram=0
+         ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+            ÃÄXUAT_1BYTE  0/38  Ram=2
+            ÃÄXUAT_1BYTE  0/38  Ram=2
+            ÃÄXUAT_1BYTE  0/38  Ram=2
+            ÀÄXUAT_1BYTE  0/38  Ram=2

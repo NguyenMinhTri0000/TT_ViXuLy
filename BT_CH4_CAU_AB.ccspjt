@@ -1,0 +1,21 @@
+[PROJECT]
+Target=BT_CH4_CAU_AB.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BT_CH4_CAU_AB.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BT_CH4_CAU_AB.c]
+Type=4
+[mru-list]
+1=BT_CH4_CAU_AB.c
+[Opened Files]
+1=BT_CH4_CAU_A.c
+2=BT_CH4_CAU_AB.c
+3=BAI_417_DEM_XUNG_T0_START_STOP_32LED.c
+4=
+[Units]
+Count=1
+1=BT_CH4_CAU_AB (main)

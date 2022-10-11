@@ -1,0 +1,24 @@
+[PROJECT]
+Target=BAI_513_DEM_PHUT_GIAY.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_513_DEM_PHUT_GIAY.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_513_DEM_PHUT_GIAY.c]
+Type=4
+[mru-list]
+1=BAI_513_DEM_PHUT_GIAY.c
+[Opened Files]
+1=BAI_502_HIENTHI_10.c
+2=BAI_503_HIENTHI_8SO_CACH2.c
+3=BAI_504_HIENTHI_8SO_CACH3.c
+4=BAI_511_DEM_GIAY.c
+5=BAI_512_DEM_GIAY_CX.c
+6=BAI_513_DEM_PHUT_GIAY.c
+7=
+[Units]
+Count=1
+1=BAI_513_DEM_PHUT_GIAY (main)

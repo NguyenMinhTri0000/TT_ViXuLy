@@ -1,0 +1,24 @@
+[PROJECT]
+Target=BAI_515_GIO_PHUT_GIAY_KEY.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_515_GIO_PHUT_GIAY_KEY.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_515_GIO_PHUT_GIAY_KEY.c]
+Type=4
+[mru-list]
+1=BAI_515_GIO_PHUT_GIAY_KEY.c
+[Opened Files]
+1=BAI_511_DEM_GIAY.c
+2=BAI_512_DEM_GIAY_CX.c
+3=BAI_513_DEM_PHUT_GIAY.c
+4=BAI_514_DEM_GIO_PHUT_GIAY.c
+5=BAI_515_GIO_PHUT_GIAY_KEY.c
+6=tv_pickit2_shift_1.c
+7=
+[Units]
+Count=1
+1=BAI_515_GIO_PHUT_GIAY_KEY (main)

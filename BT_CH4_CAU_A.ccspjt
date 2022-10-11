@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BT_CH4_CAU_A.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BT_CH4_CAU_A.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BT_CH4_CAU_A.c]
+Type=4
+[mru-list]
+1=BT_CH4_CAU_A.c
+[Opened Files]
+1=BAI_515_GIO_PHUT_GIAY_KEY.c
+2=BAi_516_GIO_PHUT_GIAY_KEY_CAITIEN.c
+3=tv_pickit2_shift_1.c
+4=BT_CH4_CAU_A.c
+5=BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+6=
+[Units]
+Count=1
+1=BT_CH4_CAU_A (main)

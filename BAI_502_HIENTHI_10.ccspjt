@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_502_HIENTHI_10.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_502_HIENTHI_10.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_502_HIENTHI_10.c]
+Type=4
+[mru-list]
+1=BAI_502_HIENTHI_10.c
+[Units]
+Count=1
+1=BAI_502_HIENTHI_10 (main)

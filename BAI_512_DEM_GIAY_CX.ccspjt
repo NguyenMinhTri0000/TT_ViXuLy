@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_512_DEM_GIAY_CX.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_512_DEM_GIAY_CX.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_512_DEM_GIAY_CX.c]
+Type=4
+[mru-list]
+1=BAI_512_DEM_GIAY_CX.c
+[Units]
+Count=1
+1=BAI_512_DEM_GIAY_CX (main)
