@@ -1,0 +1,216 @@
+#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+signed INT8 giay, phut, gio, gia_tri_mod, bdn;
+signed INT8 DV_GIO, CH_GIO, DV_PHUT, CH_PHUT, DV_GIAY, CH_GIAY;
+#INT_timer1
+void interrupt_timer1()
+{
+   bdn++;
+   set_timer1 (3036);
+}
+
+VOID GM_LCD()
+{
+   DV_GIAY = GIAY % 10 + 0X30;
+   CH_GIAY = GIAY / 10 % 10 + 0X30;
+   
+   DV_PHUT = PHUT % 10 + 0X30;
+   CH_PHUT = PHUT / 10 % 10 + 0X30;
+   
+   DV_GIO = GIO % 10 + 0X30;
+   CH_GIO = GIO / 10 % 10 + 0X30;
+}
+
+VOID HT_LCD  ()
+{
+   LCD_GOTO_XY (0, 12) ;
+   
+   LCD_DATA (CH_GIO);
+   LCD_DATA (DV_GIO);
+   lcd_data (' ');
+   
+   LCD_DATA (CH_PHUT);
+   LCD_DATA (DV_PHUT);
+   lcd_data (' ');
+   
+   LCD_DATA (CH_GIAY);
+   LCD_DATA (DV_GIAY);
+}
+
+
+
+VOID tat_2led_chinh_LCD  ()
+{
+   IF (gia_tri_mod == 1){CH_GIO = ' '; DV_GIO = ' '; }
+   else IF (gia_tri_mod == 2){CH_PHUT = ' '; DV_PHUT = ' '; }
+   else IF (gia_tri_mod == 3){CH_GIAY = ' '; DV_GIAY = ' '; }
+}
+
+
+VOID phim_mod ()
+{
+   IF (!input (BT1))
+   {
+      delay_ms (20);
+      IF (!input (BT1))
+      {
+         gia_tri_mod++;
+         IF (gia_tri_mod >= 4) gia_tri_mod = 0;
+         
+         xuat_4led_7doan_4so (0xff, 0xff, 0xff, ma7doan[gia_tri_mod % 10]);
+         WHILE (!input (BT1)) ;
+      }
+   }
+}
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+VOID phim_dw ()
+{
+   IF (!input (BT0))
+   {
+      delay_ms (20);
+      IF (!input (BT0))
+      {
+         
+         SWITCH (gia_tri_mod)
+         {
+            case 1: IF (gio == 0) gio = 23;
+            ELSE gio--;
+            BREAK;
+            
+            case 2: IF (phut == 0) phut = 59;
+            ELSE phut--;
+            BREAK;
+            
+            case 3: IF (giay == 0) giay = 59;
+            ELSE giay--;
+            BREAK;
+            
+            DEFAULT: break;
+         }
+
+         
+         WHILE (!input (BT0)) ;
+      }
+   }
+}
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+VOID phim_up ()
+{
+   IF (!input (BT2))
+   {
+      delay_ms (20);
+      IF (!input (BT2))
+      {
+         SWITCH (gia_tri_mod)
+         {
+            case 1: IF (gio == 23) gio = 0;
+            ELSE gio++;
+            BREAK;
+            
+            
+            case 2: IF (phut == 59) phut = 0;
+            ELSE phut++;
+            BREAK;
+            
+            case 3: IF (giay == 59) giay = 0;
+            ELSE giay++;
+            BREAK;
+            
+            DEFAULT: break;
+         }
+
+         WHILE (!input (BT2)) ;
+      }
+   }
+}
+
+VOID lcd_hienthi_dongho ()
+{
+   lcd_GOTO_xy (0, 12);
+   delay_us (20);
+   lcd_data (gio / 10 + 0x30) ;
+   lcd_data (gio % 10 + 0x30) ;
+   lcd_data (' ');
+   lcd_data (phut / 10 + 0x30) ;
+   lcd_data (phut % 10 + 0x30) ;
+   lcd_GOTO_xy (0, 18);
+   delay_us (20);
+   lcd_data (giay / 10 + 0x30) ;
+   lcd_data (giay % 10 + 0x30) ;
+}
+
+VOID main ()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+   lcd_GOTO_xy (0, 0) ;
+   lcd_data ("dong ho:");
+   
+   setup_timer_1 (t1_internal|t1_div_by_8);
+   set_timer1 (3036);
+   enable_interrupts (global);
+   enable_interrupts (INT_timer1);
+   giay = 0;
+   phut = 0;
+   gio = 0;
+   gia_tri_mod = 0;
+   
+   
+   WHILE (true)
+   {
+      // ! lcd_hienthi_dongho ();
+      // ! delay_ms (100);
+      // ! giay++;
+      delay_ms (50);
+      IF (bdn < 10)
+      {
+         IF (gia_tri_mod != 0)
+         {
+            IF (bdn == 0)
+            {
+               tat_2led_chinh_LCD ();
+            }
+
+            else IF (bdn == 5)
+            {
+               
+               GM_LCD ();
+            }
+         }
+
+         ELSE
+         GM_LCD ();
+         
+         
+         HT_LCD ();
+         
+         phim_mod ();
+         phim_up ();
+         phim_dw ();
+      }
+
+      ELSE
+      {
+         bdn = bdn - 10;
+         giay++;
+         IF (giay == 60)
+         {
+            giay = 0;
+            phut++;
+            IF (phut == 60)
+            {
+               phut = 0;
+               gio++;
+               IF (gio == 24) gio = 0;
+            }
+         }
+
+         
+         //GM_LCD ();
+      }
+   }
+}
+
+

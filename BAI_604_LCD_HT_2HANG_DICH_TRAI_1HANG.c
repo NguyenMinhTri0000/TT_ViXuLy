@@ -19,7 +19,7 @@ void main()
          LCD_DATA (hang1[i]);
       }
 
-      delay_ms (00) ;
+      delay_ms (100) ;
       vitri1++;
       IF (vitri1 == 36) vitri1 = 0;
 

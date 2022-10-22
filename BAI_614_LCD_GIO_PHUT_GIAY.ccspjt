@@ -11,6 +11,13 @@ Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers
 Type=4
 [mru-list]
 1=BAI_614_LCD_GIO_PHUT_GIAY.c
+[Opened Files]
+1=BAI_633_LCD_3KYTU.c
+2=BAI_635_LCD_APPLE.c
+3=BAI_636_LCD_APPLE_DICHUYEN.c
+4=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+5=BAI_614_LCD_GIO_PHUT_GIAY.c
+6=
 [Units]
 Count=1
 1=BAI_614_LCD_GIO_PHUT_GIAY (main)

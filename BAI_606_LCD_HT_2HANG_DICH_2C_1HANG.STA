@@ -34,19 +34,19 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     22   1    1    61  1.6  LCD_DATA
 0     92   4    0   245  1.8  SETUP_LCD
 0    538  26    1  1469  6.9  MAIN
- Inline         0  1429  6.8  @cinit1
+ Inline         0   341  3.3  @cinit1
 
 Program metrics:
     Functions               12
     Statements              305
     Comments                330
-    Volume (V)              6898
-    Difficulty (D)          36.3
-    Effort to implement (E) 250175
-    Time to implement (T)   3 hours, 52 minutes
+    Volume (V)              5446
+    Difficulty (D)          32.6
+    Effort to implement (E) 177468
+    Time to implement (T)   2 hours, 44 minutes
     Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   20
-    Maintainability (MI)    133
+    Cyclomatic Complexity   11
+    Maintainability (MI)    135
 
  Segment     Used  Free
 -----------  ----  ----

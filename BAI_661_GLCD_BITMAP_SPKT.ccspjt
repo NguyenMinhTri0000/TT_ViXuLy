@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_661_GLCD_BITMAP_SPKT.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_661_GLCD_BITMAP_SPKT.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_661_GLCD_BITMAP_SPKT.c]
+Type=4
+[mru-list]
+1=BAI_661_GLCD_BITMAP_SPKT.c
+[Units]
+Count=1
+1=BAI_661_GLCD_BITMAP_SPKT (main)

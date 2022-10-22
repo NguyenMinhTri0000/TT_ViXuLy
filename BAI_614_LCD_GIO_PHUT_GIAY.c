@@ -1,4 +1,6 @@
-#include <tv_pickit2_shift_1_proteus.c>
+//nen dung bai 512 nhu bai 613
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
 signed INT gio,phut,giay;
 void lcd_hienthi_dongho()

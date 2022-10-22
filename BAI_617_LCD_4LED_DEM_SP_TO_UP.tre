@@ -1,17 +1,30 @@
 ÀÄBAI_617_LCD_4LED_DEM_SP_TO_UP
-   ÀÄMAIN  0/368  Ram=12
+   ÀÄMAIN  0/358  Ram=12
       ÃÄ@cinit1  (Inline)  Ram=0
-      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
       ÃÄSETUP_LCD  0/72  Ram=0
       ³  ÃÄLCD_COMMAND  0/22  Ram=1
       ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
       ³  ³     ÃÄXUAT_LCD20X4  0/16  Ram=2
-      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/44  Ram=0
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÀÄMO_IC_74573_A_THONG_DL  0/46  Ram=0
+      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/36  Ram=0
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÀÄXUAT_1BYTE  0/38  Ram=2
       ³  ³     ÀÄXUAT_LCD20X4  0/16  Ram=2
       ³  ³        ÀÄ*
       ³  ÃÄLCD_COMMAND  0/22  Ram=1
@@ -22,16 +35,16 @@
       ³  ÀÄLCD_COMMAND  0/22  Ram=1
       ³     ÀÄ*
       ÃÄLCD_GOTO_XY  0/26  Ram=3
-      ³  ÃÄ@const827  0/20  Ram=0
+      ³  ÃÄ@const830  0/20  Ram=0
       ³  ÀÄLCD_COMMAND  0/22  Ram=1
       ³     ÀÄ*
-      ÃÄ@PSTRINGC_810  0/32  Ram=2
+      ÃÄ@PSTRINGC_813  0/32  Ram=2
       ³  ÀÄLCD_DATA  0/22  Ram=1
       ³     ÀÄLCD_XUAT_8BIT  0/26  Ram=1
       ³        ÀÄ*
       ÃÄLCD_GOTO_XY  0/26  Ram=3
       ³  ÀÄ*
-      ÃÄ@PSTRINGC_810  0/32  Ram=2
+      ÃÄ@PSTRINGC_813  0/32  Ram=2
       ³  ÀÄ*
       ÃÄgm_lcd  0/132  Ram=2
       ³  ÃÄ@DIV1616  0/66  Ram=5
@@ -58,17 +71,16 @@
       ÃÄphim_dw  0/52  Ram=0
       ³  ÀÄ@delay_ms1  0/38  Ram=1
       ÃÄ@DIV1616  0/66  Ram=5
-      ÃÄ@const686  0/32  Ram=0
+      ÃÄ@const681  0/32  Ram=0
       ÃÄ@DIV1616  0/66  Ram=5
-      ÃÄ@const686  0/32  Ram=0
+      ÃÄ@const681  0/32  Ram=0
       ÃÄ@DIV1616  0/66  Ram=5
-      ÃÄ@const686  0/32  Ram=0
+      ÃÄ@const681  0/32  Ram=0
       ÃÄ@DIV1616  0/66  Ram=5
-      ÃÄ@const686  0/32  Ram=0
-      ÃÄXUAT_4LED_7DOAN_4SO  0/44  Ram=4
-      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ÀÄMO_IC_74573_A_THONG_DL  0/46  Ram=0
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ÀÄXUAT_1BYTE  0/38  Ram=2
       ÀÄ@delay_ms1  0/38  Ram=1

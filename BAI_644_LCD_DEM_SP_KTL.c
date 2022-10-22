@@ -1,4 +1,5 @@
-#include <tv_pickit2_shift_1_proteus.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
 unsigned INT16 t0,i;
 // GIAI MA HIEN THI XOA SO 0 VO NGHIA

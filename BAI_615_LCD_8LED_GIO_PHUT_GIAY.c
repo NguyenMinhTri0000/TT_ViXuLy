@@ -1,4 +1,5 @@
-#include <tv_pickit2_shift_1_proteus.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
 signed INT8 giay, phut, gio, gia_tri_mod, bdn;
 signed INT8 DV_GIO, CH_GIO, DV_PHUT, CH_PHUT, DV_GIAY, CH_GIAY;

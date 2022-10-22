@@ -1,17 +1,30 @@
 ÀÄBAI_624_LCD_KEY_4X4_DICH
-   ÀÄMAIN  0/256  Ram=3
+   ÀÄMAIN  0/290  Ram=3
       ÃÄ@cinit1  (Inline)  Ram=0
-      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
       ÃÄSETUP_LCD  0/72  Ram=0
       ³  ÃÄLCD_COMMAND  0/22  Ram=1
       ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
       ³  ³     ÃÄXUAT_LCD20X4  0/16  Ram=2
-      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/44  Ram=0
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³  ³     ³     ÀÄMO_IC_74573_A_THONG_DL  0/48  Ram=0
+      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/36  Ram=0
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÀÄXUAT_1BYTE  0/38  Ram=2
       ³  ³     ÀÄXUAT_LCD20X4  0/16  Ram=2
       ³  ³        ÀÄ*
       ³  ÃÄLCD_COMMAND  0/22  Ram=1
@@ -22,20 +35,20 @@
       ³  ÀÄLCD_COMMAND  0/22  Ram=1
       ³     ÀÄ*
       ÃÄLCD_GOTO_XY  0/26  Ram=3
-      ³  ÃÄ@const827  0/20  Ram=0
+      ³  ÃÄ@const830  0/20  Ram=0
       ³  ÀÄLCD_COMMAND  0/22  Ram=1
       ³     ÀÄ*
-      ÃÄ@PSTRINGC_810  0/32  Ram=2
+      ÃÄ@PSTRINGC_813  0/32  Ram=2
       ³  ÀÄLCD_DATA  0/22  Ram=1
       ³     ÀÄLCD_XUAT_8BIT  0/26  Ram=1
       ³        ÀÄ*
       ÃÄLCD_GOTO_XY  0/26  Ram=3
       ³  ÀÄ*
-      ÃÄ@PSTRINGC_810  0/32  Ram=2
+      ÃÄ@PSTRINGC_813  0/32  Ram=2
       ³  ÀÄ*
       ÃÄKEY_4X4_DW  0/50  Ram=0
       ³  ÃÄKEY_NHAN  0/128  Ram=4
-      ³  ³  ÃÄ@const832  0/20  Ram=0
+      ³  ³  ÃÄ@const835  0/20  Ram=0
       ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
       ³  ³  ÀÄ@MUL88  0/76  Ram=2
       ³  ÃÄ@delay_ms1  0/38  Ram=1
@@ -48,22 +61,23 @@
       ³  ÀÄ*
       ÃÄLCD_DATA  0/22  Ram=1
       ³  ÀÄ*
-      ÃÄBUZZER_ON  0/8  Ram=0
-      ³  ÀÄXUAT_BUZZER_RELAY  0/38  Ram=2
-      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
-      ³     ÀÄMO_IC_74573_B_THONG_DL  0/48  Ram=0
+      ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ÀÄXUAT_32LED_DON_2WORD  0/38  Ram=8
+      ³     ÀÄXUAT_32LED_DON_4BYTE  0/36  Ram=4
+      ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³        ÀÄXUAT_1BYTE  0/38  Ram=2
       ÃÄLCD_GOTO_XY  0/26  Ram=3
       ³  ÀÄ*
-      ÃÄ@PSTRINGC_810  0/32  Ram=2
+      ÃÄ@PSTRINGC_813  0/32  Ram=2
       ³  ÀÄ*
       ÃÄ@MULS1616  0/82  Ram=6
       ÃÄ@delay_ms1  0/38  Ram=1
       ÃÄ@delay_ms1  0/38  Ram=1
-      ÃÄBUZZER_OFF  0/8  Ram=0
-      ³  ÀÄXUAT_BUZZER_RELAY  0/38  Ram=2
-      ³     ÀÄ*
+      ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ÀÄ*
       ÃÄLCD_GOTO_XY  0/26  Ram=3
       ³  ÀÄ*
-      ÀÄ@PSTRINGC_810  0/32  Ram=2
+      ÀÄ@PSTRINGC_813  0/32  Ram=2
          ÀÄ*

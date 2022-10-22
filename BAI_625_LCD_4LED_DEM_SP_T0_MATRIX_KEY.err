@@ -1,8 +1,4 @@
 >>> Warning 202 "C:\Users\NguyenMinhTri\Desktop\TT VXL\tv_pickit2_shift_lcd.c" Line 66(21,30): Variable never used:   LCD_SO_XX
->>> Warning 202 "BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c" Line 6(26,28): Variable never used:   ch
->>> Warning 202 "BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c" Line 6(29,31): Variable never used:   dv
->>> Warning 202 "BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c" Line 6(32,39): Variable never used:   ch_gtcd
->>> Warning 202 "BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c" Line 6(40,47): Variable never used:   dv_gtcd
-      Memory usage:   ROM=3%      RAM=2% - 3%
-      0 Errors,  5 Warnings.
+      Memory usage:   ROM=5%      RAM=2% - 3%
+      0 Errors,  1 Warnings.
 Build Successful.

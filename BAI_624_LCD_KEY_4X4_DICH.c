@@ -1,4 +1,5 @@
-#include <tv_pickit2_shift_1_proteus.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
 #include <tv_pickit2_shift_key4x4_138.c>
 
@@ -26,11 +27,13 @@ void main()
          }
          if(mp == 0x0A) 
          {
-            BUZZER_ON();
+//!            BUZZER_ON();
+            XUAT_32LED_DON_1DW(0xffffffff);
             LCD_GOTO_XY(1, 8);
             LCD_DATA("ON ");
             Delay_ms(1000*TG);
-            BUZZER_OFF();
+//!            BUZZER_OFF();
+            XUAT_32LED_DON_1DW(0);            
             LCD_GOTO_XY(1, 8);
             LCD_DATA("OFF");            
          }

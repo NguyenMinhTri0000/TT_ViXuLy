@@ -30,41 +30,42 @@
 018     t0
 019     donvi
 01A     chuc
-01B-01C giai_ma_hien_thi.TAM
-01B-01C xuat_1word.w
-01B     MAIN.@SCRATCH1
-01D     xuat_1word.B1
-01D     giai_ma_hien_thi.@SCRATCH1
-01E     XUAT_4LED_7DOAN_4SO.BL743
-01E     xuat_1word.B0
-01E     giai_ma_hien_thi.@SCRATCH2
-01F-020 @DIV1616.P1
-01F     XUAT_4LED_7DOAN_4SO.BL742
-01F     giai_ma_hien_thi.@SCRATCH3
-020     XUAT_4LED_7DOAN_4SO.BL741
-021-022 @DIV1616.P1
-021     XUAT_4LED_7DOAN_4SO.BL740
-022     XUAT_1BYTE.x
-022.7   XUAT_1BYTE.BSERI
-023     XUAT_1BYTE.SB
-023     @DIV1616.@SCRATCH1
+01B.0   tt
+01C-01D xuat_1word.w
+01C-01D giai_ma_hien_thi.TAM
+01C     MAIN.@SCRATCH1
+01E     xuat_1word.B1
+01E     giai_ma_hien_thi.@SCRATCH1
+01F     xuat_1word.B0
+01F     XUAT_4LED_7DOAN_4SO.BL743
+01F     giai_ma_hien_thi.@SCRATCH2
+020-021 @DIV1616.P1
+020     XUAT_4LED_7DOAN_4SO.BL742
+020     giai_ma_hien_thi.@SCRATCH3
+021     XUAT_4LED_7DOAN_4SO.BL741
+022     XUAT_4LED_7DOAN_4SO.BL740
+022-023 @DIV1616.P1
+023     XUAT_1BYTE.x
+023.7   XUAT_1BYTE.BSERI
+024     XUAT_1BYTE.SB
+024     @DIV1616.@SCRATCH1
 F83     PSP_DATA
 FB4.6   C1OUT
 FB4.7   C2OUT
 FBB     CCP_2
 FBB     CCP_2_LOW
 FBC     CCP_2_HIGH
-FBE     CCP_1
 FBE     CCP_1_LOW
+FBE     CCP_1
 FBF     CCP_1_HIGH
 FE1-FE2 @WRITE_PACKED_MEMORY.P1
 FE1-FE2 @READ_PACKED_MEMORY.P2
-FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P1
 FE9-FEA @READ_PACKED_MEMORY.P2
-FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P3
 FE9-FEA @WRITE_PROGRAM_MEMORY.P4
-FF6-FF8 @READ_PROGRAM_MEMORY.P1
-FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
 
 ROM Allocation:
 000004  MA7DOAN.call
@@ -84,11 +85,11 @@ Project Directory:
     C:\Users\NguyenMinhTri\Desktop\TT VXL\
 
 Project Files:
-    BT_CH4_CAU_AB.c                                         [11-Oct-22 11:39  CRC=24990981]
+    BT_CH4_CAU_AB.c                                         [18-Oct-22 07:26  CRC=BD06E195]
     tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
     ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
 
-Source signature=71DD21CF
+Source signature=0A4AF9E3
 
 Units:
     BT_CH4_CAU_AB (main)

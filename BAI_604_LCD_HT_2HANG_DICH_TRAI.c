@@ -1,6 +1,7 @@
 
 // ??
-#include <tv_pickit2_shift_1_proteus.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
 void main()
 {

@@ -1,8 +1,8 @@
 D G "LCD_ADDR_LINE4" 3 17 "0XD4"
 D G "__PCH__" 0 73 ""5.015""
 D G "__DEVICE__" 0 73 "4550"
-D G "__DATE__" 0 73 ""04-Oct-22""
-D G "__TIME__" 0 73 ""08:42:52"" "4 hàng van chay song song, khong theo thu tu"
+D G "__DATE__" 0 73 ""18-Oct-22""
+D G "__TIME__" 0 73 ""09:33:18"" "4 hàng van chay song song, khong theo thu tu"
 c L "set_tris_a" 2 1 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 

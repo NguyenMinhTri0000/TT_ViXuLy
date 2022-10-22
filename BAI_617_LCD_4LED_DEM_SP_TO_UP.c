@@ -1,6 +1,7 @@
-#include <tv_pickit2_shift_1_proteus.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
-unsigned INT16 t0,t0_tam,ch,dv,ch_gtcd,dv_gtcd,gia_tri_cai_dat;
+unsigned INT16 t0,ch,dv,ch_gtcd,dv_gtcd,gia_tri_cai_dat;
 ///////xoa so 0 vo nghia
 void gm_lcd()
 {
@@ -42,7 +43,7 @@ void phim_up()
    IF (!input (bt1))
    {
       delay_ms (20);
-      IF ( ! input (bt1) )
+      IF ( ! input (bt1) ) 
       {
          gia_tri_cai_dat++;
          IF (gia_tri_cai_dat == 100) gia_tri_cai_dat = 99;
@@ -75,25 +76,21 @@ void main()
    lcd_data ("gia tri dem:");
    setup_timer_0 (t0_ext_l_to_h|t0_div_1);
    set_timer0 (0);
-   t0 = t0_tam = 0;
+   t0 = 0;
    gia_tri_cai_dat = 1;
    WHILE (true)
    {
-      // ! t0_tam = t0;
+
       gm_lcd ();
       hienthi_lcd ();
       phim_clr ();
       phim_up ();
       phim_dw ();
+      xuat_4led_7doan_4so (ma7doan[gia_tri_cai_dat / 10], ma7doan[gia_tri_cai_dat % 10], ma7doan[t0 / 10], ma7doan[t0 % 10]) ;      
       
       t0 = get_timer0 ();
-      IF (t0 != t0_tam)
-      {
-         t0_tam = t0;
-         xuat_4led_7doan_4so (ma7doan[gia_tri_cai_dat / 10], ma7doan[gia_tri_cai_dat % 10], ma7doan[t0 / 10], ma7doan[t0 % 10]) ;
-         IF (t0 >= gia_tri_cai_dat) set_timer0 (1) ;
 
-      }
+         IF (t0 >= gia_tri_cai_dat) set_timer0 (1) ;
 
       delay_ms (50);
    }

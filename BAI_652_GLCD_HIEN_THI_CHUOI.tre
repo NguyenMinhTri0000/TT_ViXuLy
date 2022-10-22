@@ -1,0 +1,54 @@
+ÀÄBAI_652_GLCD_HIEN_THI_CHUOI
+   ÀÄMAIN  0/158  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/112  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/42  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/42  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄSETUP_GLCD  0/90  Ram=1
+      ³  ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ³  ÀÄGLCD_XUAT_8BIT  0/26  Ram=1
+      ³  ³     ÃÄXUAT_GLCD128X64  0/20  Ram=2
+      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/36  Ram=0
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/42  Ram=2
+      ³  ³     ³     ÀÄXUAT_1BYTE  0/42  Ram=2
+      ³  ³     ÀÄXUAT_GLCD128X64  0/20  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/42  Ram=1
+      ³  ÀÄGLCD_COMMAND  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_815  0/32  Ram=2
+      ³  ÀÄGLCD_DATA  0/12  Ram=1
+      ³     ÀÄGLCD_XUAT_8BIT  0/26  Ram=1
+      ³        ÀÄ*
+      ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_815  0/32  Ram=2
+      ³  ÀÄ*
+      ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_815  0/32  Ram=2
+      ³  ÀÄ*
+      ÃÄGLCD_COMMAND  0/10  Ram=1
+      ³  ÀÄ*
+      ÀÄ@PSTRINGC_815  0/32  Ram=2
+         ÀÄ*

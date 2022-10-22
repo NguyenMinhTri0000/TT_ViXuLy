@@ -1,9 +1,9 @@
 
-//#include <tv_pickit2_shift_1.c>
-#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
 #include <tv_pickit2_shift_lcd.c>
 
-const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh thoi\
+const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh vuong
 //!1 1 1 1 1      0x1f
 //!1 0 0 0 1      0x11
 //!1 0 0 0 1      0x11

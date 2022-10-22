@@ -1,6 +1,6 @@
-
-//#include <tv_pickit2_shift_1.c>
-#include <tv_pickit2_shift_1_proteus.c>
+//tim. thoi. vuong
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
 #include <tv_pickit2_shift_lcd.c>
 const UNSIGNED char hang2[]={0x0a,0x15,0x11,0x11,0x0a,0x04,0,0};     //hinh trai tim
 //!0 1 0 1 0      0x0A

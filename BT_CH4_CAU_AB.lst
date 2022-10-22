@@ -1,17 +1,17 @@
-CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
+CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:29
 
                Filename:   C:\Users\NguyenMinhTri\Desktop\TT VXL\BT_CH4_CAU_AB.lst
 
                ROM used:   604 bytes (2%)
                            Largest free fragment is 32164
-               RAM used:   28 (1%) at main() level
-                           36 (2%) worst case
+               RAM used:   29 (1%) at main() level
+                           37 (2%) worst case
                Stack used: 4 locations
                Stack size: 31
 
 *
 0000:  GOTO   01EA
-....................  
+.................... //chua xong 
 .................... #include <tv_pickit2_shift_1.c> 
 .................... #INCLUDE    <18F4550.H> 
 .................... //////////// Standard Header file for the PIC18F4550 device //////////////// 
@@ -46,33 +46,33 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 00F4:  CLRF   02
 00F6:  CLRF   00
 00F8:  CLRF   03
-00FA:  MOVF   22,W
+00FA:  MOVF   23,W
 00FC:  BNZ   0102
-00FE:  MOVF   21,W
+00FE:  MOVF   22,W
 0100:  BZ    0132
 0102:  MOVLW  10
-0104:  MOVWF  23
+0104:  MOVWF  24
 0106:  BCF    FD8.0
-0108:  RLCF   1F,F
-010A:  RLCF   20,F
+0108:  RLCF   20,F
+010A:  RLCF   21,F
 010C:  RLCF   00,F
 010E:  RLCF   03,F
-0110:  MOVF   22,W
+0110:  MOVF   23,W
 0112:  SUBWF  03,W
 0114:  BNZ   011A
-0116:  MOVF   21,W
+0116:  MOVF   22,W
 0118:  SUBWF  00,W
 011A:  BNC   012A
-011C:  MOVF   21,W
+011C:  MOVF   22,W
 011E:  SUBWF  00,F
 0120:  BTFSS  FD8.0
 0122:  DECF   03,F
-0124:  MOVF   22,W
+0124:  MOVF   23,W
 0126:  SUBWF  03,F
 0128:  BSF    FD8.0
 012A:  RLCF   01,F
 012C:  RLCF   02,F
-012E:  DECFSZ 23,F
+012E:  DECFSZ 24,F
 0130:  BRA    0106
 0132:  RETURN 0
 ....................  
@@ -246,13 +246,13 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 ....................    #BIT BSERI  = X.7 
 ....................    FOR(SB=0;SB<8;SB++) 
 *
-0024:  CLRF   23
-0026:  MOVF   23,W
+0024:  CLRF   24
+0026:  MOVF   24,W
 0028:  SUBLW  07
 002A:  BNC   0048
 ....................       {                                                  
 ....................          OUTPUT_BIT(SSDO,BSERI);     
-002C:  BTFSC  22.7
+002C:  BTFSC  23.7
 002E:  BRA    0034
 0030:  BCF    F8D.2
 0032:  BRA    0036
@@ -265,8 +265,8 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 003E:  BSF    F8D.0
 ....................          X= X<<1;          
 0040:  BCF    FD8.0
-0042:  RLCF   22,F
-0044:  INCF   23,F
+0042:  RLCF   23,F
+0044:  INCF   24,F
 0046:  BRA    0026
 ....................      } 
 0048:  RETURN 0
@@ -330,13 +330,13 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 .................... {   
 ....................    unsigned int8 b1,b0; 
 ....................    b1 = w>>8; b0 = w; 
-004A:  MOVFF  1C,1D
-004E:  MOVFF  1B,1E
+004A:  MOVFF  1D,1E
+004E:  MOVFF  1C,1F
 ....................    xuat_1byte(b1);     
-0052:  MOVFF  1D,22
+0052:  MOVFF  1E,23
 0056:  RCALL  0024
 ....................    xuat_1byte(b0); 
-0058:  MOVFF  1E,22
+0058:  MOVFF  1F,23
 005C:  RCALL  0024
 005E:  RETURN 0
 .................... }    
@@ -346,20 +346,20 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 .................... void xoa_tat_6module()                           
 .................... {                                                                                               
 ....................    xuat_1word(0);                              
-0060:  CLRF   1C
-0062:  CLRF   1B
+0060:  CLRF   1D
+0062:  CLRF   1C
 0064:  RCALL  004A
 ....................    xuat_1word(0);  
-0066:  CLRF   1C
-0068:  CLRF   1B
+0066:  CLRF   1D
+0068:  CLRF   1C
 006A:  RCALL  004A
 ....................    xuat_1word(0);                              
-006C:  CLRF   1C
-006E:  CLRF   1B
+006C:  CLRF   1D
+006E:  CLRF   1C
 0070:  RCALL  004A
 ....................    xuat_1word(0);                                     
-0072:  CLRF   1C
-0074:  CLRF   1B
+0072:  CLRF   1D
+0074:  CLRF   1C
 0076:  RCALL  004A
 ....................     
 ....................    output_high(rck_buzerelay);    
@@ -398,12 +398,12 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 009E:  BCF    F8C.2
 ....................                                                                            
 ....................    xuat_1word(0xffff);  
-00A0:  SETF   1C
-00A2:  SETF   1B
+00A0:  SETF   1D
+00A2:  SETF   1C
 00A4:  RCALL  004A
 ....................    xuat_1word(0xffff);  
-00A6:  SETF   1C
-00A8:  SETF   1B
+00A6:  SETF   1D
+00A8:  SETF   1C
 00AA:  RCALL  004A
 ....................    output_high(rck_4led7doan);        
 00AC:  BCF    F95.6
@@ -469,14 +469,14 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 .................... {      
 ....................       XUAT_1BYTE(BL740);   XUAT_1BYTE(BL741); 
 *
-0134:  MOVFF  21,22
+0134:  MOVFF  22,23
 0138:  RCALL  0024
-013A:  MOVFF  20,22
+013A:  MOVFF  21,23
 013E:  RCALL  0024
 ....................       XUAT_1BYTE(BL742);   XUAT_1BYTE(BL743);        
-0140:  MOVFF  1F,22
+0140:  MOVFF  20,23
 0144:  RCALL  0024
-0146:  MOVFF  1E,22
+0146:  MOVFF  1F,23
 014A:  RCALL  0024
 ....................       OUTPUT_LOW(RCK_4LED7DOAN);    
 014C:  BCF    F95.6
@@ -816,52 +816,71 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 .................... } 
 ....................  
 ....................  
+.................... //!#include <tv_pickit2_shift_1_proteus.c> 
+.................... #DEFINE  START_PAUSE      BT0       //DK LED DON, MOTOR 
 ....................  
 .................... unsigned INT8 t0; 
 .................... unsigned INT8 donvi, chuc; 
+.................... unsigned INT1 tt; 
+....................  
+.................... void phim_start_pause() 
+.................... { 
+....................    if(input(START_PAUSE)==0)    //kiem tra lan 1 
+....................    { 
+....................       delay_ms(50); 
+....................       
+....................          if(input(START_PAUSE)==0)    //kiem tra lan 2 
+....................          { 
+....................          //lenh chuong trinh 
+....................          tt=~tt; 
+....................             while(input(START_PAUSE)==0);   //cho nha phim 
+....................          } 
+....................        
+....................    } 
+.................... } 
 ....................  
 .................... void giai_ma_hien_thi (UNSIGNED int16 tam) 
 .................... { 
 ....................    donvi = ma7doan[tam %10]; 
-0158:  MOVFF  1C,20
-015C:  MOVFF  1B,1F
-0160:  CLRF   22
+0158:  MOVFF  1D,21
+015C:  MOVFF  1C,20
+0160:  CLRF   23
 0162:  MOVLW  0A
-0164:  MOVWF  21
+0164:  MOVWF  22
 0166:  RCALL  00F2
-0168:  MOVFF  00,1D
-016C:  MOVFF  03,1E
+0168:  MOVFF  00,1E
+016C:  MOVFF  03,1F
 0170:  MOVFF  03,03
 0174:  MOVF   00,W
-0176:  MOVFF  FF2,1F
+0176:  MOVFF  FF2,20
 017A:  BCF    FF2.7
 017C:  RCALL  0004
-017E:  BTFSC  1F.7
+017E:  BTFSC  20.7
 0180:  BSF    FF2.7
 0182:  MOVWF  19
 ....................    chuc = ma7doan[tam / 10 % 10]; 
-0184:  MOVFF  1C,20
-0188:  MOVFF  1B,1F
-018C:  CLRF   22
+0184:  MOVFF  1D,21
+0188:  MOVFF  1C,20
+018C:  CLRF   23
 018E:  MOVLW  0A
-0190:  MOVWF  21
+0190:  MOVWF  22
 0192:  RCALL  00F2
-0194:  MOVFF  02,1E
-0198:  MOVFF  01,1D
-019C:  MOVFF  02,20
-01A0:  MOVFF  01,1F
-01A4:  CLRF   22
+0194:  MOVFF  02,1F
+0198:  MOVFF  01,1E
+019C:  MOVFF  02,21
+01A0:  MOVFF  01,20
+01A4:  CLRF   23
 01A6:  MOVLW  0A
-01A8:  MOVWF  21
+01A8:  MOVWF  22
 01AA:  RCALL  00F2
-01AC:  MOVFF  00,1D
-01B0:  MOVFF  03,1E
+01AC:  MOVFF  00,1E
+01B0:  MOVFF  03,1F
 01B4:  MOVFF  03,03
 01B8:  MOVF   00,W
-01BA:  MOVFF  FF2,1F
+01BA:  MOVFF  FF2,20
 01BE:  BCF    FF2.7
 01C0:  RCALL  0004
-01C2:  BTFSC  1F.7
+01C2:  BTFSC  20.7
 01C4:  BSF    FF2.7
 01C6:  MOVWF  1A
 ....................  
@@ -873,18 +892,18 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 01CC:  BNZ   01D0
 01CE:  SETF   1A
 ....................  
-....................    xuat_4led_7doan_4so (chuc, donvi & 0X7F, 0X92, 0X8C); 
+....................    xuat_4led_7doan_4so (chuc, donvi & 0X7F, 0X92, 0X8C); //0x7F dau cham, 0x92 là S, 0x8c là P 
 01D0:  MOVF   19,W
 01D2:  ANDLW  7F
-01D4:  MOVWF  1D
-01D6:  MOVFF  1A,1E
-01DA:  MOVWF  1F
+01D4:  MOVWF  1E
+01D6:  MOVFF  1A,1F
+01DA:  MOVWF  20
 01DC:  MOVLW  92
-01DE:  MOVWF  20
+01DE:  MOVWF  21
 01E0:  MOVLW  8C
-01E2:  MOVWF  21
+01E2:  MOVWF  22
 01E4:  BRA    0134
-01E6:  GOTO   023A (RETURN)
+01E6:  GOTO   023C (RETURN)
 .................... } 
 ....................  
 .................... void main() 
@@ -926,35 +945,41 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 11:39
 ....................    set_timer0 (0); 
 022A:  CLRF   FD7
 022C:  CLRF   FD6
-....................  
+....................    tt=0; 
+022E:  BCF    1B.0
 ....................    WHILE (true) 
 ....................    { 
 ....................       t0 = get_timer0 () ; 
-022E:  MOVF   FD6,W
-0230:  MOVWF  18
+0230:  MOVF   FD6,W
+0232:  MOVWF  18
 ....................       giai_ma_hien_thi (t0); 
-0232:  CLRF   1C
-0234:  MOVFF  18,1B
-0238:  BRA    0158
-....................       IF (t0 >= 101) set_timer0 (1); 
-023A:  MOVF   18,W
-023C:  SUBLW  64
-023E:  BC    0246
-0240:  CLRF   FD7
-0242:  MOVLW  01
-0244:  MOVWF  FD6
-....................       If(input(On)==0)      setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);            
-0246:  BSF    F93.5
-0248:  BTFSC  F81.5
-024A:  BRA    0250
-024C:  MOVLW  E8
-024E:  MOVWF  FD5
-....................       if(input(off)==0)       setup_timer_0 (t0_off);       
-0250:  BSF    F93.4
-0252:  BTFSC  F81.4
-0254:  BRA    0258
-0256:  CLRF   FD5
-0258:  BRA    022E
+0234:  CLRF   1D
+0236:  MOVFF  18,1C
+023A:  BRA    0158
+....................       if (tt == 0) 
+023C:  BTFSC  1B.0
+023E:  BRA    0246
+....................       { 
+....................          setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);          
+0240:  MOVLW  E8
+0242:  MOVWF  FD5
+....................       } 
+0244:  BRA    024C
+....................       else IF (tt == 1) 
+0246:  BTFSS  1B.0
+0248:  BRA    024C
+....................       { 
+....................          setup_timer_0 (t0_off);         
+024A:  CLRF   FD5
+....................       } 
+....................       IF (t0 >= 101) set_timer0 (1);    
+024C:  MOVF   18,W
+024E:  SUBLW  64
+0250:  BC    0258
+0252:  CLRF   FD7
+0254:  MOVLW  01
+0256:  MOVWF  FD6
+0258:  BRA    0230
 ....................    } 
 .................... } 
 ....................  

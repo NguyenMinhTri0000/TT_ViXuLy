@@ -1,4 +1,5 @@
-#include <tv_pickit2_shift_1_proteus.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
 #include <tv_pickit2_shift_lcd.c>
 unsigned INT16 t0,DV,CH,TR;
 // GIAI MA HIEN THI XOA SO 0 VO NGHIA
@@ -36,7 +37,6 @@ void main()
       GM_LCD () ;
       HT_LCD () ;
       t0 = get_timer0 ();
-      
       xuat_4led_7doan_giaima_xoa_so0 (t0);
       IF (t0 >= 100) set_timer0 (1) ;
    }

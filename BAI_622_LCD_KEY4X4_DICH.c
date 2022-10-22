@@ -1,10 +1,9 @@
 
-//!#include <tv_pickit2_shift_1.c>
-#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
 #include <tv_pickit2_shift_key4x4_138.c>
 #include <tv_pickit2_shift_lcd.c>
-//UNSIGNED int8 led[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-//UNSIGNED char led[] = {0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10};
+
 unsigned CHAR led[] = {0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20};
 unsigned INT8 mp, i;
 void dich()
@@ -23,7 +22,7 @@ void xuat_lcd()
    lcd_GOTO_xy (1, 0);
    FOR (i = 19; i > 0; i--)
    {
-      lcd_data (led[i - 1]); //i - 1 dúng, còn i thì bi cham??
+      lcd_data (led[i - 1]); //i - 1 dúng, còn i thì bi cham??. xuat truoc dich sau thu
    }
 }
 

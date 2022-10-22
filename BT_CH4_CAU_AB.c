@@ -1,10 +1,28 @@
 //chua xong
 #include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
 #DEFINE  START_PAUSE      BT0       //DK LED DON, MOTOR
 
 unsigned INT8 t0;
 unsigned INT8 donvi, chuc;
 unsigned INT1 tt;
+
+void phim_start_pause()
+{
+   if(input(START_PAUSE)==0)    //kiem tra lan 1
+   {
+      delay_ms(50);
+     
+         if(input(START_PAUSE)==0)    //kiem tra lan 2
+         {
+         //lenh chuong trinh
+         tt=~tt;
+            while(input(START_PAUSE)==0);   //cho nha phim
+         }
+      
+   }
+}
+
 void giai_ma_hien_thi (UNSIGNED int16 tam)
 {
    donvi = ma7doan[tam %10];
@@ -14,7 +32,7 @@ void giai_ma_hien_thi (UNSIGNED int16 tam)
 
       IF (chuc==0xc0) chuc=0xff;
 
-   xuat_4led_7doan_4so (chuc, donvi & 0X7F, 0X92, 0X8C);
+   xuat_4led_7doan_4so (chuc, donvi & 0X7F, 0X92, 0X8C); //0x7F dau cham, 0x92 là S, 0x8c là P
 }
 
 void main()
@@ -22,13 +40,20 @@ void main()
    set_up_port_ic_chot();
  //  setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);
    set_timer0 (0);
-
+   tt=0;
    WHILE (true)
    {
       t0 = get_timer0 () ;
       giai_ma_hien_thi (t0);
-      IF (t0 >= 101) set_timer0 (1);
-      If(input(START_PAUSE)==0)      tt=~tt;
+      if (tt == 0)
+      {
+         setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);         
+      }
+      else IF (tt == 1)
+      {
+         setup_timer_0 (t0_off);        
+      }
+      IF (t0 >= 101) set_timer0 (1);   
    }
 }
 

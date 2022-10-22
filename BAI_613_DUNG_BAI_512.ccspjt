@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_613_DUNG_BAI_512.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_613_DUNG_BAI_512.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_613_DUNG_BAI_512.c]
+Type=4
+[mru-list]
+1=BAI_613_DUNG_BAI_512.c
+[Opened Files]
+1=BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c
+2=BAI_617_LCD_4LED_DEM_SP_TO_UP.c
+3=BAI_613_LCD_DEM_GIO_PHUT_GIAY.c
+4=BAI_613_DUNG_BAI_512.c
+5=BAI_512_DEM_GIAY_CX.c
+6=
+[Units]
+Count=1
+1=BAI_613_DUNG_BAI_512 (main)

@@ -1,12 +1,12 @@
 
-ROM used:   802/32768 (2%)
-            802/32768 (2%) including unused fragments
+ROM used:   898/32768 (3%)
+            898/32768 (3%) including unused fragments
 
             0.5 Average locations per line
-            2.7 Average locations per statement
+            3.2 Average locations per statement
 
-RAM used:   28/2048 (1%) at main() level
-            38/2048 (2%) worst case
+RAM used:   26/2048 (1%) at main() level
+            35/2048 (2%) worst case
 
 Stack used: 7 worst case (7 in main + 0 for interrupts)
 Stack size: 31
@@ -14,53 +14,54 @@ Stack size: 31
 Lines Stmts  %   Files
 ----- ----- ---  -----
    68    27   9  BAI_633_LCD_3KYTU.c
-  705   244  82  tv_pickit2_shift_1_proteus.c
+  627   233  82  tv_pickit2_shift_1.c
   837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
-  112    25   8  tv_pickit2_shift_lcd.c
+  112    25   9  tv_pickit2_shift_lcd.c
 ----- -----
- 1722   296 Total
+ 1644   285 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
 0     40   2    1             @delay_ms1
-0     42   3    3   271  4.3  XUAT_1BYTE
-0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
-0     48   3    0   119  1.7  MO_IC_74573_A_THONG_DL
-0     44   3    0   172  1.8  XUAT_GLCD_LCD
+0     38   2    2   234  4.3  XUAT_1BYTE
+0     22   1    4   131  2.8  xuat_1word
+0     88   5    0   396  1.4  xoa_tat_6module
+0     58   3    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   2    0   106  1.3  XUAT_GLCD_LCD
 0     16   1    2    80  2.7  XUAT_LCD20X4
-0     26   2    1   102  2.1  LCD_XUAT_8BIT
+0     26   1    1   102  2.1  LCD_XUAT_8BIT
 0     22   1    1    61  1.6  LCD_COMMAND
 0     22   1    1    61  1.6  LCD_DATA
 0     72   4    0   245  1.8  SETUP_LCD
-0     20   1    0             @const827
-0     26   2    3   147  3.7  LCD_GOTO_XY
-0     24   1    0   147  3.7  @const832
-0     24   1    0   102  1.9  @const835
-0     24   1    0   117  1.9  @const838
-0     62   4    1   165  4.0  show_heart
+0     20   1    0             @const830
+0     26   1    3   147  3.7  LCD_GOTO_XY
+0     24   1    0             @const835
+0     24   1    0             @const838
+0     24   1    0             @const841
+0     62   3    1   165  4.0  show_heart
 0     64   4    1   165  4.0  hien_hinh_thoi
 0     64   4    1   165  4.0  hien_hinh_vuong
-0     74   5    0   132  2.0  MAIN
-0     20   1    0             @const848
-0     34   2    2             @PSTRINGC_810
+0     92   5    0   132  2.0  MAIN
+0     20   1    0             @const851
+0     34   2    2             @PSTRINGC_813
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               17
-    Statements              296
-    Comments                416
-    Volume (V)              4549
-    Difficulty (D)          43.9
-    Effort to implement (E) 199713
-    Time to implement (T)   3 hours, 5 minutes
+    Functions               15
+    Statements              285
+    Comments                363
+    Volume (V)              4432
+    Difficulty (D)          38.8
+    Effort to implement (E) 172035
+    Time to implement (T)   2 hours, 39 minutes
     Est Delivered Bugs (B)  1
     Cyclomatic Complexity   4
-    Maintainability (MI)    145
+    Maintainability (MI)    142
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-07FFE   798  31966  
+00004-07FFE   894  31870  
 
 
 

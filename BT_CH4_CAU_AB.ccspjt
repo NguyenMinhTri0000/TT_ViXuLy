@@ -12,9 +12,9 @@ Type=4
 [mru-list]
 1=BT_CH4_CAU_AB.c
 [Opened Files]
-1=BT_CH4_CAU_A.c
-2=BT_CH4_CAU_AB.c
-3=BAI_417_DEM_XUNG_T0_START_STOP_32LED.c
+1=BAI_633_LCD_3KYTU.c
+2=
+3=BAI_518_DEM_XUNG_T0_SSC.c
 4=
 [Units]
 Count=1

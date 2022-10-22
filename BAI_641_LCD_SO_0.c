@@ -1,6 +1,6 @@
 
-//#include <tv_pickit2_shift_1.c>
-#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
 #include <tv_pickit2_shift_lcd.c>
 signed INT8 i;
 void lcd_hienthi_so_z_toado_xy(SIGNED int8 lcd_so, x1, y1)

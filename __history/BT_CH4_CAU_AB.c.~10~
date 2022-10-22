@@ -1,0 +1,59 @@
+//chua xong
+//!#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_1_proteus.c>
+#DEFINE  START_PAUSE      BT0       //DK LED DON, MOTOR
+
+unsigned INT8 t0;
+unsigned INT8 donvi, chuc;
+unsigned INT1 tt;
+
+void phim_start_pause()
+{
+   if(input(START_PAUSE)==0)    //kiem tra lan 1
+   {
+      delay_ms(50);
+     
+         if(input(START_PAUSE)==0)    //kiem tra lan 2
+         {
+         //lenh chuong trinh
+         tt=~tt;
+            while(input(START_PAUSE)==0);   //cho nha phim
+         }
+      
+   }
+}
+
+void giai_ma_hien_thi (UNSIGNED int16 tam)
+{
+   donvi = ma7doan[tam %10];
+   chuc = ma7doan[tam / 10 % 10];
+
+
+
+      IF (chuc==0xc0) chuc=0xff;
+
+   xuat_4led_7doan_4so (chuc, donvi & 0X7F, 0X92, 0X8C);
+}
+
+void main()
+{
+   set_up_port_ic_chot();
+ //  setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);
+   set_timer0 (0);
+   TT=0;
+   WHILE (true)
+   {
+      t0 = get_timer0 () ;
+      giai_ma_hien_thi (t0);
+      if (tt == 0)
+      {
+         setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);         
+      }
+      else
+      {
+         setup_timer_0 (t0_off);        
+      }
+      IF (t0 >= 101) set_timer0 (1);   
+   }
+}
+
