@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 10:02
+CCS PCH C Compiler, Version 5.015, 5967               22-Oct-22 12:32
 
                Filename:   C:\Users\NguyenMinhTri\Desktop\TT VXL\BAI_642_LCD_SO_0123.lst
 
@@ -1260,9 +1260,9 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 10:02
 03E8:  RCALL  028C
 03EA:  INCF   19,F
 03EC:  BRA    03CA
-....................    lcd_hienthi_so_z_toado_xy(0,2,0); 
+....................    lcd_hienthi_so_z_toado_xy(0,1,0); 
 03EE:  CLRF   1A
-03F0:  MOVLW  02
+03F0:  MOVLW  01
 03F2:  MOVWF  1B
 03F4:  CLRF   1C
 03F6:  RCALL  0310

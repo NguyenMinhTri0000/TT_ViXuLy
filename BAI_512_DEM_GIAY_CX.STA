@@ -13,11 +13,11 @@ Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   44    21   8  BAI_512_DEM_GIAY_CX.c
+   46    21   8  BAI_512_DEM_GIAY_CX.c
   627   233  92  tv_pickit2_shift_1.c
   837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
 ----- -----
- 1508   254 Total
+ 1510   254 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
@@ -33,21 +33,21 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     76   4    1   178  4.9  HIEN_THI_8LED_7DOAN_QUET
 0     16   1    0    29  1.2  interrupt_timer1
 0     60   3    1    93  2.9  giai_ma_gan_cho_8led_quet
-0     72   4    4   100  3.2  @DIVS88
+0     72   4    4    61  1.6  @DIVS88
 0    122   7    0   354  5.6  MAIN
- Inline         0             @cinit1
+ Inline         0    93  2.9  @cinit1
 
 Program metrics:
-    Functions               12
+    Functions               13
     Statements              254
-    Comments                282
-    Volume (V)              3440
-    Difficulty (D)          35.4
-    Effort to implement (E) 121666
-    Time to implement (T)   1 hours, 53 minutes
+    Comments                288
+    Volume (V)              3584
+    Difficulty (D)          36.7
+    Effort to implement (E) 131684
+    Time to implement (T)   2 hours, 2 minutes
     Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   6
-    Maintainability (MI)    139
+    Cyclomatic Complexity   5
+    Maintainability (MI)    136
 
  Segment     Used  Free
 -----------  ----  ----

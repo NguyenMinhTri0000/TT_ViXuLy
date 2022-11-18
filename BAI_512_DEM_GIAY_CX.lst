@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 08:49
+CCS PCH C Compiler, Version 5.015, 5967               01-Nov-22 08:55
 
                Filename:   C:\Users\NguyenMinhTri\Desktop\TT VXL\BAI_512_DEM_GIAY_CX.lst
 
@@ -944,17 +944,17 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 08:49
 .................... signed INT8 giay,bdn; 
 ....................  
 .................... #INT_timer1 
-....................  
-.................... void interrupt_timer1() 
+.................... void interrupt_timer1()    //timer 1 2^16 =  65535 => so tràn = 65536 
 .................... { 
 ....................    bdn++; 
 *
 00E2:  INCF   2B,F
-....................    set_timer1(3036); 
+....................    set_timer1(3036);    //20MHz bo chia 4 = 5MHz he so chia 8 (t1_div_by_8) = 625000Hz > 65536 => phai dem 10 lan 
 00E4:  MOVLW  0B
 00E6:  MOVWF  FCF
 00E8:  MOVLW  DC
 00EA:  MOVWF  FCE
+....................                         //65536 - 625000/10 = 3036 
 00EC:  BCF    F9E.0
 00EE:  GOTO   0054
 .................... } 
@@ -1028,6 +1028,7 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 08:49
 .................... { 
 ....................    set_up_port_ic_chot(); 
 0332:  BRA    0186
+....................    //khoi tao ngat 
 ....................    setup_timer_1(t1_internal | t1_div_by_8); 
 0334:  MOVLW  B5
 0336:  MOVWF  FCD
@@ -1041,6 +1042,7 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 08:49
 0342:  IORWF  FF2,F
 ....................    enable_interrupts(INT_timer1); 
 0344:  BSF    F9D.0
+....................     
 ....................    giay =0; 
 0346:  CLRF   2A
 ....................    bdn=0; 
@@ -1050,7 +1052,7 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 08:49
 ....................    { 
 ....................       giai_ma_gan_cho_8led_quet(); 
 034A:  BRA    0208
-....................       IF (bdn<10) hien_thi_8led_7doan_quet(); 
+....................       IF (bdn<10) hien_thi_8led_7doan_quet();         //chay het 10 lan moi dc 1 giay 
 034C:  BTFSC  2B.7
 034E:  BRA    0356
 0350:  MOVF   2B,W
@@ -1061,7 +1063,7 @@ CCS PCH C Compiler, Version 5.015, 5967               11-Oct-22 08:49
 ....................  
 ....................       ELSE 
 ....................       { 
-....................          bdn = bdn-10; 
+....................          bdn = bdn-10;     //bdn = 0; 
 035A:  MOVLW  0A
 035C:  SUBWF  2B,F
 ....................          giay++; 

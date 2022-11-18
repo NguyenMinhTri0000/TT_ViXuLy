@@ -1,0 +1,24 @@
+[PROJECT]
+Target=NMT_LCD.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=NMT_LCD.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[NMT_LCD.c]
+Type=4
+[mru-list]
+1=NMT_LCD.c
+[Opened Files]
+1=BT_TONG_HOP.c
+2=NMT_LCD.c
+3=BAI_605_LCD_HT_2HANG_DICH_PHAI_1HANG.c
+4=
+5=BAI_604_LCD_HT_2HANG_DICH_TRAI_1HANG.c
+6=
+7=
+[Units]
+Count=1
+1=NMT_LCD (main)

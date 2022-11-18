@@ -1,0 +1,19 @@
+[PROJECT]
+Target=BAI_731_DS18B20A.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_731_DS18B20A.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_731_DS18B20A.c]
+Type=4
+[mru-list]
+1=BAI_731_DS18B20A.c
+[Opened Files]
+1=BAI_731_DS18B20A.c
+2=
+[Units]
+Count=1
+1=BAI_731_DS18B20A (main)

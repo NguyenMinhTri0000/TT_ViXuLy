@@ -1,0 +1,88 @@
+
+#include <tv_pickit2_shift_1.c>
+#define nd_tren 40
+#define nd_duoi 35
+#include <tv_pickit2_shift_lcd.c>
+unsigned INT8 j, solan=100;
+unsigned INT16 lm35a, lm35b;
+
+int1 ttqn=0;
+void doc_nd_lm35a()
+{
+   set_adc_channel(0);
+   delay_ms(1);
+   lm35a = 0;
+   FOR (j = 0; j<solan; j++)
+   {
+      lm35a = lm35a + read_adc ();
+      delay_us (100) ;
+   }
+
+   lm35a = lm35a / 2.046;
+   lm35a = lm35a / solan;
+}
+
+void doc_nd_lm35b()
+{
+   set_adc_channel(1);
+   delay_ms(1);
+   lm35b = 0;
+   FOR (j = 0; j<solan; j++)
+   {
+      lm35b = lm35b + read_adc ();
+      delay_us (100) ;
+   }
+
+   lm35b = lm35b / 2.046;
+   lm35b = lm35b / solan;
+}
+void so_sanh_dk_buzzer()
+{
+   IF ((lm35a>nd_tren)||(lm35b>nd_tren))
+   {
+      ttqn = 1;
+//!      buzzer_on () ;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0XFF);
+     // triac_2_off () ;
+//!     XUAT_32LED_DON_4BYTE (0,0,0,0);
+   }
+
+   else IF (((lm35a < nd_tren)&&(lm35b < nd_tren))&& (ttqn == 1))
+   {
+      ttqn = 0;
+//!      buzzer_off () ;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0);
+   }
+
+   IF (((lm35a < nd_duoi)&&(lm35b < nd_duoi))&& (ttqn == 0)) 
+   //triac_2_on ();
+   XUAT_32LED_DON_4BYTE (0xff, 0, 0, 0);
+}
+void main()
+{
+   set_up_port_ic_chot () ;
+         setup_lcd () ;
+   setup_adc (adc_clock_div_32) ;
+   setup_adc_ports (an0_to_an1|vss_vdd);
+
+   WHILE (true)
+   {
+      doc_nd_lm35a ();
+      doc_nd_lm35b () ;
+      so_sanh_dk_buzzer();
+      xuat_4led_7doan_4so (ma7doan[lm35b/ 10],ma7doan[lm35b % 10]&0X7F,ma7doan[ lm35a / 10], ma7doan[lm35a % 10]);
+            //HIEN THI LCD
+      lcd_command (0x40) ;
+      FOR (i = 0; i < 64; i++) { lcd_data (lcd_ma_8doan[i]);  }
+      lcd_goto_xy(1, 0);
+      lcd_data("LM35A : ");
+      lcd_hienthi_so_z_toado_xy (lm35a/10, 0, 8);    
+      lcd_hienthi_so_z_toado_xy (lm35a%10, 0, 12);
+      lcd_goto_xy(3, 0);
+      lcd_data("LM35B : ");
+      lcd_hienthi_so_z_toado_xy (lm35b/10, 2, 8);    
+      lcd_hienthi_so_z_toado_xy (lm35b%10, 2, 12);      
+   }
+}
+
+

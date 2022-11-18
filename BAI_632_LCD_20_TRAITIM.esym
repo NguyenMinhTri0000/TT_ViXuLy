@@ -1,8 +1,8 @@
 D G "__PCH__" 0 26 ""5.015""
 D G "__DEVICE__" 0 26 "4550"
-D G "__DATE__" 0 26 ""06-Oct-22""
-D G "__TIME__" 0 26 ""14:32:42"" "#include <tv_pickit2_shift_1.c>"
-c L "set_tris_a" 2 1 6 "FUNCTION"
+D G "__DATE__" 0 26 ""22-Oct-22""
+D G "__TIME__" 0 26 ""13:36:53"" "Standard Header file for the PIC18F4550 device ////////////////"
+c L "set_tris_a" 2 3 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 
 v L "value" 2 46 "int8" `56 
@@ -101,7 +101,7 @@ d G "putc" 2 131 "putchar"
 d G "fputc" 2 132 "putchar"
 d G "fgets" 2 133 "gets"
 d G "fputs" 2 134 "puts"
-c L "output_drive" 2 1 3 "FUNCTION"
+c L "output_drive" 2 3 3 "FUNCTION"
 f B "restart_cause" 2 139 "int8()" `105 
 f B "reset_cpu" 2 140 "void()" `106 
 f B "sleep" 2 141 "void()" `107 
@@ -116,7 +116,7 @@ d G "WDT_FROM_SLEEP" 2 149 "3"
 d G "RESET_INSTRUCTION" 2 150 "0"
 d G "SLEEP_FULL" 2 153 "0" "Default"
 d G "SLEEP_IDLE" 2 154 "1" "Clock and peripherals don't stop"
-c L "sleep" 2 1 5 "FUNCTION"
+c L "sleep" 2 3 5 "FUNCTION"
 v L "mode" 2 161 "int8" `111 
 f B "setup_timer_0" 2 161 "void(int8 mode)" `110 
 v L "value" 2 162 "int16" `113 
@@ -156,7 +156,7 @@ d G "RTCC_DIV_128" 2 196 "6"
 d G "RTCC_DIV_256" 2 197 "7"
 d G "RTCC_OFF" 2 198 "0x80"
 d G "RTCC_8_BIT" 2 199 "0x40"
-c L "get_rtcc" 2 1 8 "FUNCTION"
+c L "get_rtcc" 2 3 8 "FUNCTION"
 v L "mode" 2 210 "int16" `122 
 f B "setup_wdt" 2 210 "void(int16 mode)" `121 
 f B "restart_wdt" 2 211 "void()" `123  "Constants used for SETUP_WDT() are:"
@@ -178,7 +178,7 @@ d G "WDT_16" 2 228 "0x1B00"
 d G "WDT_32S" 2 229 "0x1D00"
 d G "WDT_64S" 2 230 "0x1F00"
 d G "WDT_128S" 2 231 "0x2100"
-c L "restart_wdt" 2 1 3 "FUNCTION"
+c L "restart_wdt" 2 3 3 "FUNCTION"
 v L "mode" 2 237 "int16" `125 
 f B "setup_timer_1" 2 237 "void(int16 mode)" `124 
 f B "get_timer1" 2 238 "int16()" `126 
@@ -193,7 +193,7 @@ d G "T1_DIV_BY_1" 2 249 "0"
 d G "T1_DIV_BY_2" 2 250 "0x10"
 d G "T1_DIV_BY_4" 2 251 "0x20"
 d G "T1_DIV_BY_8" 2 252 "0x30"
-c L "set_timer1" 2 1 3 "FUNCTION"
+c L "set_timer1" 2 3 3 "FUNCTION"
 v L "mode" 2 257 "int8" `130 
 v L "period" 2 257 "int8" `131 
 v L "postscale" 2 257 "int8" `132 
@@ -205,7 +205,7 @@ d G "T2_DISABLED" 2 261 "0"
 d G "T2_DIV_BY_1" 2 262 "4"
 d G "T2_DIV_BY_4" 2 263 "5"
 d G "T2_DIV_BY_16" 2 264 "6"
-c L "set_timer2" 2 1 3 "FUNCTION"
+c L "set_timer2" 2 3 3 "FUNCTION"
 v L "mode" 2 269 "int16" `137 
 f B "setup_timer_3" 2 269 "void(int16 mode)" `136 
 f B "get_timer3" 2 270 "int16()" `138 
@@ -219,7 +219,7 @@ d G "T3_DIV_BY_1" 2 279 "0"
 d G "T3_DIV_BY_2" 2 280 "0x10"
 d G "T3_DIV_BY_4" 2 281 "0x20"
 d G "T3_DIV_BY_8" 2 282 "0x30"
-c L "set_timer3" 2 1 4 "FUNCTION"
+c L "set_timer3" 2 3 4 "FUNCTION"
 v L "mode" 2 288 "int32" `142 
 f B "setup_ccp1" 2 288 "void(int32 mode)" `141 
 v L "mode" 2 289 "int32" `144 
@@ -241,7 +241,7 @@ d G "CCP_PWM" 2 302 "0xC"
 d G "CCP_PWM_PLUS_1" 2 303 "0x1c"
 d G "CCP_PWM_PLUS_2" 2 304 "0x2c"
 d G "CCP_PWM_PLUS_3" 2 305 "0x3c"
-c L "set_pwm1_duty" 2 1 1 "FUNCTION"
+c L "set_pwm1_duty" 2 3 1 "FUNCTION"
 d G "T3_CCP1_TO_2" 2 311 "0x48"
 d G "T3_CCP2" 2 312 "0x8"
 d G "CCP_PWM_H_H" 2 315 "0x0c"
@@ -265,7 +265,7 @@ d G "CCP_SHUTDOWN_BD_L" 2 336 "0x000000"
 d G "CCP_SHUTDOWN_BD_H" 2 337 "0x010000"
 d G "CCP_SHUTDOWN_BD_F" 2 338 "0x020000"
 d G "CCP_SHUTDOWN_RESTART" 2 340 "0x80000000"
-c L "set_pwm1_duty" 2 1 1 "FUNCTION"
+c L "set_pwm1_duty" 2 3 1 "FUNCTION"
 v L "mode" 2 344 "int32" `152 
 f B "setup_ccp2" 2 344 "void(int32 mode)" `151 
 v L "mode" 2 345 "int32" `154 
@@ -273,7 +273,7 @@ v L "pwm" 2 345 "int8" `155
 f G "setup_ccp2" 2 345 "void(int32 mode,int8 pwm)" `153 
 v L "value" 2 346 "int16" `157 
 f B "set_pwm2_duty" 2 346 "void(int16 value)" `156 
-c L "set_pwm2_duty" 2 1 5 "FUNCTION"
+c L "set_pwm2_duty" 2 3 5 "FUNCTION"
 v L "mode" 2 355 "int8" `162 
 f B "setup_psp" 2 355 "void(int8 mode)" `161 
 f B "psp_output_full" 2 356 "int8()" `163 
@@ -281,7 +281,7 @@ f B "psp_input_full" 2 357 "int8()" `164
 f B "psp_overflow" 2 358 "int8()" `165  "Constants used in SETUP_PSP() are:"
 d G "PSP_ENABLED" 2 360 "0x10"
 d G "PSP_DISABLED" 2 361 "0"
-c L "psp_overflow" 2 1 3 "FUNCTION"
+c L "psp_overflow" 2 3 3 "FUNCTION"
 v L "mode" 2 368 "int32" `168 
 f B "setup_spi" 2 368 "void(int32 mode)" `167 
 v L "value" 2 369 "int8" `170 
@@ -314,7 +314,7 @@ d G "SPI_SAMPLE_AT_MIDDLE" 2 393 "0x0000"
 d G "SPI_SAMPLE_AT_END" 2 394 "0x8000"
 d G "SPI_L_TO_H" 2 397 "SPI_SCK_IDLE_LOW"
 d G "SPI_H_TO_L" 2 398 "SPI_SCK_IDLE_HIGH"
-c L "spi_data_in2" 2 1 2 "FUNCTION"
+c L "spi_data_in2" 2 3 2 "FUNCTION"
 v L "baud" 2 402 "int32" `184 
 f B "setup_uart" 2 402 "void(int32 baud)" `183 
 v L "baud" 2 403 "int32" `186 
@@ -339,7 +339,7 @@ d G "UART_AUTODETECT" 2 413 "8"
 d G "UART_AUTODETECT_NOWAIT" 2 414 "9"
 d G "UART_WAKEUP_ON_RDA" 2 415 "10"
 d G "UART_SEND_BREAK" 2 416 "13"
-c L "set_uart_speed" 2 1 3 "FUNCTION"
+c L "set_uart_speed" 2 3 3 "FUNCTION"
 v L "mode" 2 420 "int32" `202 
 f B "setup_comparator" 2 420 "void(int32 mode)" `201  "Constants used in setup_comparator() are:"
 d G "A0_A3_A1_A3" 2 422 "0xfff04"
@@ -352,14 +352,14 @@ d G "A0_VR_A1_VR" 2 428 "0x3ff06"
 d G "A3_VR_A2_VR" 2 429 "0xcff0e"
 d G "CP1_INVERT" 2 430 "0x0000010"
 d G "CP2_INVERT" 2 431 "0x0000020"
-c L "setup_comparator" 2 1 2 "FUNCTION"
+c L "setup_comparator" 2 3 2 "FUNCTION"
 v L "mode" 2 438 "int8" `206 
 f B "setup_vref" 2 438 "void(int8 mode)" `205  "Constants used in setup_vref() are:"
 d G "VREF_LOW" 2 440 "0xa0"
 d G "VREF_HIGH" 2 441 "0x80"
 d G "VREF_F5" 2 443 "0x40"
 d G "VREF_COMP" 2 444 "0x10"
-c L "setup_vref" 2 1 2 "FUNCTION"
+c L "setup_vref" 2 3 2 "FUNCTION"
 v L "mode" 2 448 "int8" `208 
 f B "setup_low_volt_detect" 2 448 "void(int8 mode)" `207  "Constants used in setup_low_volt_detect() are:"
 d G "LVD_LVDIN" 2 450 "0x1F"
@@ -380,7 +380,7 @@ d G "LVD_22" 2 464 "0x11"
 d G "LVD_21" 2 465 "0x10"
 d G "LVD_TRIGGER_BELOW" 2 467 "0"
 d G "LVD_TRIGGER_ABOVE" 2 468 "0x80"
-c L "setup_low_volt_detect" 2 1 2 "FUNCTION"
+c L "setup_low_volt_detect" 2 3 2 "FUNCTION"
 v L "mode" 2 473 "int16" `210 
 f B "setup_oscillator" 2 473 "int8(int16 mode)" `209 
 v L "mode" 2 474 "int16" `212 
@@ -401,7 +401,7 @@ d G "OSC_IDLE_MODE" 2 490 "0x80"
 d G "OSC_31250" 2 491 "0x8000"
 d G "OSC_STATE_STABLE" 2 495 "4"
 d G "OSC_STATE_EXT_RUNNING" 2 496 "8"
-c L "setup_oscillator" 2 1 4 "FUNCTION"
+c L "setup_oscillator" 2 3 4 "FUNCTION"
 v L "mode" 2 503 "int16" `215 
 f B "setup_adc" 2 503 "void(int16 mode)" `214 
 f B "read_adc" 2 504 "int8()" `216 
@@ -427,7 +427,7 @@ d G "ADC_TAD_MUL_8" 2 523 "0x20"
 d G "ADC_TAD_MUL_12" 2 524 "0x28"
 d G "ADC_TAD_MUL_16" 2 525 "0x30"
 d G "ADC_TAD_MUL_20" 2 526 "0x38"
-c L "adc_done" 2 1 1 "FUNCTION"
+c L "adc_done" 2 3 1 "FUNCTION"
 v L "pins" 2 529 "int8" `224 
 f B "setup_adc_ports" 2 529 "void(int8 pins)" `223 
 v L "pins" 2 530 "int8" `226 
@@ -468,7 +468,7 @@ d G "VSS_VREF" 2 565 "0x10" "Range 0-VrefH"
 d G "ADC_START_AND_READ" 2 568 "7" "This is the default if nothing is specified"
 d G "ADC_START_ONLY" 2 569 "1"
 d G "ADC_READ_ONLY" 2 570 "6"
-c L "set_adc_channel" 2 1 3 "FUNCTION"
+c L "set_adc_channel" 2 3 3 "FUNCTION"
 v L "x" 2 576 "sint8" `231 
 f B "abs" 2 576 "sint8(sint8 x)" `230 
 v L "x" 2 577 "sint16" `233 
@@ -838,7 +838,7 @@ f G "get_capture_time" 2 753 "int16(int8 stream)" `597
 f B "get_capture_event" 2 754 "int8()" `599 
 v L "stream" 2 755 "int8" `601 
 f G "get_capture_event" 2 755 "int8(int8 stream)" `600  "Enviroment Prototypes:"
-c L "get_capture_event" 2 1 2 "FUNCTION"
+c L "get_capture_event" 2 3 2 "FUNCTION"
 v L "address" 2 768 "int16" `603 
 f B "goto_address" 2 768 "void(int16 address)" `602 
 v L "label" 2 769 "int16" `605 
@@ -864,7 +864,7 @@ f B "read_eeprom" 2 786 "int8(__EEADDRESS__ address)" `622
 v L "address" 2 787 "__EEADDRESS__" `625 
 v L "value" 2 787 "int8" `626 
 f B "write_eeprom" 2 787 "void(__EEADDRESS__ address,int8 value)" `624  "INT"
-c L "write_eeprom" 2 1 4 "FUNCTION"
+c L "write_eeprom" 2 3 4 "FUNCTION"
 v L "interrupt" 2 794 "int32" `628 
 f B "enable_interrupts" 2 794 "void(int32 interrupt)" `627 
 v L "interrupt" 2 795 "int32" `630 
@@ -912,234 +912,205 @@ d G "INT_EEPROM" 2 831 "0x00A010"
 d G "INT_OSCF" 2 832 "0x00A080"
 d G "INT_SPP" 2 833 "0x009D80"
 d G "INT_USB" 2 834 "0x00A020"
-D G "BT0" 1 9 "PIN_B5"
-D G "BT1" 1 10 "PIN_B4"
-D G "BT2" 1 11 "PIN_B3"
-D G "BT3" 1 12 "PIN_B2"
-D G "ON" 1 14 "BT0" "DK LED DON, MOTOR"
-D G "OFF" 1 15 "BT1"
-D G "INV" 1 16 "BT2"
-D G "UP" 1 18 "BT0" "DK LED DON"
-D G "DW" 1 19 "BT1"
-D G "CLR" 1 20 "BT2"
-D G "MOD" 1 21 "BT3"
-D G "STOP" 1 23 "BT3"
-D G "ON1" 1 25 "BT0"
-D G "OFF1" 1 26 "BT1"
-D G "ON2" 1 27 "BT2"
-D G "OFF2" 1 28 "BT3"
-D G "TRIGGER" 1 31 "PIN_E2"
-D G "ECHO" 1 32 "PIN_E1"
-D G "ENABLE_573A" 1 59 "PIN_D1" "CS0 CUA A"
-D G "ENABLE_573B" 1 60 "PIN_D0" "CS1 CUA B"
-D G "SSDO" 1 62 "PIN_E2" "CHUNG TAT CA"
-D G "SSCK" 1 63 "PIN_E0" "CHUNG TAT CA"
-D G "RCK_4LED7DOAN" 1 65 "PIN_D7" "A - 4 BYTE"
-D G "G_4LED7DOAN" 1 66 "PIN_D6" "A - 4 BYTE"
-D G "RCK_MATRANLED" 1 68 "PIN_D7" "B - 3 BYTE DAO"
-D G "G_MATRANLED" 1 69 "PIN_D6" "B - 3 BYTE DAO"
-D G "RCK_32LED" 1 71 "PIN_D5" "A - 4 BYTE"
-D G "G_32LED" 1 72 "PIN_D4" "A - 4 BYTE"
-D G "RCK_8LEDQUET" 1 74 "PIN_D5" "B - 2 BYTE DAO"
-D G "G_8LEDQUET" 1 75 "PIN_D4" "B - 2 BYTE DAO"
-D G "RCK_LCD20X4" 1 77 "PIN_D3" "A - 2 BYTE DAO"
-D G "G_LCD20X4" 1 78 "PIN_D2" "A - 2 BYTE DAO"
-D G "RCK_BUZERELAY" 1 80 "PIN_D3" "B - 1 BYTE"
-D G "G_BUZERELAY" 1 81 "PIN_D2" "B - 1 BYTE"
-V L "LCD_SIGNAL" 1 83 "int8" `651 
-V L "LCD_INS_HTHI" 1 83 "int8" `652 
-f G "XUAT_LCD20X4" 1 83 "void(int8 LCD_SIGNAL,int8 LCD_INS_HTHI)" `650 
-f G "XUAT_BUZZER_RELAY" 1 85 "void()" `653  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-D G "CHOT_2_IC_74573_A_B" 1 87 "OUTPUT_D(0XFC)"
-V G "TIN_HIEU_DK_74573_A" 1 89 "int8" `654 
-D G "MO_32_LED_DON" 1 94 "G_32A=0;" "OUTPUT_LOW(G_32LED)"
-D G "TAT_32_LED_DON" 1 95 "G_32A=1;" "OUTPUT_HIGH(G_32LED)"
-D G "MO_4_LED_7DOAN" 1 97 "G_4A=0;" "OUTPUT_LOW(G_4LED7DOAN)"
-D G "TAT_4_LED_7DOAN" 1 98 "G_4A=1;" "OUTPUT_HIGH(G_4LED7DOAN)"
-D G "MO_GLCD_LCD" 1 100 "G_LCDA=0;" "OUTPUT_LOW(G_LCD20X4)"
-D G "TAT_GLCD_LCD" 1 101 "G_LCDA=1;" "OUTPUT_LOW(G_LCD20X4)"
-V G "TIN_HIEU_DK_74573_B" 1 103 "int8" `658 
-D G "MO_LED_MATRAN" 1 108 "G_MTB=0;" "OUTPUT_LOW(G_MATRANLED)"
-D G "TAT_LED_MATRAN" 1 109 "G_MTB=1;" "OUTPUT_LOW(G_MATRANLED)"
-D G "MO_8_LED_QUET" 1 111 "G_8B=0;" "OUTPUT_LOW(G_8LEDQUET)"
-D G "TAT_8_LED_QUET" 1 112 "G_8B=1;" "OUTPUT_LOW(G_8LEDQUET)"
-D G "MO_RELAY_BUZZER_DC" 1 114 "G_RBDCB=0;" "OUTPUT_LOW(G_BUZERELAY)"
-D G "TAT_RELAY_BUZZER_DC" 1 115 "G_RBDCB=1;" "OUTPUT_LOW(G_BUZERELAY)"
-C L "XUAT_BUZZER_RELAY" 1 7 3 "FUNCTION"
-V G "DL_BTN" 1 120 "int8" `662 
-V L "DL" 1 121 "int16" `664 
-F G "PHIM_BT0" 1 122 "int8(int16 DL)" `663 
+D G "BT0" 1 8 "PIN_B5"
+D G "BT1" 1 9 "PIN_B4"
+D G "BT2" 1 10 "PIN_B3"
+D G "BT3" 1 11 "PIN_B2"
+D G "ON" 1 13 "BT0" "DK LED DON, MOTOR"
+D G "OFF" 1 14 "BT1"
+D G "INV" 1 15 "BT2"
+D G "UP" 1 17 "BT0" "DK LED DON"
+D G "DW" 1 18 "BT1"
+D G "CLR" 1 19 "BT2"
+D G "MOD" 1 20 "BT3"
+D G "STOP" 1 22 "BT3"
+D G "ON1" 1 24 "BT0"
+D G "OFF1" 1 25 "BT1"
+D G "ON2" 1 26 "BT2"
+D G "OFF2" 1 27 "BT3"
+D G "SSDO" 1 32 "PIN_E2" "CHUNG TAT CA"
+D G "SSCK" 1 33 "PIN_E0" "CHUNG TAT CA"
+D G "G_ALL" 1 35 "PIN_D0" "A - 4 BYTE"
+D G "RCK_LCD20X4" 1 36 "PIN_D2" "A - 2 BYTE DAO"
+D G "RCK_BUZERELAY" 1 37 "PIN_D3" "B - 1 BYTE"
+D G "RCK_32LED" 1 38 "PIN_D4" "A - 4 BYTE"
+D G "RCK_8LEDQUET" 1 39 "PIN_D5" "B - 2 BYTE DAO"
+D G "RCK_4LED7DOAN" 1 40 "PIN_D6" "A - 4 BYTE"
+D G "RCK_MATRANLED" 1 41 "PIN_D7" "B - 3 BYTE DAO"
+V L "LCD_SIGNAL" 1 43 "int8" `655 
+V L "LCD_INS_HTHI" 1 43 "int8" `656 
+f G "XUAT_LCD20X4" 1 43 "void(int8 LCD_SIGNAL,int8 LCD_INS_HTHI)" `654 
+f G "XUAT_BUZZER_RELAY" 1 44 "void()" `657  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+C L "XUAT_BUZZER_RELAY" 1 7 2 "FUNCTION"
+V G "DL_BTN" 1 49 "int8" `658 
+V L "DL" 1 50 "int16" `660 
+F G "PHIM_BT0" 1 51 "int8(int16 DL)" `659 
 C L "PHIM_BT1" 1 7 3 "FUNCTION"
-V L "DL" 1 139 "int16" `666 
-F G "PHIM_BT1" 1 140 "int8(int16 DL)" `665 
+V L "DL" 1 70 "int16" `662 
+F G "PHIM_BT1" 1 71 "int8(int16 DL)" `661 
 C L "PHIM_BT2" 1 7 3 "FUNCTION"
-V L "DL" 1 157 "int16" `668 
-F G "PHIM_BT2" 1 158 "int8(int16 DL)" `667 
+V L "DL" 1 90 "int16" `664 
+F G "PHIM_BT2" 1 91 "int8(int16 DL)" `663 
 C L "PHIM_BT3" 1 7 3 "FUNCTION"
-V L "DL" 1 177 "int16" `670 
-V L "SOLAN" 1 177 "int8" `671 
-F G "PHIM_BT3" 1 178 "int8(int16 DL,int8 SOLAN)" `669 
+V L "DL" 1 111 "int16" `666 
+V L "SOLAN" 1 111 "int8" `667 
+F G "PHIM_BT3" 1 112 "int8(int16 DL,int8 SOLAN)" `665 
 C L "PHIM_BT3" 1 7 1 "FUNCTION"
-V G "RBDC" 1 198 "int16" `672 
-D G "CHO_IC_74573_A_GOI_DU_LIEU" 1 217 "OUTPUT_HIGH(ENABLE_573A)"
-D G "CHOT_IC_74573_A_GOI_DU_LIEU" 1 218 "OUTPUT_LOW(ENABLE_573A)"
-D G "CHO_IC_74573_B_GOI_DU_LIEU" 1 220 "OUTPUT_HIGH(ENABLE_573B)"
-D G "CHOT_IC_74573_B_GOI_DU_LIEU" 1 221 "OUTPUT_LOW(ENABLE_573B)"
-f G "MO_IC_74573_A_THONG_DL" 1 222 "void()" `685  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-V G "MA7DOAN" 1 225 "[16]" `686 
-D G "MASO0" 1 227 "0XC0"
-D G "MASO1" 1 228 "0XF9"
-D G "MASO2" 1 229 "0XA4"
-D G "MASO3" 1 230 "0XB0"
-D G "MASO4" 1 231 "0X99"
-D G "MASO5" 1 232 "0X92"
-D G "MASO6" 1 233 "0X82"
-D G "MASO7" 1 234 "0XF8"
-C L "MO_IC_74573_A_THONG_DL" 1 7 5 "FUNCTION"
-V L "BYTEXUAT" 1 241 "int8" `690 
-F G "XUAT_1BYTE" 1 242 "void(int8 BYTEXUAT)" `689 
-V L "SB" 1 243 "int8" `691 
-V L "x" 1 243 "int8" `692 
+V G "RBDC" 1 132 "int16" `668 
+V G "MA7DOAN" 1 150 "[16]" `681 
+D G "MASO0" 1 152 "0XC0"
+D G "MASO1" 1 153 "0XF9"
+D G "MASO2" 1 154 "0XA4"
+D G "MASO3" 1 155 "0XB0"
+D G "MASO4" 1 156 "0X99"
+D G "MASO5" 1 157 "0X92"
+D G "MASO6" 1 158 "0X82"
+D G "MASO7" 1 159 "0XF8"
+C L "XUAT_1BYTE" 1 7 3 "FUNCTION"
+V L "x" 1 164 "int8" `685 
+F G "XUAT_1BYTE" 1 165 "void(int8 x)" `684 
+V L "SB" 1 166 "int8" `686 
 C L "XUAT_32LED_DON_4BYTE" 1 7 5 "FUNCTION"
-V L "BLD3" 1 258 "int8" `695 
-V L "BLD2" 1 258 "int8" `696 
-V L "BLD1" 1 258 "int8" `697 
-V L "BLD0" 1 258 "int8" `698 
-F G "XUAT_32LED_DON_4BYTE" 1 259 "void(int8 BLD3,int8 BLD2,int8 BLD1,int8 BLD0)" `694 
+V L "BLD3" 1 180 "int8" `689 
+V L "BLD2" 1 180 "int8" `690 
+V L "BLD1" 1 180 "int8" `691 
+V L "BLD0" 1 180 "int8" `692 
+F G "XUAT_32LED_DON_4BYTE" 1 181 "void(int8 BLD3,int8 BLD2,int8 BLD1,int8 BLD0)" `688 
 C L "XUAT_32LED_DON_2WORD" 1 7 4 "FUNCTION"
-V L "WLD1" 1 273 "int16" `700 
-V L "WLD0" 1 273 "int16" `701 
-F G "XUAT_32LED_DON_2WORD" 1 274 "void(int16 WLD1,int16 WLD0)" `699 
-V L "B3" 1 275 "int8" `702 
-V L "B2" 1 275 "int8" `703 
-V L "B1" 1 275 "int8" `704 
-V L "B0" 1 275 "int8" `705 
+V L "WLD1" 1 195 "int16" `694 
+V L "WLD0" 1 195 "int16" `695 
+F G "XUAT_32LED_DON_2WORD" 1 196 "void(int16 WLD1,int16 WLD0)" `693 
+V L "B3" 1 197 "int8" `696 
+V L "B2" 1 197 "int8" `697 
+V L "B1" 1 197 "int8" `698 
+V L "B0" 1 197 "int8" `699 
 C L "XUAT_32LED_DON_1DW" 1 7 4 "FUNCTION"
-V L "DWLD" 1 284 "int32" `707 
-F G "XUAT_32LED_DON_1DW" 1 285 "void(int32 DWLD)" `706 
-V L "WD1" 1 286 "int16" `708 
-V L "WD0" 1 286 "int16" `709 
-C L "MO_32LED_DON" 1 7 4 "FUNCTION"
-F G "MO_32LED_DON" 1 296 "void()" `710 
-C L "TAT_32LED_DON" 1 7 4 "FUNCTION"
-F G "TAT_32LED_DON" 1 304 "void()" `711 
+V L "DWLD" 1 206 "int32" `701 
+F G "XUAT_32LED_DON_1DW" 1 207 "void(int32 DWLD)" `700 
+V L "WD1" 1 208 "int16" `702 
+V L "WD0" 1 208 "int16" `703 
 C L "XUAT_1BIT" 1 7 3 "FUNCTION"
-V L "BYTEXUAT" 1 310 "int8" `713 
-F G "XUAT_1BIT" 1 311 "int8(int8 BYTEXUAT)" `712 
-V L "XBITX" 1 312 "int8" `714 
+V L "BYTEXUAT" 1 216 "int8" `705 
+F G "XUAT_1BIT" 1 217 "int8(int8 BYTEXUAT)" `704 
+V L "XBITX" 1 218 "int8" `706 
+C L "xuat_1word" 1 7 3 "FUNCTION"
+V L "w" 1 230 "int16" `709 
+F G "xuat_1word" 1 231 "void(int16 w)" `708 
+V L "B1" 1 232 "int8" `710 
+V L "B0" 1 232 "int8" `711 
+C L "xoa_tat_6module" 1 7 3 "FUNCTION"
+F G "xoa_tat_6module" 1 241 "void()" `712 
 C L "SET_UP_PORT_IC_CHOT" 1 7 5 "FUNCTION"
-F G "SET_UP_PORT_IC_CHOT" 1 327 "void()" `716 
-C L "MO_IC_74573_A_THONG_DL" 1 7 5 "FUNCTION"
-F G "MO_IC_74573_A_THONG_DL" 1 343 "void()" `685 
-F G "MO_IC_74573_B_THONG_DL" 1 351 "void()" `717 
+F G "SET_UP_PORT_IC_CHOT" 1 273 "void()" `713 
 C L "XUAT_4LED_7DOAN_4SO" 1 7 4 "FUNCTION"
-V L "BL743" 1 362 "int8" `719 
-V L "BL742" 1 362 "int8" `720 
-V L "BL741" 1 362 "int8" `721 
-V L "BL740" 1 362 "int8" `722 
-F G "XUAT_4LED_7DOAN_4SO" 1 363 "void(int8 BL743,int8 BL742,int8 BL741,int8 BL740)" `718 
+V L "BL743" 1 291 "int8" `715 
+V L "BL742" 1 291 "int8" `716 
+V L "BL741" 1 291 "int8" `717 
+V L "BL740" 1 291 "int8" `718 
+F G "XUAT_4LED_7DOAN_4SO" 1 292 "void(int8 BL743,int8 BL742,int8 BL741,int8 BL740)" `714 
 C L "XUAT_4LED_7DOAN_3SO" 1 7 1 "FUNCTION"
-V L "BL742" 1 374 "int8" `724 
-V L "BL741" 1 374 "int8" `725 
-V L "BL740" 1 374 "int8" `726 
-F G "XUAT_4LED_7DOAN_3SO" 1 375 "void(int8 BL742,int8 BL741,int8 BL740)" `723 
+V L "BL742" 1 300 "int8" `720 
+V L "BL741" 1 300 "int8" `721 
+V L "BL740" 1 300 "int8" `722 
+F G "XUAT_4LED_7DOAN_3SO" 1 301 "void(int8 BL742,int8 BL741,int8 BL740)" `719 
 C L "XUAT_4LED_7DOAN_2SO" 1 7 1 "FUNCTION"
-V L "BL741" 1 379 "int8" `728 
-V L "BL740" 1 379 "int8" `729 
-F G "XUAT_4LED_7DOAN_2SO" 1 380 "void(int8 BL741,int8 BL740)" `727 
+V L "BL741" 1 305 "int8" `724 
+V L "BL740" 1 305 "int8" `725 
+F G "XUAT_4LED_7DOAN_2SO" 1 306 "void(int8 BL741,int8 BL740)" `723 
 C L "XUAT_4LED_7DOAN_1SO" 1 7 1 "FUNCTION"
-V L "BL740" 1 384 "int8" `731 
-F G "XUAT_4LED_7DOAN_1SO" 1 385 "void(int8 BL740)" `730 
-V G "DONVI4" 1 393 "int8" `732 
-V G "CHUC4" 1 393 "int8" `733 
-V G "TRAM4" 1 393 "int8" `734 
-V G "NGAN4" 1 393 "int8" `735 
-V L "TAM" 1 394 "int16" `737 
-F G "XUAT_4LED_7DOAN_GIAIMA_XOA_SO0" 1 395 "void(int16 TAM)" `736 
-V G "LCDDATA" 1 411 "int8" `741 
-V G "LCDCONTROL" 1 412 "int8" `742 
-V G "GLCDDATA" 1 413 "int8" `743 
-V G "GLCDCONTROL" 1 414 "int8" `744 
+V L "BL740" 1 310 "int8" `727 
+F G "XUAT_4LED_7DOAN_1SO" 1 311 "void(int8 BL740)" `726 
+V G "DONVI4" 1 319 "int8" `728 
+V G "CHUC4" 1 319 "int8" `729 
+V G "TRAM4" 1 319 "int8" `730 
+V G "NGAN4" 1 319 "int8" `731 
+V L "TAM" 1 320 "int16" `733 
+F G "XUAT_4LED_7DOAN_GIAIMA_XOA_SO0" 1 321 "void(int16 TAM)" `732 
+V L "BH" 1 338 "int8" `738 
+V L "BL" 1 338 "int8" `739 
+F G "XUAT_4LED_7DOAN_2_SO" 1 339 "void(int8 BH,int8 BL)" `737 
+V G "LCDDATA" 1 343 "int8" `743 
+V G "LCDCONTROL" 1 344 "int8" `744 
+V G "GLCDDATA" 1 345 "int8" `745 
+V G "GLCDCONTROL" 1 346 "int8" `746 
 C L "XUAT_GLCD_LCD" 1 7 4 "FUNCTION"
-F G "XUAT_GLCD_LCD" 1 420 "void()" `745 
+F G "XUAT_GLCD_LCD" 1 352 "void()" `747 
 C L "XUAT_LCD20X4" 1 7 1 "FUNCTION"
-V L "LCD_SIGNAL" 1 433 "int8" `651 
-V L "LCD_INS_HTHI" 1 433 "int8" `748 
-F G "XUAT_LCD20X4" 1 434 "void(int8 LCD_SIGNAL,int8 LCD_INS_HTHI)" `650 
+V L "LCD_SIGNAL" 1 362 "int8" `655 
+V L "LCD_INS_HTHI" 1 362 "int8" `750 
+F G "XUAT_LCD20X4" 1 363 "void(int8 LCD_SIGNAL,int8 LCD_INS_HTHI)" `654 
 C L "XUAT_GLCD128X64" 1 7 1 "FUNCTION"
-V L "GLCD_SIGNAL" 1 440 "int8" `747 
-V L "GLCD_INS_HTHI" 1 440 "int8" `748 
-F G "XUAT_GLCD128X64" 1 441 "void(int8 GLCD_SIGNAL,int8 GLCD_INS_HTHI)" `746 
+V L "GLCD_SIGNAL" 1 369 "int8" `749 
+V L "GLCD_INS_HTHI" 1 369 "int8" `750 
+F G "XUAT_GLCD128X64" 1 370 "void(int8 GLCD_SIGNAL,int8 GLCD_INS_HTHI)" `748 
 C L "XUAT_8LED_7DOAN_QUET_1" 1 7 4 "FUNCTION"
-V L "MA" 1 450 "int8" `750 
-V L "SO_HTHI" 1 450 "int8" `751 
-F G "XUAT_8LED_7DOAN_QUET_1" 1 451 "void(int8 MA,int8 SO_HTHI)" `749 
+V L "MA" 1 379 "int8" `752 
+V L "SO_HTHI" 1 379 "int8" `753 
+F G "XUAT_8LED_7DOAN_QUET_1" 1 380 "void(int8 MA,int8 SO_HTHI)" `751 
 C L "XUAT_8LED_7DOAN_QUET_TAT_LED" 1 7 4 "FUNCTION"
-F G "XUAT_8LED_7DOAN_QUET_TAT_LED" 1 465 "void()" `752 
-V G "TTLEDQUET" 1 472 "[8]" `753 
-V L "THUTULED" 1 473 "int8" `757 
-V L "SO_HTHI" 1 473 "int8" `758 
-F G "XUAT_8LED_7DOAN_QUET_2" 1 474 "void(int8 THUTULED,int8 SO_HTHI)" `756 
-V G "LED_7DQ" 1 485 "int8[8]" `759 
-V G "TT8LED" 1 486 "int8" `760 
-F G "HIEN_THI_8LED_7DOAN_QUET" 1 488 "void()" `761 
-C L "HIEN_THI_8LED_7DOAN_QUET" 1 7 1 "FUNCTION"
-C L "HIEN_THI_8LED_7DOAN_QUET" 1 7 1 "FUNCTION"
+F G "XUAT_8LED_7DOAN_QUET_TAT_LED" 1 391 "void()" `754 
+V G "TTLEDQUET" 1 398 "[8]" `755 
+V L "THUTULED" 1 399 "int8" `759 
+V L "SO_HTHI" 1 399 "int8" `760 
+F G "XUAT_8LED_7DOAN_QUET_2" 1 400 "void(int8 THUTULED,int8 SO_HTHI)" `758 
+V G "LED_7DQ" 1 410 "int8[8]" `761 
+V G "TT8LED" 1 411 "int8" `762 
+F G "HIEN_THI_8LED_7DOAN_QUET" 1 413 "void()" `763 
 C L "HIEN_THI_8LED_7DOAN_QUET_ALL" 1 7 4 "FUNCTION"
-F G "HIEN_THI_8LED_7DOAN_QUET_ALL" 1 503 "void()" `762 
-C L "HIEN_THI_8LED_7DOAN_QUET_ALL" 1 7 1 "FUNCTION"
-C L "HIEN_THI_8LED_7DOAN_QUET_ALL" 1 7 1 "FUNCTION"
-V L "DL" 1 513 "int16" `764 
-F G "DELAY_QUET_8LED" 1 514 "void(int16 DL)" `763 
-V L "I" 1 515 "int8" `765 
-V L "x" 1 520 "int16" `767 
-F G "GIAI_MA_GAN_CHO_8LED_QUET_16_XOA" 1 521 "void(int16 x)" `766 
+F G "HIEN_THI_8LED_7DOAN_QUET_ALL" 1 427 "void()" `764 
+V L "DL" 1 436 "int16" `766 
+F G "DELAY_QUET_8LED" 1 437 "void(int16 DL)" `765 
+V L "I" 1 438 "int8" `767 
+V L "x" 1 443 "int16" `769 
+F G "GIAI_MA_GAN_CHO_8LED_QUET_16_XOA" 1 444 "void(int16 x)" `768 
 C L "XUAT_2BYTE" 1 7 1 "FUNCTION"
-V L "BYTE2XUAT" 1 546 "int16" `769 
-F G "XUAT_2BYTE" 1 547 "void(int16 BYTE2XUAT)" `768 
-V L "SBB" 1 548 "int8" `770 
-V L "XX" 1 549 "int16" `771  "SHORT  BSERI;"
+V L "x" 1 471 "int16" `771 
+F G "XUAT_2BYTE" 1 472 "void(int16 x)" `770 
+V L "SBB" 1 473 "int8" `772 
 C L "XUAT_MATRANLED" 1 7 3 "FUNCTION"
-V L "MAHANG" 1 563 "int16" `774 
-V L "MACOT1" 1 563 "int16" `775 
-V L "MACOT2" 1 564 "int16" `776 
-V L "MACOT3" 1 564 "int16" `777 
-F G "XUAT_MATRANLED" 1 565 "void(int16 MAHANG,int16 MACOT1,int16 MACOT2,int16 MACOT3)" `773 
+V L "MAHANG" 1 486 "int16" `775 
+V L "MACOT1" 1 486 "int16" `776 
+V L "MACOT2" 1 487 "int16" `777 
+V L "MACOT3" 1 487 "int16" `778 
+F G "XUAT_MATRANLED" 1 488 "void(int16 MAHANG,int16 MACOT1,int16 MACOT2,int16 MACOT3)" `774 
 C L "TAT_MATRANLED" 1 7 3 "FUNCTION"
-F G "TAT_MATRANLED" 1 581 "void()" `778 
-V L "XZY" 1 589 "int8" `780 
-F G "HIEU_CHINH_4BIT_CAO" 1 590 "int8(int8 XZY)" `779 
-V L "BTG" 1 591 "int1" `781 
-V L "BX" 1 592 "int8" `782 
+F G "TAT_MATRANLED" 1 501 "void()" `779 
+V L "XZY" 1 508 "int8" `781 
+F G "HIEU_CHINH_4BIT_CAO" 1 509 "int8(int8 XZY)" `780 
+V L "BTG" 1 510 "int1" `782 
+V L "BX" 1 511 "int8" `783 
 C L "XUAT_BUZZER_RELAY" 1 7 4 "FUNCTION"
-F G "XUAT_BUZZER_RELAY" 1 607 "void()" `653 
-V L "RBDC1" 1 608 "int8" `787 
-V L "RBDC2" 1 608 "int8" `788 
+F G "XUAT_BUZZER_RELAY" 1 526 "void()" `657 
+V L "RBDC1" 1 527 "int8" `788 
+V L "RBDC2" 1 527 "int8" `789 
 C L "BUZZER_ON" 1 7 2 "FUNCTION"
-F G "BUZZER_ON" 1 621 "void()" `789 
+F G "BUZZER_ON" 1 538 "void()" `790 
 C L "BUZZER_OFF" 1 7 2 "FUNCTION"
-F G "BUZZER_OFF" 1 628 "void()" `790 
+F G "BUZZER_OFF" 1 545 "void()" `791 
 C L "RELAY_1_ON" 1 7 2 "FUNCTION"
-F G "RELAY_1_ON" 1 635 "void()" `791 
+F G "RELAY_1_ON" 1 552 "void()" `792 
 C L "RELAY_1_OFF" 1 7 2 "FUNCTION"
-F G "RELAY_1_OFF" 1 642 "void()" `792 
+F G "RELAY_1_OFF" 1 559 "void()" `793 
 C L "RELAY_2_ON" 1 7 2 "FUNCTION"
-F G "RELAY_2_ON" 1 649 "void()" `793 
+F G "RELAY_2_ON" 1 566 "void()" `794 
 C L "RELAY_2_OFF" 1 7 2 "FUNCTION"
-F G "RELAY_2_OFF" 1 656 "void()" `794 
+F G "RELAY_2_OFF" 1 573 "void()" `795 
 C L "RELAY_1_RELAY_2_ON" 1 7 2 "FUNCTION"
-F G "RELAY_1_RELAY_2_ON" 1 663 "void()" `795 
+F G "RELAY_1_RELAY_2_ON" 1 580 "void()" `796 
 C L "RELAY_1_RELAY_2_OFF" 1 7 2 "FUNCTION"
-F G "RELAY_1_RELAY_2_OFF" 1 670 "void()" `796 
+F G "RELAY_1_RELAY_2_OFF" 1 587 "void()" `797 
 C L "TRIAC_1_ON" 1 7 2 "FUNCTION"
-F G "TRIAC_1_ON" 1 677 "void()" `797 
+F G "TRIAC_1_ON" 1 594 "void()" `798 
 C L "TRIAC_1_OFF" 1 7 2 "FUNCTION"
-F G "TRIAC_1_OFF" 1 684 "void()" `798 
+F G "TRIAC_1_OFF" 1 601 "void()" `799 
 C L "TRIAC_2_ON" 1 7 2 "FUNCTION"
-F G "TRIAC_2_ON" 1 691 "void()" `799 
+F G "TRIAC_2_ON" 1 608 "void()" `800 
 C L "TRIAC_2_OFF" 1 7 2 "FUNCTION"
-F G "TRIAC_2_OFF" 1 698 "void()" `800 
-V G "LCD_CONTROL" 3 1 "int8" `801 
+F G "TRIAC_2_OFF" 1 615 "void()" `801 
+C L "GGMMAA" 1 7 1 "FUNCTION"
+F G "GGMMAA" 1 622 "void()" `802 
+V L "x" 1 623 "int8" `803 
+V G "LCD_CONTROL" 3 1 "int8" `804 
 D G "LCD_FUNCTION_SET" 3 7 "0X38"
 D G "LCD_DISPLAY_CONTROL" 3 8 "0X0C"
 D G "LCD_CLEAR_DISPLAY" 3 9 "0X01"
@@ -1150,27 +1121,28 @@ D G "LCD_ADDR_LINE1" 3 14 "0X80"
 D G "LCD_ADDR_LINE2" 3 15 "0XC0"
 D G "LCD_ADDR_LINE3" 3 16 "0X94"
 D G "LCD_ADDR_LINE4" 3 17 "0XD4"
-V L "LCD_DATA_X" 3 19 "int8" `807 
-F G "LCD_XUAT_8BIT" 3 20 "void(int8 LCD_DATA_X)" `806 
-V L "LCD_DATA_X" 3 24 "int8" `809 
-F G "LCD_COMMAND" 3 25 "void(int8 LCD_DATA_X)" `808 
-V L "LCD_DATA_X" 3 30 "int8" `811 
-F G "LCD_DATA" 3 31 "void(int8 LCD_DATA_X)" `810 
-F G "SETUP_LCD" 3 38 "void()" `812 
-V G "LCD_SO_X" 3 53 "[11][6]" `813 
-V G "LCD_SO_XX" 3 66 "[10][9]" `817 
-V G "LCD_MA_8DOAN" 3 90 "[1]" `821 
+V L "LCD_DATA_X" 3 19 "int8" `810 
+F G "LCD_XUAT_8BIT" 3 20 "void(int8 LCD_DATA_X)" `809 
+V L "LCD_DATA_X" 3 24 "int8" `812 
+F G "LCD_COMMAND" 3 25 "void(int8 LCD_DATA_X)" `811 
+V L "LCD_DATA_X" 3 30 "int8" `814 
+F G "LCD_DATA" 3 31 "void(int8 LCD_DATA_X)" `813 
+F G "SETUP_LCD" 3 38 "void()" `815 
+V G "LCD_SO_X" 3 53 "[11][6]" `816 
+V G "LCD_SO_XX" 3 66 "[10][9]" `820 
+V G "LCD_MA_8DOAN" 3 90 "[1]" `824 
 C L "LCD_GOTO_XY" 3 54 1 "FUNCTION"
-V L "x" 3 100 "sint8" `825 
-V L "Y" 3 100 "sint8" `826 
-F G "LCD_GOTO_XY" 3 101 "void(sint8 x,sint8 Y)" `824 
-V L "LCD_VITRI" 3 102 "[1]" `827 
-F G "XXX" 3 107 "void()" `830 
-V L "x" 3 108 "sint8" `831 
-V G "hang2" 0 5 "[1]" `832 
-V G "I" 0 6 "sint8" `835 
-V G "j" 0 6 "sint8" `836 
-F G "MAIN" 0 8 "void()" `837 
+V L "x" 3 100 "sint8" `828 
+V L "Y" 3 100 "sint8" `829 
+F G "LCD_GOTO_XY" 3 101 "void(sint8 x,sint8 Y)" `827 
+V L "LCD_VITRI" 3 102 "[1]" `830 
+F G "XXX" 3 107 "void()" `833 
+V L "x" 3 108 "sint8" `834 
+V G "hang2" 0 4 "[1]" `835 
+V G "I" 0 5 "sint8" `838 
+V G "j" 0 5 "sint8" `839 
+F G "MAIN" 0 7 "void()" `840 
+C L "MAIN" 0 18 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1
@@ -1305,10 +1277,17 @@ F B "spi_read2" 0 1
 F B "spi_write2" 1 0
 F B "spi_data_is_in2" 0 0
 F B "brownout_enable" 1 0
-F B "delay_ms" 1 0
-F B "delay_us" 1 0
 F B "i2c_read" 0 2
 F B "i2c_write" 1 2
 F B "i2c_start" 0 2
 F B "i2c_stop" 0 1
 F B "i2c_isr_state" 0 1
+F B "delay_ms" 1 0
+F B "delay_us" 1 0
+F B "putchar" 1 2
+F B "puts" 1 2
+F B "getch" 0 1
+F B "gets" 1 3
+F B "kbhit" 0 1
+F B "set_uart_speed" 1 3
+F B "setup_uart" 1 3

@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.015, 5967               04-Oct-22 08:05
+CCS PCH C Compiler, Version 5.015, 5967               31-Oct-22 14:45
 
                Filename:   C:\Users\NguyenMinhTri\Desktop\TT VXL\BAI_605_LCD_HT_2HANG_DICH_PHAI_1HANG.lst
 
@@ -800,7 +800,7 @@ CCS PCH C Compiler, Version 5.015, 5967               04-Oct-22 08:05
 ....................  
 .................... #DEFINE LCD_FUNCTION_SET       0X38 
 .................... #DEFINE LCD_DISPLAY_CONTROL    0X0C 
-.................... #DEFINE LCD_CLEAR_DISPLAY      0X01 
+.................... #DEFINE LCD_CLEAR_DISPLAY        0X01 
 .................... #DEFINE LCD_ENTRY_MODE         0X06 
 .................... #DEFINE LCD_SHIFT_LEFT         0X18 
 .................... #DEFINE LCD_SHIFT_RIGHT        0X1C 

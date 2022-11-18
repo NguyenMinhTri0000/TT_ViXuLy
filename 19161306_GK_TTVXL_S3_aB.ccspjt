@@ -1,0 +1,24 @@
+[PROJECT]
+Target=19161306_GK_TTVXL_S3_aB.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=19161306_GK_TTVXL_S3_aB.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[19161306_GK_TTVXL_S3_aB.c]
+Type=4
+[mru-list]
+1=19161306_GK_TTVXL_S3_aB.c
+[Opened Files]
+1=DEM_GIAY_TIMER_DAO_CHIEU.c
+2=BAI_TAP_TONG_HOP_CUA_PHUOC.c
+3=BT_TONG_HOP.c
+4=BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c
+5=BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+6=19161306_GK_TTVXL_S3_abc.c
+7=
+[Units]
+Count=1
+1=19161306_GK_TTVXL_S3_aB (main)

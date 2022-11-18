@@ -1,5 +1,5 @@
-#include <tv_pickit2_shift_1.c>
-
+//!#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_1_proteus.c>
 unsigned INT8 t0;
 unsigned INT8 donvi, chuc, tram;
 

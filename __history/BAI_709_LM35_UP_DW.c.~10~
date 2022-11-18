@@ -1,0 +1,103 @@
+
+#include <tv_pickit2_shift_1.c>
+
+int1 ttqn; 
+unsigned INT8 j, solan=100;
+unsigned INT16 gtcdt,lm35a;
+
+void doc_nd_lm35a()
+{
+   set_adc_channel(0);
+   lm35a = 0;
+   FOR (j = 0; j<solan; j++)
+   {
+      lm35a = lm35a + read_adc ();
+      delay_us (100) ;
+   }
+
+   lm35a = lm35a /2.046;
+   lm35a = lm35a / solan;
+}
+
+void so_sanh_dk_buzzer()
+{
+   IF ((lm35a>gtcdt)&&(ttqn==0))
+   {
+      ttqn = 1;
+      //buzzer_on () ;
+      //triac_2_off () ;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0xff);
+   }
+
+   else IF ((lm35a < gtcdt)&& (ttqn == 1))
+   {
+      ttqn = 0;
+      //buzzer_off () ;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0);
+   }
+
+   else IF ((lm35a < gtcdt - 3)&& (ttqn == 0)) 
+   //triac_2_on ();
+   XUAT_32LED_DON_4BYTE (0xff, 0, 0, 0);
+}
+
+void phim_up()
+{
+   IF (( ! input (up))&& (gtcdt < 60))
+   {
+      delay_ms (20) ;
+      {
+         IF (!input (up))
+         {
+            gtcdt++;
+            xuat_4led_7doan_4so(ma7doan[gtcdt/10],ma7doan[gtcdt%10]&0x7f,ma7doan[lm35a/10],ma7doan[lm35a%10]);
+            WHILE ( ! input (up)) ;
+         }
+      }
+   }
+}
+
+void phim_dw()
+{
+   IF (( ! input (dw))&& (gtcdt > 35))
+   {
+      delay_ms (20) ;
+      {
+         IF (!input (dw))
+         {
+            gtcdt--;
+            xuat_4led_7doan_4so(ma7doan[gtcdt/10],ma7doan[gtcdt%10]&0x7f,ma7doan[lm35a/10],ma7doan[lm35a%10]);
+            WHILE ( ! input (dw)) ;
+         }
+      }
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot () ;
+   setup_adc (adc_clock_div_32) ;
+   setup_adc_ports (an0|vss_vdd) ;
+   set_adc_channel (0);
+   gtcdt = 35;
+   xuat_4led_7doan_4so(ma7doan[gtcdt/10],ma7doan[gtcdt%10]&0x7f,ma7doan[lm35a/10],ma7doan[lm35a%10]);
+
+   WHILE (true)
+   {
+      lm35a = 0;
+      FOR (j = 0; j<100; j++)
+      {
+         lm35a = lm35a + read_adc () ;
+         delay_us (200) ;
+      }
+
+      lm35a = lm35a / 2.046;
+      lm35a = lm35a / 100;
+      xuat_4led_7doan_4so(ma7doan[gtcdt/10],ma7doan[gtcdt%10]&0x7f,ma7doan[lm35a/10],ma7doan[lm35a%10]);
+      phim_up () ;
+      phim_dw () ;
+      so_sanh_dk_buzzer () ;
+   }
+}
+
+

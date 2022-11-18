@@ -1,0 +1,239 @@
+//!3 nut ma tran
+//!   14 ~State
+//!      = 0 Counter - Led 7; Timer - LCD, LCD lon
+//!      = 1 Counter - LCD, LCD lon; Timer - Led 7
+//!   6  ~UD_Counter
+//!      = 0, dem len 7 - 16
+//!      = 1, dem xuong 16 - 7
+//!   10 ~UD_Timer
+//!      = 0, dem len 4 - 35
+//!      = 1, dem xuong 35 - 4
+//!giay >20 dich led trong ra ngoai      
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+#include<tv_pickit2_shift_key4x4_138.c>
+
+signed INT8 giay,bdn,i,CH_GIAY,DV_GIAY,LCH,LDV, chuc, donvi,t0;
+unsigned INT8 zt=0, zp=0,k=0;
+unsigned INT1 State=0;
+unsigned INT1 UD_Timer=0, UD_Counter=0;
+SIGNED INT32 mp;
+
+#INT_timer1
+
+void interrupt_timer1()
+{
+   bdn++;
+   set_timer1 (3036) ;
+}
+
+VOID GIAIMA_LCD()
+{
+   DV_GIAY = giay % 10 + 0X30;
+   CH_GIAY = giay / 10 + 0X30;
+   IF (CH_GIAY == 0x30) CH_GIAY = 0x20;
+}
+
+VOID GIAIMA_LCD(UNSIGNED int8 GT)
+{
+   DV_GIAY = GT % 10 + 0X30;
+   CH_GIAY = GT / 10 + 0X30;
+   IF (CH_GIAY == 0x30) CH_GIAY = 0x20; // so 0 thi doi thanh khoang trong, xoa so 0 vo nghia
+}
+
+VOID GIAIMA_LCD_LON(UNSIGNED int8 GTL)
+{
+   LDV = GTL % 10;
+   LCH = GTL / 10;
+   IF (LCH == 0) LCH = 10;
+}
+
+void lcd_hienthi_so_z_toado_xy(SIGNED int8 lcd_so, x1, y1)
+{
+   lcd_GOTO_xy (x1, y1) ;
+   FOR (i = 0; i < 6; i++)
+   {
+      IF (i == 3) lcd_goto_xy (x1 + 1, y1);
+      lcd_data (lcd_so_x[lcd_so][i]) ;
+   }
+}
+
+void giai_ma_hien_thi(UNSIGNED int16 tam)
+{
+   donvi = ma7doan[tam % 10];
+   chuc = ma7doan[tam / 10];
+   IF (chuc == 0xc0) chuc = 0xff; //xoa so 0 vo nghia
+   xuat_4led_7doan_4so (chuc, donvi, 0xC6, 0x87) ;
+}
+
+void SD_TRN_14Led()
+{
+   IF (k < 4) //dich 4 lan
+   {
+      xuat_32led_don_4byte (0, zp, zt, 0) ;
+      delay_ms (30) ;
+      zp = ((zp<<3)|0x07)&0X7F; //0x07: 0000 1110 0x7f: 0111 1111
+      zt = ((zt>>3)|0xE0)&0xFE; //0xE0: 1110 0000 0xfe: 1111 1110
+      k++;
+   }
+
+   ELSE //tat het
+   {
+      k = 0;
+      zt = 0; zp = 0;
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot () ;
+   setup_lcd () ;
+   setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit) ;
+   set_timer0 (7) ;
+   setup_timer_1 (t1_internal|t1_div_by_8) ;
+   set_timer1 (3036) ;
+   enable_interrupts (global) ;
+   enable_interrupts (INT_timer1) ;
+   giay = 4;
+   bdn = 0;
+   
+   // so lon
+   lcd_command (0x40) ;
+   FOR (i = 0; i < 64; i++) { lcd_data (lcd_ma_8doan[i]);  }
+   //hien thi lcd
+   lcd_GOTO_xy (0, 6) ;
+   lcd_data ("GIAY = ");
+   GIAIMA_LCD (giay) ;
+   lcd_GOTO_xy (0, 12) ;
+   lcd_data (CH_GIAY) ;
+   lcd_data (DV_GIAY) ;
+   lcd_GOTO_xy (1, 0) ;
+   lcd_data ("Don vi:") ;
+   lcd_GOTO_xy (1, 15) ;
+   lcd_data ("Chuc:") ;
+   GIAIMA_LCD_LON (giay) ;
+   lcd_hienthi_so_z_toado_xy (LCH, 2, 0) ;
+   lcd_hienthi_so_z_toado_xy (LDV, 2, 17) ;
+   xuat_32led_don_4byte (0, 0, 0, 0) ;
+
+   WHILE (true)
+   {
+      MP = KEY_4X4_DW () ;
+
+      IF (mp != 0xff)
+      {
+         IF (mp == 14) State = ~State;
+         IF (mp == 10) UD_Timer = ~UD_Timer;
+         IF (mp == 6) 
+         {
+         UD_Counter = ~UD_Counter;
+         set_timer0 (99 - get_timer0 ()) ;         
+         }
+      }
+
+      
+      IF (State == 0)
+      {
+         IF (UD_Counter == 0)
+         {
+            t0 = get_timer0 () ;
+            IF (t0 >= 16) set_timer0 (7);
+         }
+
+         else IF (UD_Counter == 1)
+         {
+            t0 = 16 - get_timer0 () ;
+            IF (t0 <= 7) set_timer0 (16);
+         }
+
+         giai_ma_hien_thi (t0) ;
+
+         IF (bdn < 10)
+         {
+         }
+
+         
+         ELSE
+         {
+            bdn = bdn - 10;      // tai sao - 10
+
+            IF (UD_Timer == 0)
+            {
+               giay++;
+               IF (giay > 35) giay = 4;
+            }
+
+            else IF (UD_Timer == 1)
+            {
+               giay--;
+               IF (giay < 4) giay = 35;
+            }
+
+            GIAIMA_LCD (giay) ;
+            lcd_GOTO_xy (0, 12) ;
+            lcd_data (CH_GIAY) ;
+            lcd_data (DV_GIAY) ;
+            
+            GIAIMA_LCD_LON (giay) ;
+            lcd_hienthi_so_z_toado_xy (LCH, 2, 0) ;
+            lcd_hienthi_so_z_toado_xy (LDV, 2, 17) ;
+         }
+      }
+
+      
+      else IF (State == 1)
+      {
+         IF (UD_Counter == 0)
+         {
+            t0 = get_timer0 () ;
+            IF (t0 >= 16) set_timer0 (7);
+         }
+
+         else IF (UD_Counter == 1)
+         {
+            t0 = 16 - get_timer0 () ;
+            IF (t0 <= 7) set_timer0 (16);
+         }
+
+         GIAIMA_LCD (t0) ;
+         lcd_GOTO_xy (0, 12) ;
+         lcd_data (CH_GIAY) ;
+         lcd_data (DV_GIAY) ;
+         
+         GIAIMA_LCD_LON (t0) ;
+         lcd_hienthi_so_z_toado_xy (LCH, 2, 0) ;
+         lcd_hienthi_so_z_toado_xy (LDV, 2, 17) ;
+         
+         IF (bdn < 10)
+         {
+         }
+
+         
+         ELSE
+         {
+            
+            bdn = bdn - 10;
+
+            IF (UD_Timer == 0)
+            {
+               giay++;
+               IF (giay > 35) giay = 4;
+            }
+
+            else IF (UD_Timer == 1)
+            {
+               giay--;
+               IF (giay < 4) giay = 35;
+            }
+
+            giai_ma_hien_thi (giay) ;
+         }
+      }
+
+      IF (giay > 20) SD_TRN_14Led ();
+      ELSE xuat_32led_don_4byte (0, 0, 0, 0) ;
+      delay_ms (200) ;
+   }
+}
+

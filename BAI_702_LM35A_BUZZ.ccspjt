@@ -1,0 +1,21 @@
+[PROJECT]
+Target=BAI_702_LM35A_BUZZ.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_702_LM35A_BUZZ.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_702_LM35A_BUZZ.c]
+Type=4
+[mru-list]
+1=BAI_702_LM35A_BUZZ.c
+[Opened Files]
+1=BAI_702_LM35A_BUZZ.c
+2=BAI_702_LM35A_BUZZ_THAP_PHAN.c
+3=tv_pickit2_shift_1.c
+4=
+[Units]
+Count=1
+1=BAI_702_LM35A_BUZZ (main)

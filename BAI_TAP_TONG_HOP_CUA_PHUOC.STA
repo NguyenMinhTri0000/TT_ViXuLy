@@ -1,0 +1,81 @@
+
+ROM used:   2056/32768 (6%)
+            2056/32768 (6%) including unused fragments
+
+            1.2 Average locations per line
+            5.4 Average locations per statement
+
+RAM used:   58/2048 (3%) at main() level
+            70/2048 (3%) worst case
+
+Stack used: 9 worst case (8 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  179   120  32  BAI_TAP_TONG_HOP_CUA_PHUOC.c
+  627   233  62  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  112    25   7  tv_pickit2_shift_lcd.c
+----- -----
+ 1755   378 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     42   1    0             @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     22   1    4   131  2.8  xuat_1word
+0     88   2    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   1    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0     40   1    3             @DIV88
+0     36   1    0   106  1.3  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     36   1    3   106  2.1  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   1    0             @const755
+0     52   1    3   123  2.6  XUAT_8LED_7DOAN_QUET_2
+0     74   2    1   178  4.9  HIEN_THI_8LED_7DOAN_QUET
+0     26   1    1   102  2.1  LCD_XUAT_8BIT
+0     22   1    1    61  1.6  LCD_COMMAND
+0     22   1    1    61  1.6  LCD_DATA
+0     72   2    0   245  1.8  SETUP_LCD
+0     92   2    0    93  2.9  @const816
+0     30   1    0             @const830
+0     26   1    3   147  3.7  LCD_GOTO_XY
+0     16   0    0    29  1.2  interrupt_timer1
+0    132   3    1   267  4.2  GM_8LED
+0     20   0    0   110  2.1  giai_ma_gan_cho_8led_quet
+0     30   1    1   149  3.9  KTR_STOP_COUNTER
+0     52   1    2   190  4.4  KTR_CD_COUNTER
+0     28   1    1   149  3.9  KTR_STOP_GIAY
+0     30   1    1   149  3.9  KTR_CD_GIAY
+0     92   2    5   255  5.5  lcd_hienthi_so_z_toado_xy
+0     76   2    2   158  3.5  @MUL88
+0     88   2    1   267  4.2  GM_LCD
+0    156   4    2   399  3.3  HT_LCD
+0    280   7    2  1566  7.3  MAIN
+ Inline         0   415  6.1  @cinit1
+
+Program metrics:
+    Functions               30
+    Statements              378
+    Comments                329
+    Volume (V)              12430
+    Difficulty (D)          96.2
+    Effort to implement (E) 1195169
+    Time to implement (T)   18 hours, 27 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   33
+    Maintainability (MI)    53
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  1910  30708  
+
+
+

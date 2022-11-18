@@ -1,16 +1,16 @@
-CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
+CCS PCH C Compiler, Version 5.015, 5967               22-Oct-22 13:04
 
                Filename:   C:\Users\NguyenMinhTri\Desktop\TT VXL\BAI_635_LCD_APPLE.lst
 
-               ROM used:   744 bytes (2%)
-                           Largest free fragment is 32024
+               ROM used:   836 bytes (3%)
+                           Largest free fragment is 31932
                RAM used:   28 (1%) at main() level
-                           39 (2%) worst case
-               Stack used: 7 locations
+                           43 (2%) worst case
+               Stack used: 8 locations
                Stack size: 31
 
 *
-0000:  GOTO   0242
+0000:  GOTO   02F4
 ....................  
 .................... #include <tv_pickit2_shift_1.c> 
 .................... #INCLUDE    <18F4550.H> 
@@ -43,10 +43,22 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 0022:  TBLRD*+
 0024:  MOVF   FF5,W
 0026:  RETURN 0
-0028:  DATA 1F,11
-002A:  DATA 11,11
-002C:  DATA 1F,00
-002E:  DATA 00,00
+0028:  DATA 00,00
+002A:  DATA 00,1E
+002C:  DATA 1E,1E
+002E:  DATA 1E,1E
+0030:  CLRF   FF7
+0032:  ADDLW  40
+0034:  MOVWF  FF6
+0036:  MOVLW  00
+0038:  ADDWFC FF7,F
+003A:  TBLRD*+
+003C:  MOVF   FF5,W
+003E:  RETURN 0
+0040:  DATA 1E,1E
+0042:  DATA 1E,1E
+0044:  DATA 1E,1E
+0046:  DATA 1E,1E
 ....................  
 .................... #list 
 ....................  
@@ -55,25 +67,25 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... #USE        I2C(MASTER,SLOW,SDA=PIN_B0,SCL=PIN_B1) 
 .................... #USE        DELAY(CLOCK=20000000) 
 *
-0162:  CLRF   FEA
-0164:  MOVLW  1C
-0166:  MOVWF  FE9
-0168:  MOVF   FEF,W
-016A:  BZ    0186
-016C:  MOVLW  06
-016E:  MOVWF  01
-0170:  CLRF   00
-0172:  DECFSZ 00,F
-0174:  BRA    0172
-0176:  DECFSZ 01,F
-0178:  BRA    0170
-017A:  MOVLW  7B
-017C:  MOVWF  00
-017E:  DECFSZ 00,F
-0180:  BRA    017E
-0182:  DECFSZ FEF,F
-0184:  BRA    016C
-0186:  GOTO   01BE (RETURN)
+017A:  CLRF   FEA
+017C:  MOVLW  1C
+017E:  MOVWF  FE9
+0180:  MOVF   FEF,W
+0182:  BZ    019E
+0184:  MOVLW  06
+0186:  MOVWF  01
+0188:  CLRF   00
+018A:  DECFSZ 00,F
+018C:  BRA    018A
+018E:  DECFSZ 01,F
+0190:  BRA    0188
+0192:  MOVLW  7B
+0194:  MOVWF  00
+0196:  DECFSZ 00,F
+0198:  BRA    0196
+019A:  DECFSZ FEF,F
+019C:  BRA    0184
+019E:  GOTO   01D6 (RETURN)
 .................... #USE        rs232(baud=9600, xmit=PIN_C6,rcv=PIN_C7) 
 .................... //NUT NHAN: 
 .................... #DEFINE  BT0     PIN_B5 
@@ -238,30 +250,30 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 ....................    #BIT BSERI  = X.7 
 ....................    FOR(SB=0;SB<8;SB++) 
 *
-0030:  CLRF   26
-0032:  MOVF   26,W
-0034:  SUBLW  07
-0036:  BNC   0054
+0048:  CLRF   2A
+004A:  MOVF   2A,W
+004C:  SUBLW  07
+004E:  BNC   006C
 ....................       {                                                  
 ....................          OUTPUT_BIT(SSDO,BSERI);     
-0038:  BTFSC  25.7
-003A:  BRA    0040
-003C:  BCF    F8D.2
-003E:  BRA    0042
-0040:  BSF    F8D.2
-0042:  BCF    F96.2
+0050:  BTFSC  29.7
+0052:  BRA    0058
+0054:  BCF    F8D.2
+0056:  BRA    005A
+0058:  BSF    F8D.2
+005A:  BCF    F96.2
 ....................          OUTPUT_LOW(SSCK); OUTPUT_HIGH(SSCK); 
-0044:  BCF    F96.0
-0046:  BCF    F8D.0
-0048:  BCF    F96.0
-004A:  BSF    F8D.0
+005C:  BCF    F96.0
+005E:  BCF    F8D.0
+0060:  BCF    F96.0
+0062:  BSF    F8D.0
 ....................          X= X<<1;          
-004C:  BCF    FD8.0
-004E:  RLCF   25,F
-0050:  INCF   26,F
-0052:  BRA    0032
+0064:  BCF    FD8.0
+0066:  RLCF   29,F
+0068:  INCF   2A,F
+006A:  BRA    004A
 ....................      } 
-0054:  RETURN 0
+006C:  RETURN 0
 .................... } 
 .................... //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  
 .................... //HAM 301 
@@ -322,15 +334,15 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... {   
 ....................    unsigned int8 b1,b0; 
 ....................    b1 = w>>8; b0 = w; 
-0056:  MOVFF  1D,1E
-005A:  MOVFF  1C,1F
+006E:  MOVFF  1D,1E
+0072:  MOVFF  1C,1F
 ....................    xuat_1byte(b1);     
-005E:  MOVFF  1E,25
-0062:  RCALL  0030
+0076:  MOVFF  1E,29
+007A:  RCALL  0048
 ....................    xuat_1byte(b0); 
-0064:  MOVFF  1F,25
-0068:  RCALL  0030
-006A:  RETURN 0
+007C:  MOVFF  1F,29
+0080:  RCALL  0048
+0082:  RETURN 0
 .................... }    
 .................... //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx      
 .................... //ham 104: xoa cac module  
@@ -338,72 +350,72 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... void xoa_tat_6module()                           
 .................... {                                                                                               
 ....................    xuat_1word(0);                              
-006C:  CLRF   1D
-006E:  CLRF   1C
-0070:  RCALL  0056
+0084:  CLRF   1D
+0086:  CLRF   1C
+0088:  RCALL  006E
 ....................    xuat_1word(0);  
-0072:  CLRF   1D
-0074:  CLRF   1C
-0076:  RCALL  0056
+008A:  CLRF   1D
+008C:  CLRF   1C
+008E:  RCALL  006E
 ....................    xuat_1word(0);                              
-0078:  CLRF   1D
-007A:  CLRF   1C
-007C:  RCALL  0056
+0090:  CLRF   1D
+0092:  CLRF   1C
+0094:  RCALL  006E
 ....................    xuat_1word(0);                                     
-007E:  CLRF   1D
-0080:  CLRF   1C
-0082:  RCALL  0056
+0096:  CLRF   1D
+0098:  CLRF   1C
+009A:  RCALL  006E
 ....................     
 ....................    output_high(rck_buzerelay);    
-0084:  BCF    F95.3
-0086:  BSF    F8C.3
+009C:  BCF    F95.3
+009E:  BSF    F8C.3
 ....................    output_low(rck_buzerelay); 
-0088:  BCF    F95.3
-008A:  BCF    F8C.3
+00A0:  BCF    F95.3
+00A2:  BCF    F8C.3
 ....................     
 ....................    output_high(rck_32led); 
-008C:  BCF    F95.4
-008E:  BSF    F8C.4
+00A4:  BCF    F95.4
+00A6:  BSF    F8C.4
 ....................    output_low(rck_32led);  
-0090:  BCF    F95.4
-0092:  BCF    F8C.4
+00A8:  BCF    F95.4
+00AA:  BCF    F8C.4
 ....................     
 ....................    output_high(rck_8ledquet);    
-0094:  BCF    F95.5
-0096:  BSF    F8C.5
+00AC:  BCF    F95.5
+00AE:  BSF    F8C.5
 ....................    output_low(rck_8ledquet);    
-0098:  BCF    F95.5
-009A:  BCF    F8C.5
+00B0:  BCF    F95.5
+00B2:  BCF    F8C.5
 ....................                                   
 ....................    output_high(rck_matranled);           
-009C:  BCF    F95.7
-009E:  BSF    F8C.7
+00B4:  BCF    F95.7
+00B6:  BSF    F8C.7
 ....................    output_low(rck_matranled);    
-00A0:  BCF    F95.7
-00A2:  BCF    F8C.7
+00B8:  BCF    F95.7
+00BA:  BCF    F8C.7
 ....................                             
 ....................    output_high(rck_lcd20x4);    
-00A4:  BCF    F95.2
-00A6:  BSF    F8C.2
+00BC:  BCF    F95.2
+00BE:  BSF    F8C.2
 ....................    output_low(rck_lcd20x4);       
-00A8:  BCF    F95.2
-00AA:  BCF    F8C.2
+00C0:  BCF    F95.2
+00C2:  BCF    F8C.2
 ....................                                                                            
 ....................    xuat_1word(0xffff);  
-00AC:  SETF   1D
-00AE:  SETF   1C
-00B0:  RCALL  0056
+00C4:  SETF   1D
+00C6:  SETF   1C
+00C8:  RCALL  006E
 ....................    xuat_1word(0xffff);  
-00B2:  SETF   1D
-00B4:  SETF   1C
-00B6:  RCALL  0056
+00CA:  SETF   1D
+00CC:  SETF   1C
+00CE:  RCALL  006E
 ....................    output_high(rck_4led7doan);        
-00B8:  BCF    F95.6
-00BA:  BSF    F8C.6
+00D0:  BCF    F95.6
+00D2:  BSF    F8C.6
 ....................    output_low(rck_4led7doan);                                                                       
-00BC:  BCF    F95.6
-00BE:  BCF    F8C.6
-00C0:  GOTO   00DC (RETURN)
+00D4:  BCF    F95.6
+00D6:  BCF    F8C.6
+00D8:  GOTO   00F4 (RETURN)
 .................... }              
 .................... //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  
 .................... //HAM 101 
@@ -413,44 +425,44 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... VOID SET_UP_PORT_IC_CHOT() 
 .................... {      
 ....................    set_tris_a(0xff);    set_tris_b(0x3c);                                                    
-00C4:  MOVLW  FF
-00C6:  MOVWF  F92
-00C8:  MOVLW  3C
-00CA:  MOVWF  F93
+00DC:  MOVLW  FF
+00DE:  MOVWF  F92
+00E0:  MOVLW  3C
+00E2:  MOVWF  F93
 ....................    set_tris_c(0xf1);    set_tris_e(0x00);                                                
-00CC:  MOVLW  F1
-00CE:  MOVWF  F94
-00D0:  MOVLW  00
-00D2:  MOVWF  F96
+00E4:  MOVLW  F1
+00E6:  MOVWF  F94
+00E8:  MOVLW  00
+00EA:  MOVWF  F96
 ....................    set_tris_d(0x00);     
-00D4:  MOVWF  F95
+00EC:  MOVWF  F95
 ....................    output_d(0x00);  
-00D6:  CLRF   F95
-00D8:  CLRF   F8C
+00EE:  CLRF   F95
+00F0:  CLRF   F8C
 ....................    xoa_tat_6module(); 
-00DA:  BRA    006C
+00F2:  BRA    0084
 ....................    port_b_pullups(0xff);           
-00DC:  BCF    FF1.7
+00F4:  BCF    FF1.7
 ....................    rbdc=0;                
-00DE:  CLRF   06
-00E0:  CLRF   05
+00F6:  CLRF   06
+00F8:  CLRF   05
 ....................              
 ....................    setup_adc(adc_clock_div_32);         
-00E2:  MOVF   FC0,W
-00E4:  ANDLW  C0
-00E6:  IORLW  02
-00E8:  MOVWF  FC0
-00EA:  BSF    FC0.7
-00EC:  BSF    FC2.0
+00FA:  MOVF   FC0,W
+00FC:  ANDLW  C0
+00FE:  IORLW  02
+0100:  MOVWF  FC0
+0102:  BSF    FC0.7
+0104:  BSF    FC2.0
 ....................    setup_adc_ports(an0_to_an2|vss_vdd);  
-00EE:  MOVF   FC1,W
-00F0:  ANDLW  C0
-00F2:  IORLW  0C
-00F4:  MOVWF  FC1
+0106:  MOVF   FC1,W
+0108:  ANDLW  C0
+010A:  IORLW  0C
+010C:  MOVWF  FC1
 ....................    output_low(g_all);         
-00F6:  BCF    F95.0
-00F8:  BCF    F8C.0
-00FA:  GOTO   0282 (RETURN)
+010E:  BCF    F95.0
+0110:  BCF    F8C.0
+0112:  GOTO   0334 (RETURN)
 .................... } 
 .................... //HAM 104 
 ....................  
@@ -520,39 +532,39 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... VOID XUAT_GLCD_LCD() 
 .................... {       
 ....................     XUAT_1BYTE(GLCDCONTROL);              
-00FE:  MOVFF  0E,25
-0102:  RCALL  0030
+0116:  MOVFF  0E,29
+011A:  RCALL  0048
 ....................     XUAT_1BYTE(GLCDDATA); 
-0104:  MOVFF  0D,25
-0108:  RCALL  0030
+011C:  MOVFF  0D,29
+0120:  RCALL  0048
 ....................     XUAT_1BYTE(LCDCONTROL);        
-010A:  MOVFF  0C,25
-010E:  RCALL  0030
+0122:  MOVFF  0C,29
+0126:  RCALL  0048
 ....................     XUAT_1BYTE(LCDDATA);       
-0110:  MOVFF  0B,25
-0114:  RCALL  0030
+0128:  MOVFF  0B,29
+012C:  RCALL  0048
 ....................           
 ....................     OUTPUT_HIGH(RCK_LCD20X4);      
-0116:  BCF    F95.2
-0118:  BSF    F8C.2
+012E:  BCF    F95.2
+0130:  BSF    F8C.2
 ....................     OUTPUT_LOW(RCK_LCD20X4); 
-011A:  BCF    F95.2
-011C:  BCF    F8C.2
-011E:  GOTO   0130 (RETURN)
+0132:  BCF    F95.2
+0134:  BCF    F8C.2
+0136:  GOTO   0148 (RETURN)
 .................... } 
 .................... //HAM 702 
 .................... VOID XUAT_LCD20X4(UNSIGNED INT8 LCD_SIGNAL,LCD_INS_HTHI) 
 .................... {      
 ....................     LCDCONTROL = ~LCD_SIGNAL; 
-0122:  MOVF   23,W
-0124:  MOVWF  0C
-0126:  COMF   0C,F
+013A:  MOVF   27,W
+013C:  MOVWF  0C
+013E:  COMF   0C,F
 ....................     LCDDATA    = ~LCD_INS_HTHI;       
-0128:  MOVFF  24,0B
-012C:  COMF   0B,F
+0140:  MOVFF  28,0B
+0144:  COMF   0B,F
 ....................     XUAT_GLCD_LCD(); 
-012E:  BRA    00FE
-0130:  RETURN 0
+0146:  BRA    0116
+0148:  RETURN 0
 .................... } 
 .................... //HAM 703 
 .................... VOID XUAT_GLCD128X64(UNSIGNED INT8 GLCD_SIGNAL,GLCD_INS_HTHI) 
@@ -824,7 +836,7 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 ....................  
 .................... #DEFINE LCD_FUNCTION_SET       0X38 
 .................... #DEFINE LCD_DISPLAY_CONTROL    0X0C 
-.................... #DEFINE LCD_CLEAR_DISPLAY      0X01 
+.................... #DEFINE LCD_CLEAR_DISPLAY        0X01 
 .................... #DEFINE LCD_ENTRY_MODE         0X06 
 .................... #DEFINE LCD_SHIFT_LEFT         0X18 
 .................... #DEFINE LCD_SHIFT_RIGHT        0X1C 
@@ -837,101 +849,101 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... VOID LCD_XUAT_8BIT(INT8 LCD_DATA_X) 
 .................... { 
 ....................       LCD_E=1; XUAT_LCD20X4(LCD_CONTROL,LCD_DATA_X);      
-0132:  BSF    18.0
-0134:  MOVFF  18,23
-0138:  MOVFF  22,24
-013C:  RCALL  0122
+014A:  BSF    18.0
+014C:  MOVFF  18,27
+0150:  MOVFF  26,28
+0154:  RCALL  013A
 ....................       LCD_E=0; XUAT_LCD20X4(LCD_CONTROL,LCD_DATA_X);  
-013E:  BCF    18.0
-0140:  MOVFF  18,23
-0144:  MOVFF  22,24
-0148:  RCALL  0122
-014A:  RETURN 0
+0156:  BCF    18.0
+0158:  MOVFF  18,27
+015C:  MOVFF  26,28
+0160:  RCALL  013A
+0162:  RETURN 0
 .................... } 
 .................... void LCD_COMMAND(INT8 LCD_DATA_X)    
 ....................   { 
 ....................       LCD_RS = 0; 
-014C:  BCF    18.2
+0164:  BCF    18.2
 ....................       LCD_XUAT_8BIT(LCD_DATA_X); 
-014E:  MOVFF  21,22
-0152:  RCALL  0132
+0166:  MOVFF  25,26
+016A:  RCALL  014A
 ....................       DELAY_US(20); 
-0154:  MOVLW  20
-0156:  MOVWF  00
-0158:  DECFSZ 00,F
-015A:  BRA    0158
-015C:  BRA    015E
-015E:  NOP   
-0160:  RETURN 0
+016C:  MOVLW  20
+016E:  MOVWF  00
+0170:  DECFSZ 00,F
+0172:  BRA    0170
+0174:  BRA    0176
+0176:  NOP   
+0178:  RETURN 0
 ....................   } 
 .................... void LCD_DATA(INT8 LCD_DATA_X)        
 ....................   { 
 ....................       LCD_RS = 1;      
 *
-01D2:  BSF    18.2
+01EA:  BSF    18.2
 ....................       LCD_XUAT_8BIT(LCD_DATA_X); 
-01D4:  MOVFF  1F,22
-01D8:  RCALL  0132
+01EC:  MOVFF  23,26
+01F0:  RCALL  014A
 ....................       DELAY_US(20); 
-01DA:  MOVLW  20
-01DC:  MOVWF  00
-01DE:  DECFSZ 00,F
-01E0:  BRA    01DE
-01E2:  BRA    01E4
-01E4:  NOP   
-01E6:  RETURN 0
+01F2:  MOVLW  20
+01F4:  MOVWF  00
+01F6:  DECFSZ 00,F
+01F8:  BRA    01F6
+01FA:  BRA    01FC
+01FC:  NOP   
+01FE:  RETURN 0
 ....................   } 
 ....................    
 .................... VOID SETUP_LCD () 
 .................... {                      
 ....................          LCD_E  = 0;  
 *
-018A:  BCF    18.0
+01A2:  BCF    18.0
 ....................          LCD_RW = 0;  
-018C:  BCF    18.1
+01A4:  BCF    18.1
 ....................          LCD_RS = 1;  
-018E:  BSF    18.2
+01A6:  BSF    18.2
 ....................          LCD_P =0; 
-0190:  BCF    18.3
+01A8:  BCF    18.3
 ....................          LCD_COMMAND(LCD_FUNCTION_SET);          
-0192:  MOVLW  38
-0194:  MOVWF  21
-0196:  RCALL  014C
+01AA:  MOVLW  38
+01AC:  MOVWF  25
+01AE:  RCALL  0164
 ....................          DELAY_US(40); 
-0198:  MOVLW  42
-019A:  MOVWF  00
-019C:  DECFSZ 00,F
-019E:  BRA    019C
-01A0:  NOP   
+01B0:  MOVLW  42
+01B2:  MOVWF  00
+01B4:  DECFSZ 00,F
+01B6:  BRA    01B4
+01B8:  NOP   
 ....................          LCD_COMMAND(LCD_DISPLAY_CONTROL);    
-01A2:  MOVLW  0C
-01A4:  MOVWF  21
-01A6:  RCALL  014C
+01BA:  MOVLW  0C
+01BC:  MOVWF  25
+01BE:  RCALL  0164
 ....................          DELAY_US(40); 
-01A8:  MOVLW  42
-01AA:  MOVWF  00
-01AC:  DECFSZ 00,F
-01AE:  BRA    01AC
-01B0:  NOP   
+01C0:  MOVLW  42
+01C2:  MOVWF  00
+01C4:  DECFSZ 00,F
+01C6:  BRA    01C4
+01C8:  NOP   
 ....................          LCD_COMMAND(LCD_CLEAR_DISPLAY);       
-01B2:  MOVLW  01
-01B4:  MOVWF  21
-01B6:  RCALL  014C
+01CA:  MOVLW  01
+01CC:  MOVWF  25
+01CE:  RCALL  0164
 ....................          DELAY_MS(2); 
-01B8:  MOVLW  02
-01BA:  MOVWF  1C
-01BC:  BRA    0162
+01D0:  MOVLW  02
+01D2:  MOVWF  1C
+01D4:  BRA    017A
 ....................          LCD_COMMAND(LCD_ENTRY_MODE);        
-01BE:  MOVLW  06
-01C0:  MOVWF  21
-01C2:  RCALL  014C
+01D6:  MOVLW  06
+01D8:  MOVWF  25
+01DA:  RCALL  0164
 ....................          DELAY_US(40);                 
-01C4:  MOVLW  42
-01C6:  MOVWF  00
-01C8:  DECFSZ 00,F
-01CA:  BRA    01C8
-01CC:  NOP   
-01CE:  GOTO   0284 (RETURN)
+01DC:  MOVLW  42
+01DE:  MOVWF  00
+01E0:  DECFSZ 00,F
+01E2:  BRA    01E0
+01E4:  NOP   
+01E6:  GOTO   0336 (RETURN)
 .................... } 
 ....................  
 .................... CONST UNSIGNED CHAR LCD_SO_X[11][6] ={ 
@@ -986,18 +998,18 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 ....................    CONST UNSIGNED INT8 LCD_VITRI[]={0x80,0xC0,0x94,0xD4}; 
 ....................    LCD_COMMAND(LCD_VITRI[X]+Y); 
 *
-01E8:  CLRF   03
-01EA:  MOVF   1E,W
-01EC:  MOVFF  FF2,20
-01F0:  BCF    FF2.7
-01F2:  RCALL  0004
-01F4:  BTFSC  20.7
-01F6:  BSF    FF2.7
-01F8:  ADDWF  1F,W
-01FA:  MOVWF  20
-01FC:  MOVWF  21
-01FE:  RCALL  014C
-0200:  GOTO   023A (RETURN)
+0200:  CLRF   03
+0202:  MOVF   22,W
+0204:  MOVFF  FF2,24
+0208:  BCF    FF2.7
+020A:  RCALL  0004
+020C:  BTFSC  24.7
+020E:  BSF    FF2.7
+0210:  ADDWF  23,W
+0212:  MOVWF  24
+0214:  MOVWF  25
+0216:  RCALL  0164
+0218:  RETURN 0
 .................... } 
 ....................  
 .................... VOID XXX() 
@@ -1008,167 +1020,195 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:32
 .................... } 
 ....................  
 ....................  
-.................... const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh thoi\ 
-.................... //!1 1 1 1 1      0x1f 
-.................... //!1 0 0 0 1      0x11 
-.................... //!1 0 0 0 1      0x11 
-.................... //!1 0 0 0 1      0x11 
-.................... //!1 1 1 1 1     0x1f 
-.................... //!0 0 0 0 0      0×00 
-.................... //!0 0 0 0 0              0×00 
-.................... //!0 0 0 0 0               0×00   
+.................... const UNSIGNED char hang4[]={0x00,0x00,0x00,0x1E,0x1E,0x1E,0x1E,0x1E};     //hcn nho 
+.................... //!0 0 0 0 0               0x00   
+.................... //!0 0 0 0 0               0x00   
+.................... //!0 0 0 0 0               0x00   
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E   
+.................... const UNSIGNED char hang3[]={0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E};     //hcn lon 
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E  
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E   
+.................... //!1 1 1 1 0               0×1E  
 .................... signed INT8 i, vitri_x, vitri_y; 
 ....................  
-.................... void hien_hinh_vuong(int8 vitri_y, int8 vitri_x) 
+.................... void hien_hinh_cn_nho(int8 vitri_y, int8 vitri_x) 
 .................... { 
 ....................    lcd_command(0x50);      //vi tri dau trang 148 
-0204:  MOVLW  50
-0206:  MOVWF  21
-0208:  RCALL  014C
+021A:  MOVLW  50
+021C:  MOVWF  25
+021E:  RCALL  0164
 ....................    FOR (i=0;i<8;i++) { lcd_data(hang4[i]); }       //0x40 luu hang2[0] 0x41 luu hang2[1]... 
-020A:  CLRF   19
-020C:  BTFSC  19.7
-020E:  BRA    0216
-0210:  MOVF   19,W
-0212:  SUBLW  07
-0214:  BNC   0230
-0216:  CLRF   03
-0218:  MOVF   19,W
-021A:  MOVFF  FF2,1E
-021E:  BCF    FF2.7
-0220:  RCALL  0018
-0222:  BTFSC  1E.7
-0224:  BSF    FF2.7
-0226:  MOVWF  1E
-0228:  MOVWF  1F
-022A:  RCALL  01D2
-022C:  INCF   19,F
-022E:  BRA    020C
+0220:  CLRF   19
+0222:  BTFSC  19.7
+0224:  BRA    022C
+0226:  MOVF   19,W
+0228:  SUBLW  07
+022A:  BNC   0246
+022C:  CLRF   03
+022E:  MOVF   19,W
+0230:  MOVFF  FF2,22
+0234:  BCF    FF2.7
+0236:  RCALL  0018
+0238:  BTFSC  22.7
+023A:  BSF    FF2.7
+023C:  MOVWF  22
+023E:  MOVWF  23
+0240:  RCALL  01EA
+0242:  INCF   19,F
+0244:  BRA    0222
 ....................    lcd_GOTO_xy(vitri_y, vitri_x);       //vi tri tao ma    
-0230:  MOVFF  1C,1E
-0234:  MOVFF  1D,1F
-0238:  BRA    01E8
+0246:  MOVFF  20,22
+024A:  MOVFF  21,23
+024E:  RCALL  0200
 ....................    lcd_data(2);            //dia chi ki tu trang 148 
-023A:  MOVLW  02
-023C:  MOVWF  1F
-023E:  RCALL  01D2
-0240:  RETURN 0
+0250:  MOVLW  02
+0252:  MOVWF  23
+0254:  RCALL  01EA
+0256:  RETURN 0
+.................... } 
+.................... void hien_hinh_cn_lon(int8 vitri_y, int8 vitri_x) 
+.................... { 
+....................    lcd_command(0x40);      //vi tri dau trang 148 
+0258:  MOVLW  40
+025A:  MOVWF  25
+025C:  RCALL  0164
+....................    FOR (i=0;i<8;i++) { lcd_data(hang3[i]); }       //0x40 luu hang2[0] 0x41 luu hang2[1]... 
+025E:  CLRF   19
+0260:  BTFSC  19.7
+0262:  BRA    026A
+0264:  MOVF   19,W
+0266:  SUBLW  07
+0268:  BNC   0284
+026A:  CLRF   03
+026C:  MOVF   19,W
+026E:  MOVFF  FF2,22
+0272:  BCF    FF2.7
+0274:  RCALL  0030
+0276:  BTFSC  22.7
+0278:  BSF    FF2.7
+027A:  MOVWF  22
+027C:  MOVWF  23
+027E:  RCALL  01EA
+0280:  INCF   19,F
+0282:  BRA    0260
+....................    lcd_GOTO_xy(vitri_y, vitri_x);       //vi tri tao ma    
+0284:  MOVFF  20,22
+0288:  MOVFF  21,23
+028C:  RCALL  0200
+....................    lcd_data(0);            //dia chi ki tu trang 148 
+028E:  CLRF   23
+0290:  RCALL  01EA
+0292:  RETURN 0
+.................... } 
+.................... void hien_cot_song_dien_thoai(int8 vitri_y, int8 vitri_x) 
+.................... { 
+....................    hien_hinh_cn_nho(vitri_y, vitri_x);  
+0294:  MOVFF  1C,20
+0298:  MOVFF  1D,21
+029C:  RCALL  021A
+....................  
+....................    hien_hinh_cn_lon(vitri_y, vitri_x+1); 
+029E:  MOVLW  01
+02A0:  ADDWF  1D,W
+02A2:  MOVWF  1E
+02A4:  MOVFF  1C,20
+02A8:  MOVWF  21
+02AA:  RCALL  0258
+....................     
+....................    hien_hinh_cn_lon(vitri_y, vitri_x+2); 
+02AC:  MOVLW  02
+02AE:  ADDWF  1D,W
+02B0:  MOVWF  1E
+02B2:  MOVFF  1C,20
+02B6:  MOVWF  21
+02B8:  RCALL  0258
+....................    hien_hinh_cn_nho(vitri_y-1, vitri_x+2); 
+02BA:  MOVLW  01
+02BC:  SUBWF  1C,W
+02BE:  MOVWF  1E
+02C0:  MOVLW  02
+02C2:  ADDWF  1D,W
+02C4:  MOVWF  1F
+02C6:  MOVFF  1E,20
+02CA:  MOVWF  21
+02CC:  RCALL  021A
+....................     
+....................    hien_hinh_cn_lon(vitri_y, vitri_x+3); 
+02CE:  MOVLW  03
+02D0:  ADDWF  1D,W
+02D2:  MOVWF  1E
+02D4:  MOVFF  1C,20
+02D8:  MOVWF  21
+02DA:  RCALL  0258
+....................    hien_hinh_cn_lon(vitri_y-1, vitri_x+3);    
+02DC:  MOVLW  01
+02DE:  SUBWF  1C,W
+02E0:  MOVWF  1E
+02E2:  MOVLW  03
+02E4:  ADDWF  1D,W
+02E6:  MOVWF  1F
+02E8:  MOVFF  1E,20
+02EC:  MOVWF  21
+02EE:  RCALL  0258
+02F0:  GOTO   0340 (RETURN)
 .................... } 
 .................... void main() 
-0242:  CLRF   FF8
-0244:  BCF    FD0.7
-0246:  BSF    FB8.3
-0248:  MOVLW  08
-024A:  MOVWF  FAF
-024C:  MOVLW  02
-024E:  MOVWF  FB0
-0250:  MOVLW  A6
-0252:  MOVWF  FAC
-0254:  MOVLW  90
-0256:  MOVWF  FAB
-0258:  CLRF   04
-025A:  CLRF   0B
-025C:  CLRF   0C
-025E:  CLRF   0D
-0260:  CLRF   0E
-0262:  CLRF   17
-0264:  MOVF   FC1,W
-0266:  ANDLW  C0
-0268:  IORLW  0F
-026A:  MOVWF  FC1
-026C:  MOVLW  07
-026E:  MOVWF  FB4
-0270:  SETF   0F
-0272:  SETF   10
-0274:  SETF   11
-0276:  SETF   12
-0278:  SETF   13
-027A:  SETF   14
-027C:  SETF   15
-027E:  SETF   16
+02F4:  CLRF   FF8
+02F6:  BCF    FD0.7
+02F8:  BSF    FB8.3
+02FA:  MOVLW  08
+02FC:  MOVWF  FAF
+02FE:  MOVLW  02
+0300:  MOVWF  FB0
+0302:  MOVLW  A6
+0304:  MOVWF  FAC
+0306:  MOVLW  90
+0308:  MOVWF  FAB
+030A:  CLRF   04
+030C:  CLRF   0B
+030E:  CLRF   0C
+0310:  CLRF   0D
+0312:  CLRF   0E
+0314:  CLRF   17
+0316:  MOVF   FC1,W
+0318:  ANDLW  C0
+031A:  IORLW  0F
+031C:  MOVWF  FC1
+031E:  MOVLW  07
+0320:  MOVWF  FB4
+0322:  SETF   0F
+0324:  SETF   10
+0326:  SETF   11
+0328:  SETF   12
+032A:  SETF   13
+032C:  SETF   14
+032E:  SETF   15
+0330:  SETF   16
 .................... { 
 ....................    set_up_port_ic_chot(); 
-0280:  BRA    00C4
+0332:  BRA    00DC
 ....................    setup_lcd(); 
-0282:  BRA    018A
-....................    //hk hieu y thay 
-.................... //!   lcd_GOTO_xy(0,17); 
-.................... //!   lcd_data("U");  
-.................... //!   lcd_data(0x20);     
-.................... //!   lcd_data(0x32);       
-.................... //!   lcd_data(00);       
-.................... //!   lcd_GOTO_xy(1,17); 
-.................... //!   lcd_data(0x00);  
-.................... //!   lcd_data(0x01);     
-.................... //!   lcd_data(0x01);       
-....................    
+0334:  BRA    01A2
 ....................  
-....................    hien_hinh_vuong(0, 7); 
-0284:  CLRF   1C
-0286:  MOVLW  07
-0288:  MOVWF  1D
-028A:  RCALL  0204
-....................     
-....................    hien_hinh_vuong(1, 7); 
-028C:  MOVLW  01
-028E:  MOVWF  1C
-0290:  MOVLW  07
-0292:  MOVWF  1D
-0294:  RCALL  0204
-....................    hien_hinh_vuong(1, 5);  
-0296:  MOVLW  01
-0298:  MOVWF  1C
-029A:  MOVLW  05
-029C:  MOVWF  1D
-029E:  RCALL  0204
-....................     
-....................    hien_hinh_vuong(2, 7); 
-02A0:  MOVLW  02
-02A2:  MOVWF  1C
-02A4:  MOVLW  07
-02A6:  MOVWF  1D
-02A8:  RCALL  0204
-....................    hien_hinh_vuong(2, 5); 
-02AA:  MOVLW  02
-02AC:  MOVWF  1C
-02AE:  MOVLW  05
-02B0:  MOVWF  1D
-02B2:  RCALL  0204
-....................    hien_hinh_vuong(2, 3);  
-02B4:  MOVLW  02
-02B6:  MOVWF  1C
-02B8:  MOVLW  03
-02BA:  MOVWF  1D
-02BC:  RCALL  0204
-....................     
-....................    hien_hinh_vuong(3, 7);    
-02BE:  MOVLW  03
-02C0:  MOVWF  1C
-02C2:  MOVLW  07
-02C4:  MOVWF  1D
-02C6:  RCALL  0204
-....................    hien_hinh_vuong(3, 5); 
-02C8:  MOVLW  03
-02CA:  MOVWF  1C
-02CC:  MOVLW  05
-02CE:  MOVWF  1D
-02D0:  RCALL  0204
-....................    hien_hinh_vuong(3, 3); 
-02D2:  MOVLW  03
-02D4:  MOVWF  1C
-02D6:  MOVWF  1D
-02D8:  RCALL  0204
-....................    hien_hinh_vuong(3, 1);     
-02DA:  MOVLW  03
-02DC:  MOVWF  1C
-02DE:  MOVLW  01
-02E0:  MOVWF  1D
-02E2:  RCALL  0204
+....................    hien_cot_song_dien_thoai(2, 16); 
+0336:  MOVLW  02
+0338:  MOVWF  1C
+033A:  MOVLW  10
+033C:  MOVWF  1D
+033E:  BRA    0294
+.................... //!hien_hinh_cn_lon(2, 19); 
 ....................    WHILE(true); 
-02E4:  BRA    02E4
+0340:  BRA    0340
 .................... } 
 ....................  
-02E6:  SLEEP 
+0342:  SLEEP 
 ....................  
 
 Configuration Fuses:

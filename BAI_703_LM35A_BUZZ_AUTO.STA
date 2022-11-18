@@ -1,0 +1,59 @@
+
+ROM used:   1506/32768 (5%)
+            1506/32768 (5%) including unused fragments
+
+            1.0 Average locations per line
+            5.8 Average locations per statement
+
+RAM used:   29/2048 (1%) at main() level
+            43/2048 (2%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   58    26  10  BAI_703_LM35A_BUZZ_AUTO.c
+  627   233  90  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+----- -----
+ 1522   259 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   1    1             @delay_ms1
+0     32   1    0             @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     34   1    4   160  1.8  XUAT_32LED_DON_4BYTE
+0     22   1    4   131  2.8  xuat_1word
+0     88   3    0   396  1.4  xoa_tat_6module
+0     58   2    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   1    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0    296  10    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
+0     66   2    5             @DIV1616
+0     80   3    1   388  5.1  so_sanh_dk_buzzer
+0    250   8    0   409  5.0  MAIN
+0     56   2    2   626  7.5  @ITOF
+0    348  12   14             @DIVFF
+0     58   2    4             @SFTOI
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               10
+    Statements              259
+    Comments                287
+    Volume (V)              5175
+    Difficulty (D)          36.2
+    Effort to implement (E) 187154
+    Time to implement (T)   2 hours, 53 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   9
+    Maintainability (MI)    131
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1502  31262  
+
+
+

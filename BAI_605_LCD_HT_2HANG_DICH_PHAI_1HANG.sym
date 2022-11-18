@@ -92,9 +92,9 @@ Project Files:
     BAI_605_LCD_HT_2HANG_DICH_PHAI_1HANG.c                  [04-Oct-22 07:56  CRC=D1FD461A]
     tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
     ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
-    tv_pickit2_shift_lcd.c                                  [03-Oct-22 14:26  CRC=3316A17B]
+    tv_pickit2_shift_lcd.c                                  [22-Oct-22 12:49  CRC=775AB218]
 
-Source signature=3236BF16
+Source signature=BABEE050
 
 Units:
     BAI_605_LCD_HT_2HANG_DICH_PHAI_1HANG (main)

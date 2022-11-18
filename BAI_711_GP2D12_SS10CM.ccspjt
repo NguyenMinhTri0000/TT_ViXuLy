@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BAI_711_GP2D12_SS10CM.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_711_GP2D12_SS10CM.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_711_GP2D12_SS10CM.c]
+Type=4
+[mru-list]
+1=BAI_711_GP2D12_SS10CM.c
+[Units]
+Count=1
+1=BAI_711_GP2D12_SS10CM (main)

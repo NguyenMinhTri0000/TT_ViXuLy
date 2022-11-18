@@ -1,7 +1,8 @@
+D G "LCD_ADDR_LINE4" 3 17 "0XD4"
 D G "__PCH__" 0 101 ""5.015""
 D G "__DEVICE__" 0 101 "4550"
-D G "__DATE__" 0 101 ""18-Oct-22""
-D G "__TIME__" 0 101 ""11:25:14"" "!#include <tv_pickit2_shift_1_proteus.c>"
+D G "__DATE__" 0 101 ""22-Oct-22""
+D G "__TIME__" 0 101 ""11:57:38"" "!#include <tv_pickit2_shift_1_proteus.c>"
 c L "set_tris_a" 2 1 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 

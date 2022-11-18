@@ -1,12 +1,12 @@
 
-ROM used:   654/32768 (2%)
-            654/32768 (2%) including unused fragments
+ROM used:   558/32768 (2%)
+            558/32768 (2%) including unused fragments
 
             0.4 Average locations per line
-            2.6 Average locations per statement
+            2.1 Average locations per statement
 
-RAM used:   28/2048 (1%) at main() level
-            39/2048 (2%) worst case
+RAM used:   30/2048 (1%) at main() level
+            42/2048 (2%) worst case
 
 Stack used: 4 worst case (4 in main + 0 for interrupts)
 Stack size: 31
@@ -14,41 +14,40 @@ Stack size: 31
 Lines Stmts  %   Files
 ----- ----- ---  -----
    36    18   7  BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
-  627   233  93  tv_pickit2_shift_1.c
+  705   244  93  tv_pickit2_shift_1_proteus.c
   837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
 ----- -----
- 1500   251 Total
+ 1578   262 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
-0     32   2    0   271  4.3  @const681
-0     38   3    2   234  4.3  XUAT_1BYTE
-0     22   2    4   131  2.8  xuat_1word
-0     88   7    0   396  1.4  xoa_tat_6module
-0     58   4    0   253  2.3  SET_UP_PORT_IC_CHOT
-0     36   3    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0     32   3    0             @const686
+0     42   4    3   271  4.3  XUAT_1BYTE
+0     30   3    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     48   4    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   4    4   231  2.3  XUAT_4LED_7DOAN_4SO
 0     20   2    3    76  1.7  XUAT_4LED_7DOAN_3SO
-0     66   5    5   465  4.8  @DIV1616
-0    190  15    5   309  4.7  giai_ma_hien_thi
-0    100   8    0   183  3.6  MAIN
- Inline         0    68  2.4  @cinit1
+0     66   6    5             @DIV1616
+0    190  17    5   309  4.7  giai_ma_hien_thi
+0     82   7    0   183  3.6  MAIN
+ Inline         0   402  5.2  @cinit1
 
 Program metrics:
-    Functions               11
-    Statements              251
-    Comments                284
-    Volume (V)              4219
-    Difficulty (D)          34.3
-    Effort to implement (E) 144924
-    Time to implement (T)   2 hours, 14 minutes
+    Functions               8
+    Statements              262
+    Comments                338
+    Volume (V)              2765
+    Difficulty (D)          24.9
+    Effort to implement (E) 68848
+    Time to implement (T)   1 hours, 4 minutes
     Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   9
-    Maintainability (MI)    139
+    Cyclomatic Complexity   8
+    Maintainability (MI)    54
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-07FFE   650  32114  
+00004-07FFE   554  32210  
 
 
 

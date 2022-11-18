@@ -3,53 +3,57 @@
 //!#include <tv_pickit2_shift_1_proteus.c>
 #include <tv_pickit2_shift_lcd.c>
 
-const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh vuong
-//!1 1 1 1 1      0x1f
-//!1 0 0 0 1      0x11
-//!1 0 0 0 1      0x11
-//!1 0 0 0 1      0x11
-//!1 1 1 1 1     0x1f
-//!0 0 0 0 0      0×00
-//!0 0 0 0 0              0×00
-//!0 0 0 0 0               0×00  
+const UNSIGNED char hang4[]={0x00,0x00,0x00,0x1E,0x1E,0x1E,0x1E,0x1E};     //hcn nho
+//!0 0 0 0 0               0x00  
+//!0 0 0 0 0               0x00  
+//!0 0 0 0 0               0x00  
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E  
+const UNSIGNED char hang3[]={0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E};     //hcn lon
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E 
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E  
+//!1 1 1 1 0               0×1E 
 signed INT8 i, vitri_x, vitri_y;
 
-void hien_hinh_vuong(int8 vitri_y, int8 vitri_x)
+void hien_hinh_cn_nho(int8 vitri_y, int8 vitri_x)
 {
    lcd_command(0x50);      //vi tri dau trang 148
    FOR (i=0;i<8;i++) { lcd_data(hang4[i]); }       //0x40 luu hang2[0] 0x41 luu hang2[1]...
    lcd_GOTO_xy(vitri_y, vitri_x);       //vi tri tao ma   
    lcd_data(2);            //dia chi ki tu trang 148
 }
+void hien_hinh_cn_lon(int8 vitri_y, int8 vitri_x)
+{
+   lcd_command(0x40);      //vi tri dau trang 148
+   FOR (i=0;i<8;i++) { lcd_data(hang3[i]); }       //0x40 luu hang2[0] 0x41 luu hang2[1]...
+   lcd_GOTO_xy(vitri_y, vitri_x);       //vi tri tao ma   
+   lcd_data(0);            //dia chi ki tu trang 148
+}
+void hien_cot_song_dien_thoai(int8 vitri_y, int8 vitri_x)
+{
+   hien_hinh_cn_nho(vitri_y, vitri_x); 
+
+   hien_hinh_cn_lon(vitri_y, vitri_x+1);
+   
+   hien_hinh_cn_lon(vitri_y, vitri_x+2);
+   hien_hinh_cn_nho(vitri_y-1, vitri_x+2);
+   
+   hien_hinh_cn_lon(vitri_y, vitri_x+3);
+   hien_hinh_cn_lon(vitri_y-1, vitri_x+3);   
+}
 void main()
 {
    set_up_port_ic_chot();
    setup_lcd();
-   //hk hieu y thay
-//!   lcd_GOTO_xy(0,17);
-//!   lcd_data("U"); 
-//!   lcd_data(0x20);    
-//!   lcd_data(0x32);      
-//!   lcd_data(00);      
-//!   lcd_GOTO_xy(1,17);
-//!   lcd_data(0x00); 
-//!   lcd_data(0x01);    
-//!   lcd_data(0x01);      
-  
 
-   hien_hinh_vuong(0, 7);
-   
-   hien_hinh_vuong(1, 7);
-   hien_hinh_vuong(1, 5); 
-   
-   hien_hinh_vuong(2, 7);
-   hien_hinh_vuong(2, 5);
-   hien_hinh_vuong(2, 3); 
-   
-   hien_hinh_vuong(3, 7);   
-   hien_hinh_vuong(3, 5);
-   hien_hinh_vuong(3, 3);
-   hien_hinh_vuong(3, 1);    
+   hien_cot_song_dien_thoai(2, 16);
+//!hien_hinh_cn_lon(2, 19);
    WHILE(true);
 }
 

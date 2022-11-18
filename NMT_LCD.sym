@@ -1,0 +1,130 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     TIN_HIEU_DK_74573_A
+004.2   G_LCDA
+004.4   G_32A
+004.6   G_4A
+005     TIN_HIEU_DK_74573_B
+005.2   G_RBDCB
+005.4   G_8B
+005.6   G_MTB
+006     DL_BTN
+007.0   STEP_MOTOR_ENABLE
+007-008 RBDC
+007.1   STEP_MOTOR_IN1
+007.2   STEP_MOTOR_IN2
+007.3   STEP_MOTOR_IN3
+007.4   STEP_MOTOR_IN4
+007.5   DC_ENABLE
+007.6   PWRKEY
+008.0   BUZZER
+008.1   TRIAC_1
+008.2   TRIAC_2
+008.3   RELAY_1
+008.4   RELAY_2
+009     DONVI4
+00A     CHUC4
+00B     TRAM4
+00C     NGAN4
+00D     LCDDATA
+00E     LCDCONTROL
+00F     GLCDDATA
+010     GLCDCONTROL
+011-018 LED_7DQ
+019     TT8LED
+01A     LCD_CONTROL
+01A.0   LCD_E
+01A.1   LCD_RW
+01A.2   LCD_RS
+01A.3   LCD_P
+01B-052 hang1
+053-08A hang2
+08B-08C lcd_dich_trai_1hang.mang1
+08D     lcd_dich_trai_1hang.hang
+08E     lcd_dich_trai_1hang.vitri1
+08F     lcd_dich_trai_1hang.I
+090-091 Size_Of.mang
+090     @delay_ms1.P1
+090     LCD_COMMAND.LCD_DATA_X
+090     lcd_dich_trai_1hang.@SCRATCH1
+091     LCD_DATA.LCD_DATA_X
+092     LCD_XUAT_8BIT.LCD_DATA_X
+092     Size_Of.I
+093     XUAT_LCD20X4.LCD_SIGNAL
+093     Size_Of.@SCRATCH1
+094     XUAT_LCD20X4.LCD_INS_HTHI
+095     XUAT_1BYTE.BYTEXUAT
+096     XUAT_1BYTE.SB
+097     XUAT_1BYTE.x
+097.7   XUAT_1BYTE.BSERI
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  SET_UP_PORT_IC_CHOT
+000022  XUAT_1BYTE
+00004C  MO_IC_74573_A_THONG_DL
+00007C  XUAT_GLCD_LCD
+0000A8  XUAT_LCD20X4
+0000B8  LCD_XUAT_8BIT
+0000D2  LCD_COMMAND
+0000E8  @delay_ms1
+00010E  SETUP_LCD
+000156  LCD_DATA
+00016E  Size_Of
+00018C  lcd_dich_trai_1hang
+000202  @cinit1
+000202  MAIN
+00021E  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    NMT_LCD.c                                               [26-Oct-22 21:39  CRC=94036C1C]
+    tv_pickit2_shift_1_proteus.c                            [22-Aug-21 17:45  CRC=CBC49623]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+    tv_pickit2_shift_lcd.c                                  [22-Oct-22 12:49  CRC=775AB218]
+
+Source signature=A1B548B7
+
+Units:
+    NMT_LCD (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   NMT_LCD.xsym
+    Errors:      NMT_LCD.err
+    Ext Symbols: NMT_LCD.esym
+    INHX32:      NMT_LCD.hex
+    Symbols:     NMT_LCD.sym
+    List:        NMT_LCD.lst
+    Debug/COFF:  NMT_LCD.cof
+    Project:     NMT_LCD.ccspjt
+    Call Tree:   NMT_LCD.tre
+    Statistics:  NMT_LCD.STA

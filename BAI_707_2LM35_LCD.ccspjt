@@ -1,0 +1,25 @@
+[PROJECT]
+Target=BAI_707_2LM35_LCD.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_707_2LM35_LCD.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_707_2LM35_LCD.c]
+Type=4
+[mru-list]
+1=BAI_707_2LM35_LCD.c
+[Opened Files]
+1=BAI_702_LM35A_BUZZ_THAP_PHAN.c
+2=BAI_703_LM35A_BUZZ_AUTO.c
+3=BAI_705_ADC_2LM35.c
+4=BAI_706_2LM35_BUZZ.c
+5=BAI_707_2LM35_LCD.c
+6=BAI_704_LM35A_BUZZ_AUTO.c
+7=BAI_621_LCD_KEX4X4.c
+8=
+[Units]
+Count=1
+1=BAI_707_2LM35_LCD (main)

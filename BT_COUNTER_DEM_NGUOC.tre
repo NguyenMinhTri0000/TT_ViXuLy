@@ -1,0 +1,35 @@
+ÀÄBT_COUNTER_DEM_NGUOC
+   ÀÄMAIN  0/118  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
+      ÃÄPHIM_BT0  0/40  Ram=1
+      ³  ÀÄ@delay_ms1  0/40  Ram=1
+      ÃÄdem_xuong  0/40  Ram=2
+      ³  ÀÄgiai_ma_hien_thi  0/188  Ram=5
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@const686  0/32  Ram=0
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@const686  0/32  Ram=0
+      ³     ÃÄ@DIV1616  0/66  Ram=5
+      ³     ÃÄ@const686  0/32  Ram=0
+      ³     ÀÄXUAT_4LED_7DOAN_3SO  0/20  Ram=3
+      ³        ÀÄXUAT_4LED_7DOAN_4SO  0/44  Ram=4
+      ³           ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³           ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³           ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³           ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³           ÀÄMO_IC_74573_A_THONG_DL  0/46  Ram=0
+      ÃÄXUAT_32LED_DON_1DW  0/36  Ram=9
+      ³  ÀÄXUAT_32LED_DON_2WORD  0/38  Ram=8
+      ³     ÀÄXUAT_32LED_DON_4BYTE  0/44  Ram=4
+      ³        ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³        ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³        ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³        ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³        ÀÄMO_IC_74573_A_THONG_DL  0/46  Ram=0
+      ÃÄdem_len  0/40  Ram=2
+      ³  ÀÄgiai_ma_hien_thi  0/188  Ram=5
+      ³     ÀÄ*
+      ÀÄXUAT_32LED_DON_1DW  0/36  Ram=9
+         ÀÄ*

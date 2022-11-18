@@ -1,0 +1,25 @@
+[PROJECT]
+Target=DEM_GIAY_TIMER_DAO_CHIEU.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=DEM_GIAY_TIMER_DAO_CHIEU.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[DEM_GIAY_TIMER_DAO_CHIEU.c]
+Type=4
+[mru-list]
+1=DEM_GIAY_TIMER_DAO_CHIEU.c
+[Opened Files]
+1=Tach_ct_con.c
+2=NMT_TEST.c
+3=DEM_GIAY_TIMER_DAO_CHIEU.c
+4=BAI_644_LCD_DEM_SP_KTL.c
+5=19129004_GK_TTVXL_C3_abcd.c
+6=BT_COUNTER_DEM_NGUOC.c
+7=
+8=
+[Units]
+Count=1
+1=DEM_GIAY_TIMER_DAO_CHIEU (main)

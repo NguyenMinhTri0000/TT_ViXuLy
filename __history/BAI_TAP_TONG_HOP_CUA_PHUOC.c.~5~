@@ -1,0 +1,178 @@
+
+
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_PROTEUS.c>
+#include <tv_pickit2_shift_lcd.c>
+
+UNsigned INT8 I,T0,HC_GIAY,DV_GIAY,HC_SP,DV_SP,giay,bdn,HC_GIAY_LCD,DV_GIAY_LCD,HC_SP_LCD,DV_SP_LCD;
+unsigned INT1 TT_COT=0,TT_DC_COT=0,TT_GIAY=0,TT_DC_GIAY=0;
+
+#INT_timer1
+
+void interrupt_timer1()
+{
+   bdn++;
+   set_timer1 (3036);
+}
+
+VOID GM_8LED()
+{
+   HC_GIAY = ma7doan [GIAY / 10];
+   DV_GIAY = ma7doan [GIAY % 10];
+   IF (HC_GIAY == 0XC0) HC_GIAY = 0XFF;
+   HC_SP = ma7doan [T0 / 10];
+   DV_SP = ma7doan [T0 % 10];
+   IF (HC_SP == 0XC0) HC_SP = 0XFF;
+}
+
+void giai_ma_gan_cho_8led_quet()
+{
+   led_7dq[6] = DV_GIAY;
+   led_7dq[7] = HC_GIAY;
+   led_7dq[0] = DV_SP;
+   led_7dq[1] = HC_SP;
+}
+
+VOID KTR_STOP_COUNTER()
+{
+   IF (INPUT (BT0) == 0)
+   DELAY_MS (20);
+
+   IF (INPUT (BT0) == 0)
+   {
+      TT_COT = ~TT_COT;
+      WHILE ( ! input (bt0)) ;
+   }
+}
+
+VOID KTR_CD_COUNTER()
+{
+   IF (INPUT (BT1) == 0)
+   DELAY_MS (20);
+
+   IF (INPUT (BT1) == 0)
+   {
+      set_timer0 (99 - get_timer0 ()) ;
+      TT_DC_COT = ~TT_DC_COT;
+      WHILE ( ! input (bt1)) ;
+   }
+}
+
+VOID KTR_STOP_GIAY()
+{
+   IF (INPUT (BT2) == 0)
+   DELAY_MS (20);
+
+   IF (INPUT (BT2) == 0)
+   {
+      TT_GIAY = ~TT_GIAY;
+      WHILE ( ! input (bt2)) ;
+   }
+}
+
+VOID KTR_CD_GIAY()
+{
+   IF (INPUT (BT3) == 0)
+   DELAY_MS (20);
+
+   IF (INPUT (BT3) == 0)
+   {
+      TT_DC_GIAY = ~TT_DC_GIAY;
+      WHILE ( ! input (bt3)) ;
+   }
+}
+
+void lcd_hienthi_so_z_toado_xy(SIGNED int8 lcd_so, x1, y1)
+{
+   lcd_GOTO_xy (x1, y1) ;
+   FOR (i = 0; i < 6; i++)
+   {
+      IF (i == 3) lcd_goto_xy (x1 + 1, y1);
+      lcd_data (lcd_so_x[lcd_so][i]);
+   }
+}
+
+VOID GM_LCD()
+{
+   HC_GIAY_LCD = GIAY / 10 + 0X30;
+   DV_GIAY_LCD = GIAY % 10 + 0X30;
+   IF (HC_GIAY_LCD == 0X30) HC_GIAY_LCD = 0X20;
+   HC_SP_LCD = T0 / 10 + 0X30;
+   DV_SP_LCD = T0 % 10 + 0X30;
+   IF (HC_SP_LCD == 0X30) HC_SP_LCD = 0X20;
+}
+
+VOID HT_LCD()
+{
+   LCD_GOTO_XY (0, 0) ;
+   LCD_DATA (HC_GIAY_LCD);
+   LCD_DATA (DV_GIAY_LCD);
+   LCD_GOTO_XY (0, 18) ;
+   LCD_DATA (HC_SP_LCD);
+   LCD_DATA (DV_SP_LCD);
+   lcd_hienthi_so_z_toado_xy (GIAY / 10, 2, 0) ;
+   lcd_hienthi_so_z_toado_xy ( (DV_GIAY_LCD - 0X30) % 10, 2, 3);
+   lcd_hienthi_so_z_toado_xy (T0 / 10, 2, 14) ;
+   lcd_hienthi_so_z_toado_xy ( (DV_SP_LCD - 0X30) % 10, 2, 17);
+}
+
+VOID MAIN()
+{
+   set_up_port_ic_chot ();
+   setup_lcd ();
+   setup_timer_1 (t1_internal|t1_div_by_8);
+   set_timer1 (3036);
+   enable_interrupts (global);
+   enable_interrupts (INT_timer1);
+   setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);
+   set_timer0 (0);
+   bdn = 0; giay = 0;
+   t0 = get_timer0 ();
+
+   WHILE (TRUE)
+   {
+      giai_ma_gan_cho_8led_quet ();
+      KTR_STOP_COUNTER ();
+      KTR_CD_COUNTER ();
+      KTR_STOP_GIAY ();
+      KTR_STOP_GIAY ();
+      KTR_CD_GIAY ();
+      GM_8LED ();
+      GM_LCD ();
+      HT_LCD ();
+      HIEN_THI_8LED_7DOAN_QUET ();
+      XUAT_4LED_7DOAN_4SO (HC_SP, DV_SP&0X7F, HC_GIAY, DV_GIAY) ;
+      //counter dem, dung dem
+      IF (TT_COT == 0) setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit);
+      IF (TT_COT == 1) SETUP_TIMER_0 (T0_OFF) ;
+      //counter dem len, xuong
+      IF (TT_DC_COT == 0) t0 = get_timer0 () ;     //nen dat them if gioi han cho no
+      IF (TT_DC_COT == 1) t0 = 99 - get_timer0 () ;
+      //timer dem dung dem
+      IF (TT_GIAY == 0) setup_timer_1 (t1_internal|t1_div_by_8) ;
+      IF (TT_GIAY == 1) setup_timer_1 (T1_DISABLED) ;
+      //timer dem xuong
+      IF (bdn < 10)
+      {
+         HIEN_THI_8LED_7DOAN_QUET ();
+      }
+
+      ELSE IF (TT_DC_GIAY == 0)
+      {
+         bdn = bdn - 10;
+         giay++;
+         IF (giay == 60) giay = 0;
+      }
+
+      ELSE IF (TT_DC_GIAY == 1)
+      {
+         bdn = bdn - 10;
+         giay--;
+         IF (giay == 0) giay = 60;
+      }
+
+      IF (GET_TIMER0 () == 100) SET_TIMER0 (1);
+   }
+}
+
+

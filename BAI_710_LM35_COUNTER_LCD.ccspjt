@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_710_LM35_COUNTER_LCD.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_710_LM35_COUNTER_LCD.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_710_LM35_COUNTER_LCD.c]
+Type=4
+[mru-list]
+1=BAI_710_LM35_COUNTER_LCD.c
+[Opened Files]
+1=BAI_707_2LM35_LCD.c
+2=BAI_710_LM35_COUNTER_LCD.c
+3=BAI_708_LM35A_COUNTER_T0.c
+4=BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+5=
+[Units]
+Count=1
+1=BAI_710_LM35_COUNTER_LCD (main)

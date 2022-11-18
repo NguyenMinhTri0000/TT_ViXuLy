@@ -1,56 +1,55 @@
 
-ROM used:   908/32768 (3%)
-            908/32768 (3%) including unused fragments
+ROM used:   802/32768 (2%)
+            802/32768 (2%) including unused fragments
 
-            0.6 Average locations per line
-            3.4 Average locations per statement
+            0.5 Average locations per line
+            2.9 Average locations per statement
 
-RAM used:   28/2048 (1%) at main() level
-            36/2048 (2%) worst case
+RAM used:   30/2048 (1%) at main() level
+            38/2048 (2%) worst case
 
-Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack used: 3 worst case (3 in main + 0 for interrupts)
 Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   54    33  12  BAI_417_GOM_NUT_NHAN.c
-  627   233  88  tv_pickit2_shift_1.c
+   55    28  10  BAI_417_GOM_NUT_NHAN.c
+  705   244  90  tv_pickit2_shift_1_proteus.c
   837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
 ----- -----
- 1518   266 Total
+ 1597   272 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
 0     40   2    1             @delay_ms1
-0     32   2    0             @const681
-0     38   2    2   234  4.3  XUAT_1BYTE
-0     34   2    4   160  1.8  XUAT_32LED_DON_4BYTE
-0     22   1    4   131  2.8  xuat_1word
-0     88   5    0   396  1.4  xoa_tat_6module
-0     58   3    0   253  2.3  SET_UP_PORT_IC_CHOT
-0     36   2    4   160  1.8  XUAT_4LED_7DOAN_4SO
-0    294  16    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
-0     66   4    5             @DIV1616
-0     30   2    0   147  3.3  phim
-0    166   9    1   598  5.7  MAIN
- Inline         0             @cinit1
+0     32   2    0  3618 10.3  @const686
+0     42   3    3   271  4.3  XUAT_1BYTE
+0     42   3    4   231  2.3  XUAT_32LED_DON_4BYTE
+0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   3    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   3    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0    294  18    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
+0     66   4    5  3618 10.3  @DIV1616
+0     30   2    0   138  3.3  phim_ON_OFF
+0    132   8    1   555  5.3  MAIN
+ Inline         0    61  1.6  @cinit1
 
 Program metrics:
-    Functions               9
-    Statements              266
-    Comments                282
-    Volume (V)              4039
-    Difficulty (D)          28.1
-    Effort to implement (E) 113288
-    Time to implement (T)   1 hours, 45 minutes
-    Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   9
-    Maintainability (MI)    118
+    Functions               11
+    Statements              272
+    Comments                342
+    Volume (V)              12933
+    Difficulty (D)          49.0
+    Effort to implement (E) 634350
+    Time to implement (T)   9 hours, 47 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   52
+    Maintainability (MI)    117
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-07FFE   904  31860  
+00004-07FFE   798  31966  
 
 
 

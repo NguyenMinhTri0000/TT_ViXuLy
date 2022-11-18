@@ -1,0 +1,193 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     DL_BTN
+017-018 RBDC
+017.0   STEP_MOTOR_ENABLE
+017.1   STEP_MOTOR_IN1
+017.2   STEP_MOTOR_IN2
+017.3   STEP_MOTOR_IN3
+017.4   STEP_MOTOR_IN4
+017.5   DC_ENABLE
+017.6   PWRKEY
+018.0   BUZZER
+018.1   TRIAC_1
+018.2   TRIAC_2
+018.3   RELAY_1
+018.4   RELAY_2
+019     DONVI4
+01A     CHUC4
+01B     TRAM4
+01C     NGAN4
+01D     LCDDATA
+01E     LCDCONTROL
+01F     GLCDDATA
+020     GLCDCONTROL
+021-028 LED_7DQ
+029     TT8LED
+02A.0   LCD_E
+02A     LCD_CONTROL
+02A.1   LCD_RW
+02A.2   LCD_RS
+02A.3   LCD_P
+02B     MPT1
+02C     MPT2
+02D     giay
+02E     bdn
+02F     I
+030     LCH
+031     LDV
+032     chuc
+033     donvi
+034     t0
+035     DV_SP_LCD
+036     HC_SP_LCD
+037-038 giai_ma_hien_thi.TAM
+037-038 xuat_1word.w
+037     @delay_ms1.P1
+037     @DIVS88.P2
+037     GM_LCD.@SCRATCH1
+037     HT_LCD.@SCRATCH1
+037     @PSTRINGC_813.@SCRATCH1
+038     lcd_hienthi_so_z_toado_xy.lcd_so
+038     @DIVS88.P1
+038     @PSTRINGC_813.@SCRATCH2
+039     xuat_1word.B1
+039-03A @DIV1616.P1
+039     lcd_hienthi_so_z_toado_xy.x1
+039     giai_ma_hien_thi.@SCRATCH1
+039     @DIVS88.@SCRATCH1
+03A     xuat_1word.B0
+03A     lcd_hienthi_so_z_toado_xy.y1
+03A     giai_ma_hien_thi.@SCRATCH2
+03A     @DIVS88.@SCRATCH2
+03B-03C @DIV1616.P1
+03B     @MUL88.P2
+03B     XUAT_4LED_7DOAN_4SO.BL743
+03B     lcd_hienthi_so_z_toado_xy.@SCRATCH1
+03B     giai_ma_hien_thi.@SCRATCH3
+03C     LCD_GOTO_XY.x
+03C     XUAT_4LED_7DOAN_4SO.BL742
+03C     LCD_DATA.LCD_DATA_X
+03C     @MUL88.P1
+03C     lcd_hienthi_so_z_toado_xy.@SCRATCH2
+03D     LCD_GOTO_XY.Y
+03D     XUAT_4LED_7DOAN_4SO.BL741
+03D     @DIV1616.@SCRATCH1
+03E     XUAT_4LED_7DOAN_4SO.BL740
+03E     LCD_GOTO_XY.@SCRATCH1
+03F     LCD_COMMAND.LCD_DATA_X
+040     LCD_XUAT_8BIT.LCD_DATA_X
+041     XUAT_LCD20X4.LCD_SIGNAL
+042     XUAT_LCD20X4.LCD_INS_HTHI
+043     XUAT_1BYTE.x
+043.7   XUAT_1BYTE.BSERI
+044     XUAT_1BYTE.SB
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  MA7DOAN.call
+0000B0  MA7DOAN.data
+0000C0  LCD_SO_X.call
+0000DA  LCD_SO_X.data
+00011C  LCD_VITRI.call
+000136  LCD_VITRI.data
+00013A  interrupt_timer1
+00014A  @const873.call
+000152  @const875.call
+000158  @const876.call
+000160  XUAT_1BYTE
+000186  xuat_1word
+00019C  xoa_tat_6module
+0001F4  SET_UP_PORT_IC_CHOT
+00022E  XUAT_GLCD_LCD
+000252  XUAT_LCD20X4
+000262  LCD_XUAT_8BIT
+00027C  LCD_COMMAND
+000292  @delay_ms1
+0002BA  SETUP_LCD
+000302  @DIVS88
+00034A  GM_LCD
+000378  LCD_GOTO_XY
+000392  LCD_DATA
+0003A8  @PSTRINGC_813
+0003C8  @MUL88
+000414  lcd_hienthi_so_z_toado_xy
+000474  HT_LCD
+0004F0  @DIV1616
+000532  XUAT_4LED_7DOAN_4SO
+000556  giai_ma_hien_thi
+0005D8  @cinit1
+0005D8  MAIN
+00060C  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    19161306_GK_TTVXL_S3_aB.c                               [01-Nov-22 11:21  CRC=00337576]
+    tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+    tv_pickit2_shift_lcd.c                                  [22-Oct-22 12:49  CRC=775AB218]
+    tv_pickit2_shift_key4x4_138.c                           [20-Sep-22 09:17  CRC=F3FC138F]
+
+Source signature=599284B2
+
+Units:
+    19161306_GK_TTVXL_S3_aB (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   19161306_GK_TTVXL_S3_aB.xsym
+    Errors:      19161306_GK_TTVXL_S3_aB.err
+    Ext Symbols: 19161306_GK_TTVXL_S3_aB.esym
+    INHX32:      19161306_GK_TTVXL_S3_aB.hex
+    Symbols:     19161306_GK_TTVXL_S3_aB.sym
+    List:        19161306_GK_TTVXL_S3_aB.lst
+    Debug/COFF:  19161306_GK_TTVXL_S3_aB.cof
+    Project:     19161306_GK_TTVXL_S3_aB.ccspjt
+    Call Tree:   19161306_GK_TTVXL_S3_aB.tre
+    Statistics:  19161306_GK_TTVXL_S3_aB.STA

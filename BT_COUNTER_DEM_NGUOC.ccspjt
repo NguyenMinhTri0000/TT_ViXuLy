@@ -1,0 +1,26 @@
+[PROJECT]
+Target=BT_COUNTER_DEM_NGUOC.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BT_COUNTER_DEM_NGUOC.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BT_COUNTER_DEM_NGUOC.c]
+Type=4
+[mru-list]
+1=BT_COUNTER_DEM_NGUOC.c
+[Opened Files]
+1=BT_TONG_HOP.c
+2=NMT_LCD.c
+3=BT_COUNTER_DEM_NGUOC.c
+4=E:\Advanced C\BaiTapC\BT2_Chuoi\SoSanh.c
+5=BAI_604_LCD_HT_2HANG_DICH_TRAI_1HANG.c
+6=
+7=
+8=D:\2022-2023_HK1\VXL_TUNGA\N\BT_COUNTER - XUAN THANH.c
+9=
+[Units]
+Count=1
+1=BT_COUNTER_DEM_NGUOC (main)

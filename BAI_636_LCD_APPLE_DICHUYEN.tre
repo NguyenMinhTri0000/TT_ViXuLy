@@ -1,5 +1,5 @@
 ÀÄBAI_636_LCD_APPLE_DICHUYEN
-   ÀÄMAIN  0/174  Ram=1
+   ÀÄMAIN  0/176  Ram=1
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
       ³  ÀÄxoa_tat_6module  0/88  Ram=0
@@ -34,29 +34,45 @@
       ³  ÃÄ@delay_ms1  0/38  Ram=1
       ³  ÀÄLCD_COMMAND  0/22  Ram=1
       ³     ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ÃÄhien_cot_song_dien_thoai  0/94  Ram=4
+      ³  ÃÄhien_hinh_cn_nho  0/62  Ram=3
+      ³  ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@const835  0/24  Ram=0
+      ³  ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
+      ³  ³  ³  ÃÄ@const830  0/20  Ram=0
+      ³  ³  ³  ÀÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄhien_hinh_cn_lon  0/60  Ram=3
+      ³  ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@const838  0/24  Ram=0
+      ³  ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄhien_hinh_cn_lon  0/60  Ram=3
       ³  ³  ÀÄ*
-      ³  ÃÄ@const835  0/24  Ram=0
-      ³  ÃÄLCD_DATA  0/22  Ram=1
-      ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
-      ³  ³     ÀÄ*
-      ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
-      ³  ³  ÃÄ@const830  0/20  Ram=0
-      ³  ³  ÀÄLCD_COMMAND  0/22  Ram=1
-      ³  ³     ÀÄ*
-      ³  ÀÄLCD_DATA  0/22  Ram=1
-      ³     ÀÄ*
-      ÃÄLCD_GOTO_XY  0/26  Ram=3
-      ³  ÀÄ*
-      ÃÄ@PSTRINGC_813  0/32  Ram=2
-      ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³  ÃÄhien_hinh_cn_nho  0/62  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄhien_hinh_cn_lon  0/60  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄhien_hinh_cn_lon  0/60  Ram=3
       ³     ÀÄ*
       ÃÄ@delay_ms1  0/38  Ram=1
-      ÃÄhien_hinh_vuong  0/62  Ram=3
+      ÃÄLCD_COMMAND  0/22  Ram=1
       ³  ÀÄ*
-      ÃÄLCD_GOTO_XY  0/26  Ram=3
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄhien_cot_song_dien_thoai  0/94  Ram=4
       ³  ÀÄ*
-      ÃÄ@PSTRINGC_813  0/32  Ram=2
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄLCD_COMMAND  0/22  Ram=1
       ³  ÀÄ*
       ÀÄ@delay_ms1  0/38  Ram=1

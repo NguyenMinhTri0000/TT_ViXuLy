@@ -1,0 +1,36 @@
+ÀÄBT_COUTER_DEM_NGUOC_CACH2
+   ÀÄMAIN  0/136  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄgiai_ma_hien_thi  0/188  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÀÄXUAT_4LED_7DOAN_3SO  0/20  Ram=3
+      ³     ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+      ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³        ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³        ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÃÄgiai_ma_hien_thi  0/188  Ram=5
+      ³  ÀÄ*
+      ÀÄPHIM_BT0  0/52  Ram=2
+         ÀÄ@delay_ms1  0/40  Ram=1

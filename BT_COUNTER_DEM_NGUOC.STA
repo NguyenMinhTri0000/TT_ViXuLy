@@ -1,0 +1,60 @@
+
+ROM used:   868/32768 (3%)
+            868/32768 (3%) including unused fragments
+
+            0.5 Average locations per line
+            3.0 Average locations per statement
+
+RAM used:   33/2048 (2%) at main() level
+            55/2048 (3%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   95    50  17  BT_COUNTER_DEM_NGUOC.c
+  705   244  83  tv_pickit2_shift_1_proteus.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+----- -----
+ 1637   294 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   2    1             @delay_ms1
+0     32   2    0             @const686
+0     42   2    3   271  4.3  XUAT_1BYTE
+0     44   3    4   231  2.3  XUAT_32LED_DON_4BYTE
+0     38   2    8   245  3.1  XUAT_32LED_DON_2WORD
+0     36   2    9   123  3.2  XUAT_32LED_DON_1DW
+0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   3    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   3    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0     20   1    3    76  1.7  XUAT_4LED_7DOAN_3SO
+0     66   4    5             @DIV1616
+0     40   2    1   195  4.0  PHIM_BT0
+0    188  11    5   309  4.7  giai_ma_hien_thi
+0     40   2    2   206  4.1  dem_xuong
+0     40   2    2   206  4.1  dem_len
+0    118   7    1   362  4.2  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               13
+    Statements              294
+    Comments                352
+    Volume (V)              4752
+    Difficulty (D)          41.0
+    Effort to implement (E) 194637
+    Time to implement (T)   3 hours, 0 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   11
+    Maintainability (MI)    139
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   864  31900  
+
+
+

@@ -1,0 +1,60 @@
+ÀÄBAI_712_GP2D12_SS1CM
+   ÀÄMAIN  0/1376  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÀÄGIAI_MA_HIENTHI_4LED  0/40  Ram=6
+         ÃÄ@SFTOI  0/58  Ram=4
+         ÀÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/296  Ram=5
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@const681  0/32  Ram=0
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@const681  0/32  Ram=0
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@const681  0/32  Ram=0
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@DIV1616  0/66  Ram=5
+            ÃÄ@const681  0/32  Ram=0
+            ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+               ÃÄXUAT_1BYTE  0/38  Ram=2
+               ÃÄXUAT_1BYTE  0/38  Ram=2
+               ÃÄXUAT_1BYTE  0/38  Ram=2
+               ÀÄXUAT_1BYTE  0/38  Ram=2

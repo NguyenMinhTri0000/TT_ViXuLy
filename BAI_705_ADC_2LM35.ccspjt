@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_705_ADC_2LM35.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_705_ADC_2LM35.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_705_ADC_2LM35.c]
+Type=4
+[mru-list]
+1=BAI_705_ADC_2LM35.c
+[Opened Files]
+1=BAI_702_LM35A_BUZZ.c
+2=BAI_702_LM35A_BUZZ_THAP_PHAN.c
+3=BAI_403_DEM_00_99.c
+4=BAI_703_LM35A_BUZZ_AUTO.c
+5=BAI_705_ADC_2LM35.c
+6=
+[Units]
+Count=1
+1=BAI_705_ADC_2LM35 (main)

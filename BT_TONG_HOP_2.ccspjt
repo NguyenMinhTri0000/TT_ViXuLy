@@ -1,0 +1,16 @@
+[PROJECT]
+Target=BT_TONG_HOP_2.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BT_TONG_HOP_2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BT_TONG_HOP_2.c]
+Type=4
+[mru-list]
+1=BT_TONG_HOP_2.c
+[Units]
+Count=1
+1=BT_TONG_HOP_2 (main)

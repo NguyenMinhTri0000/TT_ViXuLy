@@ -1,0 +1,12 @@
+>>> Warning 202 "C:\Users\NguyenMinhTri\Desktop\TT VXL\tv_pickit2_shift_lcd.c" Line 66(21,30): Variable never used:   LCD_SO_XX
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 17(61,63): Variable never used:   t0
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 18(15,17): Variable never used:   zt
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 18(21,23): Variable never used:   zp
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 18(26,27): Variable never used:   k
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 19(15,20): Variable never used:   State
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 20(15,23): Variable never used:   UD_Timer
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 20(27,37): Variable never used:   UD_Counter
+>>> Warning 202 "19161306_GK_TTVXL_S3_a.c" Line 21(14,16): Variable never used:   mp
+      Memory usage:   ROM=3%      RAM=3% - 4%
+      0 Errors,  9 Warnings.
+Build Successful.

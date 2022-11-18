@@ -1,0 +1,103 @@
+//!3 nut ma tran
+//!   14 ~State
+//!      = 0 Counter - Led 7; Timer - LCD, LCD lon
+//!      = 1 Counter - LCD, LCD lon; Timer - Led 7
+//!   6  ~UD_Counter
+//!      = 0, dem len 7 - 16
+//!      = 1, dem xuong 16 - 7
+//!   10 ~UD_Timer
+//!      = 0, dem len 4 - 35
+//!      = 1, dem xuong 35 - 4
+//!giay >20 dich led trong ra ngoai      
+#include <tv_pickit2_shift_1.c>
+//!#include <tv_pickit2_shift_1_proteus.c>
+#include <tv_pickit2_shift_lcd.c>
+#include<tv_pickit2_shift_key4x4_138.c>
+
+signed INT8 giay,bdn,i,CH_GIAY,DV_GIAY,LCH,LDV, chuc, donvi,t0;
+unsigned INT8 zt=0, zp=0,k=0;
+unsigned INT1 State=0;
+unsigned INT1 UD_Timer=0, UD_Counter=0;
+SIGNED INT32 mp;
+
+#INT_timer1
+
+void interrupt_timer1()
+{
+   bdn++;
+   set_timer1 (3036) ;
+}
+
+VOID GIAIMA_LCD()
+{
+   DV_GIAY = giay % 10 + 0X30;
+   CH_GIAY = giay / 10 + 0X30;
+   IF (CH_GIAY == 0x30) CH_GIAY = 0x20;
+}
+
+VOID GIAIMA_LCD(UNSIGNED int8 GT)
+{
+   DV_GIAY = GT % 10 + 0X30;
+   CH_GIAY = GT / 10 + 0X30;
+   IF (CH_GIAY == 0x30) CH_GIAY = 0x20; // so 0 thi doi thanh khoang trong, xoa so 0 vo nghia
+}
+
+VOID GIAIMA_LCD_LON(UNSIGNED int8 GTL)
+{
+   LDV = GTL % 10;
+   LCH = GTL / 10;
+   IF (LCH == 0) LCH = 10;
+}
+
+void lcd_hienthi_so_z_toado_xy(SIGNED int8 lcd_so, x1, y1)
+{
+   lcd_GOTO_xy (x1, y1) ;
+   FOR (i = 0; i < 6; i++)
+   {
+      IF (i == 3) lcd_goto_xy (x1 + 1, y1);
+      lcd_data (lcd_so_x[lcd_so][i]) ;
+   }
+}
+
+void giai_ma_hien_thi(UNSIGNED int16 tam)
+{
+   donvi = ma7doan[tam % 10];
+   chuc = ma7doan[tam / 10];
+   IF (chuc == 0xc0) chuc = 0xff; //xoa so 0 vo nghia
+   xuat_4led_7doan_4so (donvi&0x7f, 0xF8, 0xFC, chuc&0x7f) ;
+}
+
+
+
+void main()
+{
+   set_up_port_ic_chot () ;
+   setup_lcd () ;
+   setup_timer_0 (t0_ext_l_to_h|t0_div_1|t0_8_bit) ;
+   set_timer0 (6) ;
+   setup_timer_1 (t1_internal|t1_div_by_8) ;
+   set_timer1 (3036) ;
+   enable_interrupts (global) ;
+   enable_interrupts (INT_timer1) ;
+   giay = 8;
+   bdn = 0;
+   
+
+
+   WHILE (true)
+   {
+      IF (bdn < 10)
+      {
+//!         HIEN_THI_8LED_7DOAN_QUET ();
+      }
+
+      ELSE 
+      {
+         bdn = bdn - 10;
+         giay++;
+         IF (giay == 17) giay = 8;
+      }
+      giai_ma_hien_thi(giay);
+   }
+}
+

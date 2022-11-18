@@ -1,0 +1,20 @@
+[PROJECT]
+Target=BAI_701_LM35A.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_701_LM35A.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_701_LM35A.c]
+Type=4
+[mru-list]
+1=BAI_701_LM35A.c
+[Opened Files]
+1=BAI_412_DEM_XUNG_T0_XOA_SO0_VN_BOSUNG.c
+2=BAI_701_LM35A.c
+3=
+[Units]
+Count=1
+1=BAI_701_LM35A (main)

@@ -35,39 +35,46 @@
 019     I
 01A     vitri_x
 01B     vitri_y
-01C     hien_hinh_vuong.vitri_y
-01C-01D xuat_1word.w
+01C     hien_cot_song_dien_thoai.vitri_y
 01C     @delay_ms1.P1
-01D     hien_hinh_vuong.vitri_x
-01E     LCD_GOTO_XY.x
+01C-01D xuat_1word.w
+01D     hien_cot_song_dien_thoai.vitri_x
 01E     xuat_1word.B1
-01E     hien_hinh_vuong.@SCRATCH1
-01F     LCD_DATA.LCD_DATA_X
+01E     hien_cot_song_dien_thoai.@SCRATCH1
 01F     xuat_1word.B0
-01F     LCD_GOTO_XY.Y
-020     LCD_GOTO_XY.@SCRATCH1
-021     LCD_COMMAND.LCD_DATA_X
-022     LCD_XUAT_8BIT.LCD_DATA_X
-023     XUAT_LCD20X4.LCD_SIGNAL
-024     XUAT_LCD20X4.LCD_INS_HTHI
-025     XUAT_1BYTE.x
-025.7   XUAT_1BYTE.BSERI
-026     XUAT_1BYTE.SB
+01F     hien_cot_song_dien_thoai.@SCRATCH2
+020     hien_hinh_cn_lon.vitri_y
+020     hien_hinh_cn_nho.vitri_y
+021     hien_hinh_cn_lon.vitri_x
+021     hien_hinh_cn_nho.vitri_x
+022     LCD_GOTO_XY.x
+022     hien_hinh_cn_nho.@SCRATCH1
+022     hien_hinh_cn_lon.@SCRATCH1
+023     LCD_DATA.LCD_DATA_X
+023     LCD_GOTO_XY.Y
+024     LCD_GOTO_XY.@SCRATCH1
+025     LCD_COMMAND.LCD_DATA_X
+026     LCD_XUAT_8BIT.LCD_DATA_X
+027     XUAT_LCD20X4.LCD_SIGNAL
+028     XUAT_LCD20X4.LCD_INS_HTHI
+029     XUAT_1BYTE.x
+029.7   XUAT_1BYTE.BSERI
+02A     XUAT_1BYTE.SB
 F83     PSP_DATA
 FB4.6   C1OUT
 FB4.7   C2OUT
-FBB     CCP_2
 FBB     CCP_2_LOW
+FBB     CCP_2
 FBC     CCP_2_HIGH
 FBE     CCP_1_LOW
 FBE     CCP_1
 FBF     CCP_1_HIGH
-FE1-FE2 @WRITE_PACKED_MEMORY.P1
-FE1-FE2 @READ_PACKED_MEMORY.P2
-FE9-FEA @WRITE_PACKED_MEMORY.P1
-FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
 FE9-FEA @READ_PROGRAM_MEMORY.P3
-FE9-FEA @READ_PACKED_MEMORY.P4
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
 FF6-FF8 @READ_PROGRAM_MEMORY.P1
 FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
 
@@ -76,33 +83,37 @@ ROM Allocation:
 000014  LCD_VITRI.data
 000018  hang4.call
 000028  hang4.data
-000030  XUAT_1BYTE
-000056  xuat_1word
-00006C  xoa_tat_6module
-0000C4  SET_UP_PORT_IC_CHOT
-0000FE  XUAT_GLCD_LCD
-000122  XUAT_LCD20X4
-000132  LCD_XUAT_8BIT
-00014C  LCD_COMMAND
-000162  @delay_ms1
-00018A  SETUP_LCD
-0001D2  LCD_DATA
-0001E8  LCD_GOTO_XY
-000204  hien_hinh_vuong
-000242  MAIN
-000242  @cinit1
-000270  @cinit2
+000030  hang3.call
+000040  hang3.data
+000048  XUAT_1BYTE
+00006E  xuat_1word
+000084  xoa_tat_6module
+0000DC  SET_UP_PORT_IC_CHOT
+000116  XUAT_GLCD_LCD
+00013A  XUAT_LCD20X4
+00014A  LCD_XUAT_8BIT
+000164  LCD_COMMAND
+00017A  @delay_ms1
+0001A2  SETUP_LCD
+0001EA  LCD_DATA
+000200  LCD_GOTO_XY
+00021A  hien_hinh_cn_nho
+000258  hien_hinh_cn_lon
+000294  hien_cot_song_dien_thoai
+0002F4  @cinit1
+0002F4  MAIN
+000322  @cinit2
 
 Project Directory:
     C:\Users\NguyenMinhTri\Desktop\TT VXL\
 
 Project Files:
-    BAI_635_LCD_APPLE.c                                     [18-Oct-22 08:32  CRC=4BD8EB37]
+    BAI_635_LCD_APPLE.c                                     [22-Oct-22 13:04  CRC=841D504B]
     tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
     ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
-    tv_pickit2_shift_lcd.c                                  [03-Oct-22 14:26  CRC=3316A17B]
+    tv_pickit2_shift_lcd.c                                  [22-Oct-22 12:49  CRC=775AB218]
 
-Source signature=AC126433
+Source signature=6CDEEA81
 
 Units:
     BAI_635_LCD_APPLE (main)

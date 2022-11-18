@@ -1,0 +1,38 @@
+ÀÄBAI_708_LM35A_COUNTER_T0
+   ÀÄMAIN  0/296  Ram=12
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄdoc_nd_lm35a  0/156  Ram=0
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄ@ITOF  0/56  Ram=2
+      ³  ÃÄ@DIVFF  0/348  Ram=14
+      ³  ÃÄ@SFTOI  0/58  Ram=4
+      ³  ÀÄ@DIV1616  0/66  Ram=5
+      ÃÄcounter_dem_len  0/32  Ram=3
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄXUAT_1BYTE  0/38  Ram=2
+         ÀÄXUAT_1BYTE  0/38  Ram=2

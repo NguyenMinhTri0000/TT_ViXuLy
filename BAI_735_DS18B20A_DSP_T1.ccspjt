@@ -1,0 +1,22 @@
+[PROJECT]
+Target=BAI_735_DS18B20A_DSP_T1.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_735_DS18B20A_DSP_T1.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_735_DS18B20A_DSP_T1.c]
+Type=4
+[mru-list]
+1=BAI_735_DS18B20A_DSP_T1.c
+[Opened Files]
+1=BAI_735_DS18B20A_DSP_T1.c
+2=BAI_734_DS18B20A_LM35A.c
+3=BAI_736_DS18B20A_UO_DW_BUZZ.c
+4=BAI_709_LM35_UP_DW.c
+5=
+[Units]
+Count=1
+1=BAI_735_DS18B20A_DSP_T1 (main)

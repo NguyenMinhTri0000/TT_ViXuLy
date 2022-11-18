@@ -1,0 +1,231 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     TIN_HIEU_DK_74573_A
+016.2   G_LCDA
+016.4   G_32A
+016.6   G_4A
+017     TIN_HIEU_DK_74573_B
+017.2   G_RBDCB
+017.4   G_8B
+017.6   G_MTB
+018     DL_BTN
+019.0   STEP_MOTOR_ENABLE
+019-01A RBDC
+019.1   STEP_MOTOR_IN1
+019.2   STEP_MOTOR_IN2
+019.3   STEP_MOTOR_IN3
+019.4   STEP_MOTOR_IN4
+019.5   DC_ENABLE
+019.6   PWRKEY
+01A.0   BUZZER
+01A.1   TRIAC_1
+01A.2   TRIAC_2
+01A.3   RELAY_1
+01A.4   RELAY_2
+01B     DONVI4
+01C     CHUC4
+01D     TRAM4
+01E     NGAN4
+01F     LCDDATA
+020     LCDCONTROL
+021     GLCDDATA
+022     GLCDCONTROL
+023-02A LED_7DQ
+02B     TT8LED
+02C.0   LCD_E
+02C     LCD_CONTROL
+02C.1   LCD_RW
+02C.2   LCD_RS
+02C.3   LCD_P
+02D     MPT1
+02E     MPT2
+02F     giay
+030     bdn
+031     I
+032     CH_GIAY
+033     DV_GIAY
+034     LCH
+035     LDV
+036     chuc
+037     donvi
+038     t0
+039     zt
+03A     zp
+03B     k
+03C.0   State
+03C.1   UD_Timer
+03C.2   UD_Counter
+03D-040 mp
+041-042 giai_ma_hien_thi.TAM
+041     Timer.So_Nho
+041     GIAIMA_LCD.GT
+041     Counter.So_Nho
+041     GIAIMA_LCD_LON.GTL
+041     lcd_hienthi_so_z_toado_xy.lcd_so
+041     KEY_NHAN.MAPHIM
+041     XUAT_32LED_DON_4BYTE.BLD3
+041     SD_TRN_14Led.@SCRATCH1
+041     MAIN.@SCRATCH1
+041     @PSTRINGC_810.@SCRATCH1
+042     KEY_NHAN.HANG
+042     @DIV88.P1
+042     lcd_hienthi_so_z_toado_xy.x1
+042     XUAT_32LED_DON_4BYTE.BLD2
+042     Timer.So_Lon
+042     Counter.So_Lon
+042     GIAIMA_LCD.@SCRATCH1
+042     @PSTRINGC_810.@SCRATCH2
+043     lcd_hienthi_so_z_toado_xy.y1
+043     KEY_NHAN.COT
+043     XUAT_4LED_7DOAN_4SO.BL743
+043     XUAT_32LED_DON_4BYTE.BLD1
+043-044 @DIV1616.P1
+043     @DIV88.P2
+043     giai_ma_hien_thi.@SCRATCH1
+043     Counter.@SCRATCH1
+043     Timer.@SCRATCH1
+044     XUAT_4LED_7DOAN_4SO.BL742
+044     @delay_ms1.P1
+044     XUAT_32LED_DON_4BYTE.BLD0
+044     @MUL88.P1
+044     KEY_NHAN.@SCRATCH1
+044     @DIV88.@SCRATCH1
+044     lcd_hienthi_so_z_toado_xy.@SCRATCH1
+044     giai_ma_hien_thi.@SCRATCH2
+045-046 @DIV1616.P1
+045     LCD_DATA.LCD_DATA_X
+045     LCD_GOTO_XY.x
+045     @MUL88.P1
+045     XUAT_4LED_7DOAN_4SO.BL741
+045     lcd_hienthi_so_z_toado_xy.@SCRATCH2
+045     giai_ma_hien_thi.@SCRATCH3
+046     XUAT_4LED_7DOAN_4SO.BL740
+046     LCD_GOTO_XY.Y
+047     @DIV1616.@SCRATCH1
+047     LCD_GOTO_XY.@SCRATCH1
+048     LCD_COMMAND.LCD_DATA_X
+049     LCD_XUAT_8BIT.LCD_DATA_X
+04A     XUAT_LCD20X4.LCD_SIGNAL
+04B     XUAT_LCD20X4.LCD_INS_HTHI
+04C     XUAT_1BYTE.BYTEXUAT
+04D     XUAT_1BYTE.SB
+04E     XUAT_1BYTE.x
+04E.7   XUAT_1BYTE.BSERI
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  MA7DOAN.call
+0000B0  MA7DOAN.data
+0000C0  LCD_SO_X.call
+0000DA  LCD_SO_X.data
+00011C  LCD_MA_8DOAN.call
+000136  LCD_MA_8DOAN.data
+000176  LCD_VITRI.call
+000190  LCD_VITRI.data
+000194  MAQUETKEY.call
+0001AE  MAQUETKEY.data
+0001B2  interrupt_timer1
+0001C2  @const891.call
+0001CA  @const893.call
+0001D2  @const894.call
+0001D8  SET_UP_PORT_IC_CHOT
+0001F6  XUAT_1BYTE
+000220  MO_IC_74573_A_THONG_DL
+00024E  XUAT_GLCD_LCD
+00027A  XUAT_LCD20X4
+00028A  LCD_XUAT_8BIT
+0002A4  LCD_COMMAND
+0002BA  @delay_ms1
+0002E0  SETUP_LCD
+000328  LCD_DATA
+00033E  LCD_GOTO_XY
+000358  @PSTRINGC_810
+000378  @DIV88
+0003A0  GIAIMA_LCD
+0003CC  GIAIMA_LCD_LON
+0003F2  @MUL88
+00043C  lcd_hienthi_so_z_toado_xy
+00049C  XUAT_32LED_DON_4BYTE
+0004C6  KEY_NHAN
+000546  KEY_4X4_DW
+000578  Counter
+0005BA  @DIV1616
+0005FC  XUAT_4LED_7DOAN_4SO
+000628  giai_ma_hien_thi
+00069C  Timer
+0006D8  SD_TRN_14Led
+000728  MAIN
+000728  @cinit1
+000756  @cinit2
+
+Project Directory:
+    C:\Users\NguyenMinhTri\Desktop\TT VXL\
+
+Project Files:
+    Tach_ct_con.c                                           [31-Oct-22 15:40  CRC=158388F2]
+    tv_pickit2_shift_1_proteus.c                            [22-Aug-21 17:45  CRC=CBC49623]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
+    tv_pickit2_shift_lcd.c                                  [22-Oct-22 12:49  CRC=775AB218]
+    tv_pickit2_shift_key4x4_138.c                           [20-Sep-22 09:17  CRC=F3FC138F]
+
+Source signature=93D2DA93
+
+Units:
+    Tach_ct_con (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Tach_ct_con.xsym
+    Errors:      Tach_ct_con.err
+    Ext Symbols: Tach_ct_con.esym
+    INHX32:      Tach_ct_con.hex
+    Symbols:     Tach_ct_con.sym
+    List:        Tach_ct_con.lst
+    Debug/COFF:  Tach_ct_con.cof
+    Project:     Tach_ct_con.ccspjt
+    Call Tree:   Tach_ct_con.tre
+    Statistics:  Tach_ct_con.STA

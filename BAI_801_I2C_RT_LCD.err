@@ -1,0 +1,23 @@
+*** Error 18 "BAI_801_I2C_RT_LCD.c" Line 2(10,42): File can not be opened
+    Not in "C:\Program Files (x86)\PICC\Devices\TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+    Not in "C:\Program Files (x86)\PICC\Drivers\TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+    Not in "C:\Users\NguyenMinhTri\Desktop\TT VXL\TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+    Not in local "TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+    Not in local "C:\Users\NguyenMinhTri\Desktop\TT VXL\TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+    Not in last "C:\Program Files (x86)\PICC\Devices\TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+    Not in project "C:\Users\NguyenMinhTri\Desktop\TT VXL\TV_PICKIT2_SHIFT_DS13B07_I2C.C"
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 7(13,14): Undefined identifier  -- SETUP_LCD
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 8(15,16): Undefined identifier  -- LCD_COMMAND
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 9(12,13): Undefined identifier  -- LCD_DATA
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 10(29,30): Undefined identifier  -- DOC_THOI_GIAN_TU_REALTIME
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 11(8,15): Undefined identifier   MA_DS13
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 13(38,39): Undefined identifier  -- THIET_LAP_THOI_GIAN_HIEN_TAI
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 14(40,41): Undefined identifier  -- NAP_THOI_GIAN_HTAI_VAO_DS13B07
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 18(32,33): Undefined identifier  -- DOC_THOI_GIAN_TU_REALTIME
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 19(7,14): Undefined identifier   GIAYTAM
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 22(35,36): Undefined identifier  -- DOC_THOI_GIAN_TU_REALTIME
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 23(13,20): Undefined identifier   GIAYTAM
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 25(13,20): Undefined identifier   GIAYTAM
+*** Error 12 "BAI_801_I2C_RT_LCD.c" Line 26(39,40): Undefined identifier  -- HIEN_THI_THOI_GIAN_DS13B07
+      14 Errors,  0 Warnings.
+Build Failed.

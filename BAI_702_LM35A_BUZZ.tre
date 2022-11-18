@@ -1,0 +1,48 @@
+ÀÄBAI_702_LM35A_BUZZ
+   ÀÄMAIN  0/250  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@ITOF  0/56  Ram=2
+      ÃÄ@DIVFF  0/348  Ram=14
+      ÃÄ@SFTOI  0/58  Ram=4
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/296  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÀÄso_sanh_dk_buzzer  0/58  Ram=1
+         ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+         ÀÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+            ÀÄ*

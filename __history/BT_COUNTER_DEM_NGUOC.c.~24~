@@ -1,0 +1,97 @@
+//!#include <tv_pickit2_shift_1.c>
+#include <tv_pickit2_shift_1_proteus.c>
+unsigned int8 t0, t0_tam, sp;
+int1 tt_ss=0, tt_dc=0, tt_ht=0;
+
+void phim_start_pause()
+{
+   if(!input(bt0))
+   {
+      delay_ms(20);
+      if(!input(bt0))
+      {
+         tt_ss = ~tt_ss;
+         while(input(bt0)==0);
+      }
+   }
+}
+
+void phim_dc()
+{
+   if(!input(bt1))
+   {
+      delay_ms(20);
+      if(!input(bt1))
+      {
+         tt_dc = ~tt_dc;
+         while(input(bt1)==0);
+      }
+   }
+}
+
+void phim_hienthi()
+{
+   if(!input(bt2))
+   {
+      delay_ms(20);
+      if(!input(bt2))
+      {
+         tt_ht = ~tt_ht;
+         while(input(bt2)==0);
+      }
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot();
+   setup_timer_0(t0_off);
+   set_timer0(0);
+   t0_tam = t0 = 0;
+   xuat_4led_7doan_giaima_xoa_so0(t0);
+
+   while(true)
+   {
+      phim_start_pause();
+      
+      if(tt_ss==1)
+      {
+         setup_timer_0(t0_ext_l_to_h | t0_div_1|t0_8_bit);
+         xuat_32led_don_4byte(0xff,0xff,0xff,0xff);
+      }
+      else 
+      {
+         setup_timer_0(t0_off);
+         xuat_32led_don_4byte(0,0,0,0);
+      }
+      
+      phim_dc();
+      if(tt_dc==0) 
+      {
+         t0 = get_timer0();
+         sp=t0;
+         if(t0>100) set_timer0(1);
+      }
+      else 
+      {
+         t0 = get_timer0();
+         
+         if(t0==1) 
+         {
+            set_timer0(0);
+            sp--;
+            if(sp==0) sp=99;
+         }
+      }
+      
+      phim_hienthi();
+      if(tt_ht==0)
+      {
+         xuat_4led_7doan_4so(ma7doan[sp/10], ma7doan[sp%10]&0x7f, 0x12, 0x0c);
+      }
+      else 
+      {
+         xuat_4led_7doan_4so(0x12, 0x0c, ma7doan[sp/10], ma7doan[sp%10]&0x7f);
+      }
+   }
+}

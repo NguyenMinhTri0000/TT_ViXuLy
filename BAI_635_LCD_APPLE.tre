@@ -1,5 +1,5 @@
 ÀÄBAI_635_LCD_APPLE
-   ÀÄMAIN  0/166  Ram=0
+   ÀÄMAIN  0/80  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
       ³  ÀÄxoa_tat_6module  0/88  Ram=0
@@ -34,34 +34,35 @@
       ³  ÃÄ@delay_ms1  0/40  Ram=1
       ³  ÀÄLCD_COMMAND  0/22  Ram=1
       ³     ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÃÄLCD_COMMAND  0/22  Ram=1
-      ³  ³  ÀÄ*
-      ³  ÃÄ@const835  0/24  Ram=0
-      ³  ÃÄLCD_DATA  0/22  Ram=1
-      ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
-      ³  ³     ÀÄ*
-      ³  ÃÄLCD_GOTO_XY  0/28  Ram=3
-      ³  ³  ÃÄ@const830  0/20  Ram=0
-      ³  ³  ÀÄLCD_COMMAND  0/22  Ram=1
-      ³  ³     ÀÄ*
-      ³  ÀÄLCD_DATA  0/22  Ram=1
-      ³     ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÃÄhien_hinh_vuong  0/62  Ram=3
-      ³  ÀÄ*
-      ÀÄhien_hinh_vuong  0/62  Ram=3
-         ÀÄ*
+      ÀÄhien_cot_song_dien_thoai  0/96  Ram=4
+         ÃÄhien_hinh_cn_nho  0/62  Ram=3
+         ³  ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄ@const835  0/24  Ram=0
+         ³  ÃÄLCD_DATA  0/22  Ram=1
+         ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
+         ³  ³     ÀÄ*
+         ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
+         ³  ³  ÃÄ@const830  0/20  Ram=0
+         ³  ³  ÀÄLCD_COMMAND  0/22  Ram=1
+         ³  ³     ÀÄ*
+         ³  ÀÄLCD_DATA  0/22  Ram=1
+         ³     ÀÄ*
+         ÃÄhien_hinh_cn_lon  0/60  Ram=3
+         ³  ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄ@const838  0/24  Ram=0
+         ³  ÃÄLCD_DATA  0/22  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
+         ³  ³  ÀÄ*
+         ³  ÀÄLCD_DATA  0/22  Ram=1
+         ³     ÀÄ*
+         ÃÄhien_hinh_cn_lon  0/60  Ram=3
+         ³  ÀÄ*
+         ÃÄhien_hinh_cn_nho  0/62  Ram=3
+         ³  ÀÄ*
+         ÃÄhien_hinh_cn_lon  0/60  Ram=3
+         ³  ÀÄ*
+         ÀÄhien_hinh_cn_lon  0/60  Ram=3
+            ÀÄ*

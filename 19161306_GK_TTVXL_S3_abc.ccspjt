@@ -1,0 +1,22 @@
+[PROJECT]
+Target=19161306_GK_TTVXL_S3_abc.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=19161306_GK_TTVXL_S3_abc.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[19161306_GK_TTVXL_S3_abc.c]
+Type=4
+[mru-list]
+1=19161306_GK_TTVXL_S3_abc.c
+[Opened Files]
+1=BAI_TAP_TONG_HOP_CUA_PHUOC.c
+2=BT_TONG_HOP.c
+3=19161306_GK_TTVXL_S3_abc.c
+4=19129004_GK_TTVXL_C3_abcd.c
+5=
+[Units]
+Count=1
+1=19161306_GK_TTVXL_S3_abc (main)

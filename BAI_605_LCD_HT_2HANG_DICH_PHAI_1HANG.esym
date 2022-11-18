@@ -1,8 +1,7 @@
-D G "LCD_ADDR_LINE4" 3 17 "0XD4"
-D G "__PCH__" 0 38 ""5.015""
-D G "__DEVICE__" 0 38 "4550"
-D G "__DATE__" 0 38 ""04-Oct-22""
-D G "__TIME__" 0 38 ""08:05:15"" "Standard Header file for the PIC18F4550 device ////////////////"
+D G "__PCH__" 3 166 ""5.015""
+D G "__DEVICE__" 3 166 "4550"
+D G "__DATE__" 3 166 ""31-Oct-22""
+D G "__TIME__" 3 166 ""14:45:08"" "Standard Header file for the PIC18F4550 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 
@@ -1123,7 +1122,7 @@ D G "LCD_ADDR_LINE2" 3 15 "0XC0"
 D G "LCD_ADDR_LINE3" 3 16 "0X94"
 D G "LCD_ADDR_LINE4" 3 17 "0XD4"
 V L "LCD_DATA_X" 3 19 "int8" `810 
-F G "LCD_XUAT_8BIT" 3 20 "void(int8 LCD_DATA_X)" `809 
+F G "LCD_XUAT_8BIT" 3 20 "void(int8 LCD_DATA_X,int8 value)" `809 
 V L "LCD_DATA_X" 3 24 "int8" `812 
 F G "LCD_COMMAND" 3 25 "void(int8 LCD_DATA_X)" `811 
 V L "LCD_DATA_X" 3 30 "int8" `814 
@@ -1145,7 +1144,7 @@ V G "I" 0 5 "int8" `837
 V G "j" 0 5 "int8" `838 
 V G "vitri1" 0 5 "int8" `839 
 V G "vitri2" 0 5 "int8" `840 
-F G "MAIN" 0 7 "void()" `841 
+F G "MAIN" 0 7 "void(int16 pin)" `841 
 C L "MAIN" 0 3 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0

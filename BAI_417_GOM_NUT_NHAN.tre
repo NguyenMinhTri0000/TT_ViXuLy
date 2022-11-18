@@ -1,48 +1,34 @@
 ÀÄBAI_417_GOM_NUT_NHAN
-   ÀÄMAIN  0/166  Ram=1
+   ÀÄMAIN  0/132  Ram=1
       ÃÄ@cinit1  (Inline)  Ram=0
-      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
-      ³  ÀÄxoa_tat_6module  0/88  Ram=0
-      ³     ÃÄxuat_1word  0/22  Ram=4
-      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
-      ³     ÃÄxuat_1word  0/22  Ram=4
-      ³     ³  ÀÄ*
-      ³     ÃÄxuat_1word  0/22  Ram=4
-      ³     ³  ÀÄ*
-      ³     ÃÄxuat_1word  0/22  Ram=4
-      ³     ³  ÀÄ*
-      ³     ÃÄxuat_1word  0/22  Ram=4
-      ³     ³  ÀÄ*
-      ³     ÀÄxuat_1word  0/22  Ram=4
-      ³        ÀÄ*
+      ÃÄSET_UP_PORT_IC_CHOT  0/30  Ram=0
       ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/294  Ram=5
       ³  ÃÄ@DIV1616  0/66  Ram=5
-      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@const686  0/32  Ram=0
       ³  ÃÄ@DIV1616  0/66  Ram=5
       ³  ÃÄ@DIV1616  0/66  Ram=5
-      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@const686  0/32  Ram=0
       ³  ÃÄ@DIV1616  0/66  Ram=5
       ³  ÃÄ@DIV1616  0/66  Ram=5
-      ³  ÃÄ@const681  0/32  Ram=0
+      ³  ÃÄ@const686  0/32  Ram=0
       ³  ÃÄ@DIV1616  0/66  Ram=5
       ³  ÃÄ@DIV1616  0/66  Ram=5
-      ³  ÃÄ@const681  0/32  Ram=0
-      ³  ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
-      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³     ÀÄXUAT_1BYTE  0/38  Ram=2
-      ÃÄphim  0/30  Ram=0
+      ³  ÃÄ@const686  0/32  Ram=0
+      ³  ÀÄXUAT_4LED_7DOAN_4SO  0/44  Ram=4
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³     ÀÄMO_IC_74573_A_THONG_DL  0/46  Ram=0
+      ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/294  Ram=5
+      ³  ÀÄ*
+      ÃÄphim_ON_OFF  0/30  Ram=0
       ³  ÀÄ@delay_ms1  0/40  Ram=1
-      ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
-      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³  ÃÄXUAT_1BYTE  0/38  Ram=2
-      ³  ÀÄXUAT_1BYTE  0/38  Ram=2
-      ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/294  Ram=5
-      ³  ÀÄ*
-      ÃÄXUAT_4LED_7DOAN_GIAIMA_XOA_SO0  0/294  Ram=5
-      ³  ÀÄ*
-      ÀÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+      ÃÄXUAT_32LED_DON_4BYTE  0/42  Ram=4
+      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ÃÄXUAT_1BYTE  0/42  Ram=3
+      ³  ÀÄMO_IC_74573_A_THONG_DL  0/46  Ram=0
+      ÀÄXUAT_32LED_DON_4BYTE  0/42  Ram=4
          ÀÄ*

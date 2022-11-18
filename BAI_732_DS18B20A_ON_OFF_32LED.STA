@@ -1,0 +1,66 @@
+
+ROM used:   1384/32768 (4%)
+            1384/32768 (4%) including unused fragments
+
+            0.8 Average locations per line
+            4.2 Average locations per statement
+
+RAM used:   31/2048 (2%) at main() level
+            52/2048 (3%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   35    22   7  BAI_732_DS18B20A_ON_OFF_32LED.c
+  627   233  71  TV_PICKIT2_SHIFT_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+   36    17   5  TV_PICKIT2_SHIFT_DS18B20.c
+  230    54  17  ..\..\..\..\Program Files (x86)\PICC\Drivers\TOUCH.c
+----- -----
+ 1765   326 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     26   1    1             @delay_us1
+0     32   1    0             @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     36   1    4   160  1.8  XUAT_32LED_DON_4BYTE
+0     38   1    8   245  3.1  XUAT_32LED_DON_2WORD
+0     36   1    9   123  3.2  XUAT_32LED_DON_1DW
+0     22   1    4   131  2.8  xuat_1word
+0     88   3    0   396  1.4  xoa_tat_6module
+0     58   2    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   1    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0    294  11    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
+0     66   2    5             @DIV1616
+0     60   2    1   176  2.3  touch_read_bit
+0     34   1    2   149  4.3  touch_read_byte
+0    112   4    1   450  3.3  touch_write_bit
+0     46   2    3   185  5.6  touch_write_byte
+0     78   3    2   260  3.2  touch_present
+0     46   2    0   158  1.3  KHOI_TAO_DS18B20
+0     50   2    0   179  2.2  DOC_GIATRI_DS18B20
+0    184   7    1   530  6.2  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               17
+    Statements              326
+    Comments                401
+    Volume (V)              7611
+    Difficulty (D)          53.6
+    Effort to implement (E) 407627
+    Time to implement (T)   6 hours, 17 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   14
+    Maintainability (MI)    139
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1380  31384  
+
+
+

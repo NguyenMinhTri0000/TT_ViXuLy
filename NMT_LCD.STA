@@ -1,0 +1,58 @@
+
+ROM used:   690/32768 (2%)
+            690/32768 (2%) including unused fragments
+
+            0.4 Average locations per line
+            2.3 Average locations per statement
+
+RAM used:   139/2048 (7%) at main() level
+            152/2048 (7%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   51    26   9  NMT_LCD.c
+  705   244  83  tv_pickit2_shift_1_proteus.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  112    25   8  tv_pickit2_shift_lcd.c
+----- -----
+ 1705   295 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   3    1             @delay_ms1
+0     42   3    3   271  4.3  XUAT_1BYTE
+0     30   2    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     48   3    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   3    0   172  1.8  XUAT_GLCD_LCD
+0     16   1    2    80  2.7  XUAT_LCD20X4
+0     26   2    1   102  2.1  LCD_XUAT_8BIT
+0     22   2    1    61  1.6  LCD_COMMAND
+0     24   2    1    61  1.6  LCD_DATA
+0     72   5    0   245  1.8  SETUP_LCD
+0     30   2    4    93  3.3  Size_Of
+0    118   9    4   554  6.6  lcd_dich_trai_1hang
+0    176  13    0    96  2.0  MAIN
+ Inline         0   496  6.2  @cinit1
+
+Program metrics:
+    Functions               13
+    Statements              295
+    Comments                385
+    Volume (V)              4253
+    Difficulty (D)          38.0
+    Effort to implement (E) 161482
+    Time to implement (T)   2 hours, 30 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   13
+    Maintainability (MI)    132
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   686  32078  
+
+
+

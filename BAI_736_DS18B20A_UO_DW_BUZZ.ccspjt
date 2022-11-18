@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_736_DS18B20A_UO_DW_BUZZ.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_736_DS18B20A_UO_DW_BUZZ.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_736_DS18B20A_UO_DW_BUZZ.c]
+Type=4
+[mru-list]
+1=BAI_736_DS18B20A_UO_DW_BUZZ.c
+[Opened Files]
+1=BAI_736_DS18B20A_UO_DW_BUZZ.c
+2=BAI_512_DEM_GIAY_CX.c
+3=BAI_734_DS18B20A_LM35A.c
+4=BAI_601_LCD_HIENTHI_4HANG.c
+5=BAI_625_LCD_4LED_DEM_SP_T0_MATRIX_KEY.c
+6=
+[Units]
+Count=1
+1=BAI_736_DS18B20A_UO_DW_BUZZ (main)

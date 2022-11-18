@@ -1,0 +1,115 @@
+
+#include <tv_pickit2_shift_1.c>
+#define nd_tren 40
+#define nd_duoi 35
+#include <tv_pickit2_shift_lcd.c>
+unsigned INT8 j, solan=100;
+unsigned INT16 lm35a, lm35b, T0;
+
+int1 ttqn=0;
+void counter_dem_len(unsigned int8  gioi_han_duoi, gioi_han_tren)    //phai set gia tri dau o main set_timer 
+{
+   t0 = get_timer0 () ;
+//!   giai_ma_hien_thi (t0);
+   IF (t0 >= gioi_han_tren+1) set_timer0 (gioi_han_duoi + 1);
+}
+void doc_nd_lm35a()
+{
+   set_adc_channel(0);
+   delay_ms(1);
+   lm35a = 0;
+   FOR (j = 0; j<solan; j++)
+   {
+      lm35a = lm35a + read_adc ();
+      delay_us (100) ;
+   }
+
+   lm35a = lm35a / 2.046;
+   lm35a = lm35a / solan;
+}
+
+void doc_nd_lm35b()
+{
+   set_adc_channel(1);
+   delay_ms(1);
+   lm35b = 0;
+   FOR (j = 0; j<solan; j++)
+   {
+      lm35b = lm35b + read_adc ();
+      delay_us (100) ;
+   }
+
+   lm35b = lm35b / 2.046;
+   lm35b = lm35b / solan;
+}
+void so_sanh_dk_buzzer()
+{
+   IF ((lm35a>nd_tren)&&(lm35b>nd_tren))     //mo den
+   {
+      ttqn = 1;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0);
+     // triac_2_on () ;
+
+   }
+
+   else IF (((lm35a < nd_tren)&&(lm35b < nd_tren))&& (ttqn == 1))
+   {
+      ttqn = 0;
+//!      XUAT_32LED_DON_4BYTE (0, 0, 0, 0);
+   }
+
+   IF (((lm35a < nd_duoi)&&(lm35b < nd_duoi))&& (ttqn == 0)) 
+   //triac_2_on ();
+   XUAT_32LED_DON_4BYTE (0xff, 0, 0, 0);
+}
+void hien_thi_lcd()
+{
+      int8 ch;
+            //HIEN THI LCD
+      lcd_goto_xy(0, 0);
+      lcd_data("LM35A : ");
+      lcd_data (lm35a/10 +0x30);    
+      lcd_data (lm35b%10 +0x30);    
+      lcd_goto_xy(1, 0);
+      lcd_data("LM35B : ");
+      lcd_data (lm35b/10 +0x30);    
+      lcd_data (lm35b%10 +0x30);  
+      ch = T0/10;
+
+      lcd_goto_xy(2, 0);
+      lcd_data("DEM SAN PHAM: ");
+      
+      //xoa 0 vo nghia
+      if(ch == 0)
+      {
+         lcd_data (0x20);    
+         lcd_data (T0%10 +0x30);
+      }
+      else
+      {
+         lcd_data (ch +0x30);    
+         lcd_data (T0%10 +0x30);
+      }
+      
+}
+
+void main()
+{
+   set_up_port_ic_chot () ;
+   setup_lcd () ;
+   setup_adc (adc_clock_div_32) ;
+   setup_adc_ports (an0_to_an1|vss_vdd);
+   set_timer0 (0);
+   WHILE (true)
+   {
+      doc_nd_lm35a ();
+      doc_nd_lm35b () ;
+      so_sanh_dk_buzzer();
+      counter_dem_len(0, 99);
+//!      xuat_4led_7doan_4so (ma7doan[lm35b/ 10],ma7doan[lm35b % 10]&0X7F,ma7doan[ lm35a / 10], ma7doan[lm35a % 10]);
+      hien_thi_lcd();
+    
+   }
+}
+
+

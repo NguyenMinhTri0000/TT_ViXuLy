@@ -1,0 +1,85 @@
+
+ROM used:   2628/32768 (8%)
+            2628/32768 (8%) including unused fragments
+
+            1.3 Average locations per line
+            6.6 Average locations per statement
+
+RAM used:   64/2048 (3%) at main() level
+            70/2048 (3%) worst case
+
+Stack used: 8 worst case (7 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  132    72  18  BAI_736_DS18B20A_UO_DW_BUZZ.c
+  627   233  58  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+   36    17   4  TV_PICKIT2_SHIFT_DS18B20.c
+  230    54  13  ..\..\..\..\Program Files (x86)\PICC\Drivers\TOUCH.c
+  112    25   6  tv_pickit2_shift_lcd.c
+----- -----
+ 1974   401 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   0    1             @delay_us1
+0     42   1    0             @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     34   1    4   160  1.8  XUAT_32LED_DON_4BYTE
+0     22   0    4   131  2.8  xuat_1word
+0     88   2    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     34   1    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0     66   1    5             @DIV1616
+0     36   1    0   106  1.3  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     36   1    3   106  2.1  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   1    0             @const755
+0     52   1    3   123  2.6  XUAT_8LED_7DOAN_QUET_2
+0     76   1    1   178  4.9  HIEN_THI_8LED_7DOAN_QUET
+0     60   1    1   176  2.3  touch_read_bit
+0     34   1    2   149  4.3  touch_read_byte
+0    112   2    1   450  3.3  touch_write_bit
+0     46   1    3   185  5.6  touch_write_byte
+0     78   1    2   260  3.2  touch_present
+0     50   1    0   179  2.2  DOC_GIATRI_DS18B20
+0     26   0    1   102  2.1  LCD_XUAT_8BIT
+0     22   0    1    61  1.6  LCD_COMMAND
+0     22   0    1    61  1.6  LCD_DATA
+0     72   1    0   245  1.8  SETUP_LCD
+0     30   1    0   689  6.3  @const849
+0     26   0    3   147  3.7  LCD_GOTO_XY
+0     16   0    0    29  1.2  interrupt_timer1
+0    180   3    3   204  3.2  giai_ma_gan_cho_8led_quet
+0    194   4    2   277  3.3  lcd_hienthi
+0    112   2    1   436  5.6  so_sanh_dk_buzzer
+0     44   1    0   165  3.8  phim_up
+0     46   1    0   165  3.8  phim_dw
+0    606  12   12  1067  8.3  MAIN
+ Inline         0   348  6.5  @cinit1
+
+Program metrics:
+    Functions               32
+    Statements              401
+    Comments                452
+    Volume (V)              14150
+    Difficulty (D)          104.0
+    Effort to implement (E) 1471406
+    Time to implement (T)   22 hours, 42 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   23
+    Maintainability (MI)    76
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  2482  30136  
+
+
+

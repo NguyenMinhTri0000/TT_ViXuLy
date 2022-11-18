@@ -1,0 +1,5 @@
+>>> Warning 201 "BT_TONG_HOP.c" Line 30(1,1): Assignment inside relational expression
+>>> Warning 202 "C:\Users\NguyenMinhTri\Desktop\TT VXL\tv_pickit2_shift_lcd.c" Line 66(21,30): Variable never used:   LCD_SO_XX
+      Memory usage:   ROM=8%      RAM=3% - 4%
+      0 Errors,  2 Warnings.
+Build Successful.

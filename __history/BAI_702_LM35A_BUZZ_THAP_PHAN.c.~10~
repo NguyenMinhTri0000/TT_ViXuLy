@@ -1,0 +1,58 @@
+
+#include <tv_pickit2_shift_1.c>
+#define nd_tren 35
+
+unsigned INT8 j, solan=100;
+float lm35a;
+unsigned int16 KQ_HT;
+int1 ttqn=0;
+
+void so_sanh_dk_buzzer()
+{
+   IF ((lm35a>nd_tren)&&(ttqn==0))
+   {
+      ttqn = 1;
+      //buzzer_on () ;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0XFF);
+   }
+
+   else IF ((lm35a < nd_tren)&& (ttqn == 1))
+   {
+      ttqn = 0;
+      //buzzer_off () ;
+      XUAT_32LED_DON_4BYTE (0, 0, 0, 0);
+   }
+}
+
+void main()
+{
+   set_up_port_ic_chot () ;
+   setup_adc (adc_clock_div_32) ;
+   setup_adc_ports (an0|vss_vdd);
+   set_adc_channel (0);
+   ttqn = 0;
+
+   WHILE (true)
+   {
+      lm35a = 0;
+      FOR (j = 0; j<solan; j++)
+      {
+         lm35a = lm35a + read_adc ();
+         delay_ms (1) ;
+      }
+
+      lm35a = lm35a / 2.046;
+      lm35a = lm35a / solan;
+      
+      KQ_HT = (int16)(lm35a*10);
+      
+      //giai ma
+//!      XUAT_4LED_7DOAN_3SO (KQ_HT/100, (KQ_HT/10%10)&0x7f, KQ_HT%10);
+//!            xuat_4led_7doan_giaima_xoa_so0 (lm35a);
+//!                        xuat_4led_7doan_giaima_xoa_so0 (KQ_HT/100);
+                                                xuat_4led_7doan_giaima_xoa_so0 (KQ_HT%10);
+      so_sanh_dk_buzzer () ;
+   }
+}
+
+

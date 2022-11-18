@@ -1,0 +1,66 @@
+
+ROM used:   1146/32768 (3%)
+            1146/32768 (3%) including unused fragments
+
+            0.7 Average locations per line
+            4.0 Average locations per statement
+
+RAM used:   47/2048 (2%) at main() level
+            55/2048 (3%) worst case
+
+Stack used: 6 worst case (5 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  102    53  19  DEM_GIAY_TIMER_DAO_CHIEU.c
+  627   233  81  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+----- -----
+ 1566   286 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   2    1             @delay_ms1
+0     42   2    0             @const681
+0     38   2    2   234  4.3  XUAT_1BYTE
+0     22   1    4   131  2.8  xuat_1word
+0     88   4    0   396  1.4  xoa_tat_6module
+0     58   3    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   2    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0     18   1    2    66  1.6  XUAT_4LED_7DOAN_2SO
+0     36   2    3   106  2.1  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   1    0             @const755
+0     52   2    3   123  2.6  XUAT_8LED_7DOAN_QUET_2
+0     76   3    1   178  4.9  HIEN_THI_8LED_7DOAN_QUET
+0     16   1    0    29  1.2  interrupt_timer1
+0     30   1    0   138  3.3  phim_ON_OFF
+0     30   1    0   138  3.3  phim_dung
+0     64   3    3   307  6.0  Timer
+0     60   3    1    93  2.9  giai_ma_gan_cho_8led_quet
+0     72   3    4             @DIVS88
+0    180   8    2   422  6.1  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               16
+    Statements              286
+    Comments                292
+    Volume (V)              5018
+    Difficulty (D)          48.4
+    Effort to implement (E) 242890
+    Time to implement (T)   3 hours, 45 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   13
+    Maintainability (MI)    111
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  1000  31618  
+
+
+

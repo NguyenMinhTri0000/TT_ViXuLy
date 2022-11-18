@@ -1,0 +1,49 @@
+ÀÄBAI_702_LM35A_BUZZ_THAP_PHAN
+   ÀÄMAIN  0/548  Ram=9
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@ADDFF  0/620  Ram=16
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@DIVFF  0/346  Ram=14
+      ÃÄ@MULFF  0/244  Ram=11
+      ÃÄ@SFTOI  0/58  Ram=4
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄ@DIV1616  0/66  Ram=5
+      ÃÄ@const681  0/32  Ram=0
+      ÃÄXUAT_4LED_7DOAN_3SO  0/20  Ram=3
+      ³  ÀÄXUAT_4LED_7DOAN_4SO  0/36  Ram=4
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+      ÀÄso_sanh_dk_buzzer  0/102  Ram=1
+         ÃÄ@FLT  0/118  Ram=10
+         ÃÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+         ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+         ÃÄ@FLT  0/118  Ram=10
+         ÀÄXUAT_32LED_DON_4BYTE  0/34  Ram=4
+            ÀÄ*

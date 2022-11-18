@@ -1,0 +1,84 @@
+
+ROM used:   2416/32768 (7%)
+            2416/32768 (7%) including unused fragments
+
+            1.2 Average locations per line
+            5.4 Average locations per statement
+
+RAM used:   66/2048 (3%) at main() level
+            79/2048 (4%) worst case
+
+Stack used: 8 worst case (7 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  232   127  28  Tach_ct_con.c
+  705   244  54  tv_pickit2_shift_1_proteus.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  112    25   6  tv_pickit2_shift_lcd.c
+   62    52  12  tv_pickit2_shift_key4x4_138.c
+----- -----
+ 1948   448 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     42   1    0  3618 10.3  @const686
+0     42   1    3   271  4.3  XUAT_1BYTE
+0     42   1    4   231  2.3  XUAT_32LED_DON_4BYTE
+0     30   1    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   1    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     44   1    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0     66   1    5  3618 10.3  @DIV1616
+0     44   1    0   172  1.8  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     26   1    1   102  2.1  LCD_XUAT_8BIT
+0     22   0    1    61  1.6  LCD_COMMAND
+0     22   0    1    61  1.6  LCD_DATA
+0     72   1    0   245  1.8  SETUP_LCD
+0     92   2    0    61  1.6  @const813
+0     90   2    0             @const821
+0     30   1    0             @const827
+0     26   1    3   147  3.7  LCD_GOTO_XY
+0     30   1    0   147  3.7  @const832
+0    128   3    4   656  8.1  KEY_NHAN
+0     74   2    2   598  6.2  @MUL88
+0     50   1    0   204  4.4  KEY_4X4_DW
+0     16   0    0    29  1.2  interrupt_timer1
+0     44   1    2   141  4.0  GIAIMA_LCD
+0     40   1    3             @DIV88
+0     38   1    1   118  3.5  GIAIMA_LCD_LON
+0     96   2    5   255  5.5  lcd_hienthi_so_z_toado_xy
+0    116   2    5   200  4.5  giai_ma_hien_thi
+0     80   2    1   338  6.0  SD_TRN_14Led
+0     66   1    3   247  5.0  Counter
+0     60   1    3   290  5.9  Timer
+0    588  12    1  2504  8.3  MAIN
+0      8   0    0   110  3.7  @const891
+0     32   1    2  3584 10.3  @PSTRINGC_810
+0      8   0    0  3618 10.3  @const893
+0      6   0    0             @const894
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               31
+    Statements              448
+    Comments                466
+    Volume (V)              35023
+    Difficulty (D)          144.1
+    Effort to implement (E) 5045802
+    Time to implement (T)   77 hours, 52 minutes
+    Est Delivered Bugs (B)  10
+    Cyclomatic Complexity   124
+    Maintainability (MI)    77
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  2270  30348  
+
+
+

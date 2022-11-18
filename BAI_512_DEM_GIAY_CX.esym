@@ -1,8 +1,7 @@
-D G "MASO7" 1 159 "0XF8"
-D G "__PCH__" 0 31 ""5.015""
-D G "__DEVICE__" 0 31 "4550"
-D G "__DATE__" 0 31 ""11-Oct-22""
-D G "__TIME__" 0 31 ""08:49:19"" "Standard Header file for the PIC18F4550 device ////////////////"
+D G "__PCH__" 0 47 ""5.015""
+D G "__DEVICE__" 0 47 "4550"
+D G "__DATE__" 0 47 ""01-Nov-22""
+D G "__TIME__" 0 47 ""08:55:53"" "Standard Header file for the PIC18F4550 device ////////////////"
 c L "set_tris_a" 2 3 6 "FUNCTION"
 v L "value" 2 45 "int8" `54 
 f B "set_tris_a" 2 45 "void(int8 value)" `53 
@@ -1113,9 +1112,14 @@ F G "GGMMAA" 1 622 "void()" `802
 V L "x" 1 623 "int8" `803 
 V G "giay" 0 4 "sint8" `804 
 V G "bdn" 0 4 "sint8" `805 
-F G "interrupt_timer1" 0 9 "void()" `806 
-F G "giai_ma_gan_cho_8led_quet" 0 15 "void(sint8 ,sint8 )" `807 
+C L "interrupt_timer1" 0 7 1 "FUNCTION"
+F G "interrupt_timer1" 0 8 "void()" `806 
+C L "interrupt_timer1" 0 7 2 "FUNCTION"
+F G "giai_ma_gan_cho_8led_quet" 0 15 "void()" `807 
 F G "MAIN" 0 21 "void()" `811 
+C L "MAIN" 0 7 1 "FUNCTION"
+C L "MAIN" 0 7 1 "FUNCTION"
+C L "MAIN" 0 7 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

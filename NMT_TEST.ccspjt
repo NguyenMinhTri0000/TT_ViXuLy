@@ -1,0 +1,26 @@
+[PROJECT]
+Target=NMT_TEST.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=NMT_TEST.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[NMT_TEST.c]
+Type=4
+[mru-list]
+1=NMT_TEST.c
+[Opened Files]
+1=BAI_417_GOM_NUT_NHAN.c
+2=BAI_643_LCD_DEM_00_99.c
+3=BAI_512_DEM_GIAY_CX.c
+4=BAI_404_DEM_GIAY_00_59.c
+5=Tach_ct_con.c
+6=NMT_TEST.c
+7=DEM_GIAY_TIMER_DAO_CHIEU.c
+8=BAI_644_LCD_DEM_SP_KTL.c
+9=
+[Units]
+Count=1
+1=NMT_TEST (main)

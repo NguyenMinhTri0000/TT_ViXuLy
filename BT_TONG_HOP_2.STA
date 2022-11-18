@@ -1,0 +1,85 @@
+
+ROM used:   2794/32768 (9%)
+            2794/32768 (9%) including unused fragments
+
+            1.5 Average locations per line
+            7.7 Average locations per statement
+
+RAM used:   62/2048 (3%) at main() level
+            78/2048 (4%) worst case
+
+Stack used: 9 worst case (8 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  169    96  26  BT_TONG_HOP_2.c
+  705   244  67  tv_pickit2_shift_1_proteus.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  112    25   7  tv_pickit2_shift_lcd.c
+----- -----
+ 1823   365 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     42   1    0   221  5.7  @const686
+0     42   1    3   271  4.3  XUAT_1BYTE
+0     42   1    4   231  2.3  XUAT_32LED_DON_4BYTE
+0     30   1    0   152  1.8  SET_UP_PORT_IC_CHOT
+0     46   1    0   119  1.7  MO_IC_74573_A_THONG_DL
+0     46   1    0   119  1.7  MO_IC_74573_B_THONG_DL
+0     42   1    4   231  2.3  XUAT_4LED_7DOAN_4SO
+0    296   5    5   465  4.8  XUAT_4LED_7DOAN_GIAIMA_XOA_SO0
+0     66   1    5   155  3.1  @DIV1616
+0     44   1    0   172  1.8  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     44   1    3   172  2.7  XUAT_8LED_7DOAN_QUET_1
+0     10   0    0    25  1.2  XUAT_8LED_7DOAN_QUET_TAT_LED
+0     34   1    0    25  1.2  @const753
+0     60   1    3   190  3.1  XUAT_8LED_7DOAN_QUET_2
+0     72   1    1   178  4.9  HIEN_THI_8LED_7DOAN_QUET
+0     26   0    1   102  2.1  LCD_XUAT_8BIT
+0     22   0    1    61  1.6  LCD_COMMAND
+0     22   0    1    61  1.6  LCD_DATA
+0     72   1    0   245  1.8  SETUP_LCD
+0     92   2    0             @const813
+0     90   2    0             @const821
+0     30   1    0             @const827
+0     26   0    3   147  3.7  LCD_GOTO_XY
+0     16   0    0    29  1.2  interrupt_timer1
+0    148   3    3   204  3.2  giai_ma_gan_cho_8led_quet
+0     72   1    4             @DIVS88
+0     34   1    0   156  4.3  hien_thi_quet_led
+0    228   4    2   526  4.8  hienthi_lcd
+0    164   3    8   125  3.0  hien_thi_led_7_doan
+0     30   1    1   158  3.5  PHIM_BT0
+0     32   1    1   158  3.5  PHIM_BT1
+0    108   2    5   255  5.5  lcd_hienthi_so_z_toado_xy
+0     76   1    2             @MUL88
+0    210   4    2   415  6.1  hien_thi_so_lon
+0     76   1    1   346  4.7  dem_couter
+0    104   2    0   370  2.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               32
+    Statements              365
+    Comments                408
+    Volume (V)              12228
+    Difficulty (D)          99.2
+    Effort to implement (E) 1213066
+    Time to implement (T)   18 hours, 43 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   24
+    Maintainability (MI)    66
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  2648  29970  
+
+
+

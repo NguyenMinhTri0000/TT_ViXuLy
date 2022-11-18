@@ -1,0 +1,24 @@
+[PROJECT]
+Target=BAI_712_GP2D12_SS1CM.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_712_GP2D12_SS1CM.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_712_GP2D12_SS1CM.c]
+Type=4
+[mru-list]
+1=BAI_712_GP2D12_SS1CM.c
+[Opened Files]
+1=BAI_707_2LM35_LCD.c
+2=BAI_710_LM35_COUNTER_LCD.c
+3=BAI_708_LM35A_COUNTER_T0.c
+4=BAI_412_DEM_XUNG_T0_XOA_SO0_VN.c
+5=BAI_712_GP2D12_SS1CM.c
+6=BAI_713_GP2D12_SS1CM.c
+7=
+[Units]
+Count=1
+1=BAI_712_GP2D12_SS1CM (main)

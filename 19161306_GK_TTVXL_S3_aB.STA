@@ -1,0 +1,77 @@
+
+ROM used:   1660/32768 (5%)
+            1660/32768 (5%) including unused fragments
+
+            0.9 Average locations per line
+            4.5 Average locations per statement
+
+RAM used:   55/2048 (3%) at main() level
+            69/2048 (3%) worst case
+
+Stack used: 9 worst case (8 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  117    56  15  19161306_GK_TTVXL_S3_aB.c
+  627   233  64  tv_pickit2_shift_1.c
+  837     0   0  ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H
+  112    25   7  tv_pickit2_shift_lcd.c
+   62    52  14  tv_pickit2_shift_key4x4_138.c
+----- -----
+ 1755   366 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   1    1             @delay_ms1
+0     42   1    0   271  4.3  @const681
+0     38   1    2   234  4.3  XUAT_1BYTE
+0     22   1    4   131  2.8  xuat_1word
+0     88   3    0   396  1.4  xoa_tat_6module
+0     58   2    0   253  2.3  SET_UP_PORT_IC_CHOT
+0     36   1    4   160  1.8  XUAT_4LED_7DOAN_4SO
+0     66   2    5   465  4.8  @DIV1616
+0     36   1    0   106  1.3  XUAT_GLCD_LCD
+0     16   0    2    80  2.7  XUAT_LCD20X4
+0     26   1    1   102  2.1  LCD_XUAT_8BIT
+0     22   1    1    61  1.6  LCD_COMMAND
+0     22   1    1    61  1.6  LCD_DATA
+0     72   2    0   245  1.8  SETUP_LCD
+0     92   3    0    93  2.9  @const816
+0     30   1    0             @const830
+0     26   1    3   147  3.7  LCD_GOTO_XY
+0     76   2    2   603  4.8  @MUL88
+0     16   0    0    29  1.2  interrupt_timer1
+0     96   3    5   255  5.5  lcd_hienthi_so_z_toado_xy
+0    130   4    5   226  5.0  giai_ma_hien_thi
+0     46   1    1   122  3.9  GM_LCD
+0     72   2    4   122  3.9  @DIVS88
+0    124   4    1   315  2.7  HT_LCD
+0      8   0    0   315  2.7  @const873
+0     32   1    2   563  6.2  @PSTRINGC_813
+0      6   0    0   583  6.2  @const875
+0      8   0    0   583  6.2  @const876
+0    168   5    0   569  6.2  MAIN
+ Inline         0   603  6.2  @cinit1
+
+Program metrics:
+    Functions               28
+    Statements              366
+    Comments                329
+    Volume (V)              14337
+    Difficulty (D)          101.0
+    Effort to implement (E) 1448542
+    Time to implement (T)   22 hours, 21 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   28
+    Maintainability (MI)    55
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  1514  31104  
+
+
+
