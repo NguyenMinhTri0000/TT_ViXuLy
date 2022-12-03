@@ -1,0 +1,102 @@
+#INCLUDE <TV_PICKIT2_SHIFT_1.c>
+#INCLUDE <TV_PICKIT2_SHIFT_DS18B20.c>  
+#include <tv_pickit2_shift_lcd.c>
+signed INT8 i;
+const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh vuong
+void lcd_hienthi_so_z_toado_xy(SIGNED int8 lcd_so, x1, y1)
+{
+   lcd_GOTO_xy(x1,y1);
+   FOR (i=0;i<6;i++)    //mot so LCD duoc tao thanh tu 6 phan, 3 tren, 3 duoi
+   {
+      IF (i==3) lcd_goto_xy(x1+1,y1);
+      lcd_data(lcd_so_x[lcd_so][i]);
+   }
+}
+
+void phim_tt()
+{
+   if(input(BT0)==0)    //kiem tra lan 1
+   {
+      delay_ms(50);
+     
+         if(input(BT0)==0)    //kiem tra lan 2
+         {
+         //lenh chuong trinh
+            TT ++;
+            if(TT >=2) TT = 0;  //TT == 4 nhung den 3 so thap phan la loi roi
+            while(input(BT0)==0);   //cho nha phim
+         }
+      
+   }
+}
+void hien_hinh_vuong()
+{
+   lcd_command(0x40);      //vi tri dau trang 148
+   FOR (i=0;i<8;i++) { lcd_data(hang4[i]); }       //0x40 luu hang2[0] 0x41 luu hang2[1]...
+   lcd_GOTO_xy(0,15);       //vi tri tao ma   
+   lcd_data(0);            //dia chi ki tu trang 148
+}
+
+void HIEN_THI_LCD()
+{
+
+      lcd_command(0x40);
+      FOR (i=0;i<64;i++) { lcd_data(lcd_ma_8doan[i]); }
+      lcd_hienthi_so_z_toado_xy(11,2,16);
+      lcd_hienthi_so_z_toado_xy(13,2,12);
+
+      
+   if(TT == 0)
+   {
+         unsigned int8 TP = (DS18A&0X000F)*10/16;
+      lcd_command(0x40);
+      FOR (i=0;i<64;i++) { lcd_data(lcd_ma_8doan[i]); }
+      lcd_hienthi_so_z_toado_xy(DS18A/10,0,0);
+      lcd_hienthi_so_z_toado_xy(DS18A%10,0,4);   //mot so 3 ô + 1 space = 4
+      lcd_hienthi_so_z_toado_xy(TP,0,8); 
+      lcd_hienthi_so_z_toado_xy(10,0,12);    //space
+//!      lcd_hienthi_so_z_toado_xy(10,0,16);   
+   }
+   else    if(TT == 1)
+   {
+         unsigned int8 TP = (DS18A&0X000F)*100/16;
+      lcd_command(0x40);
+      FOR (i=0;i<64;i++) { lcd_data(lcd_ma_8doan[i]); }
+      lcd_hienthi_so_z_toado_xy(DS18A/10,0,0);
+      lcd_hienthi_so_z_toado_xy(DS18A%10,0,4);   //mot so 3 ô + 1 space = 4
+      lcd_hienthi_so_z_toado_xy(TP/10,0,8); 
+      lcd_hienthi_so_z_toado_xy(TP%10,0,12);    
+//!      lcd_hienthi_so_z_toado_xy(10,0,16);  
+   }
+//!   else    if(TT == 2)
+//!   {
+//!         unsigned int8 TP = (DS18A&0X000F)*1000/16;
+//!      lcd_command(0x40);
+//!      FOR (i=0;i<64;i++) { lcd_data(lcd_ma_8doan[i]); }
+//!      lcd_hienthi_so_z_toado_xy(DS18A/10,0,0);
+//!      lcd_hienthi_so_z_toado_xy(DS18A%10,0,4);   //mot so 3 ô + 1 space = 4
+//!      lcd_hienthi_so_z_toado_xy(TP/100,0,8); 
+//!      lcd_hienthi_so_z_toado_xy(TP/10%10,0,12);    
+//!      lcd_hienthi_so_z_toado_xy(TP%100,0,16);   
+//!   }   
+}
+VOID MAIN()
+{
+   SET_UP_PORT_IC_CHOT();
+   setup_lcd();
+   KHOI_TAO_DS18B20();
+   DS18A_TAM=0;
+   TT = 0;
+//!   XUAT_4LED_7DOAN_GIAIMA_XOA_SO0(0);
+   WHILE(TRUE)
+   {
+      IF(TOUCH_PRESENT())   DOC_GIATRI_DS18B20();
+         DS18A=DS18A>>4;
+         DS18A=DS18A&0X0FF;
+
+//!         XUAT_4LED_7DOAN_4SO(ma7doan[DS18A/10], ma7doan[DS18A%10]&0x7f, ma7doan[TP/10], ma7doan[TP%10]);
+         HIEN_THI_LCD();
+         phim_tt();
+//!         hien_hinh_vuong()   ;
+   }
+}

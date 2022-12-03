@@ -1,0 +1,192 @@
+ÀÄBAI_803_I2C_RT_LCD_3KEY_HT_THU
+   ÀÄMAIN  0/162  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄSETUP_LCD  0/72  Ram=0
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
+      ³  ³     ÃÄXUAT_LCD20X4  0/16  Ram=2
+      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/36  Ram=0
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ÀÄXUAT_LCD20X4  0/16  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄLCD_COMMAND  0/22  Ram=1
+      ³     ÀÄ*
+      ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_813  0/32  Ram=2
+      ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³     ÀÄLCD_XUAT_8BIT  0/26  Ram=1
+      ³        ÀÄ*
+      ÃÄDOC_THOI_GIAN_TU_REALTIME  0/214  Ram=0
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÃÄ@I2C_READ_1  0/72  Ram=3
+      ³  ÀÄ@I2C_READ_1  0/72  Ram=3
+      ÃÄTHIET_LAP_THOI_GIAN_HIEN_TAI  0/38  Ram=0
+      ÃÄNAP_THOI_GIAN_HTAI_VAO_DS13B07  0/134  Ram=0
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÃÄ@I2C_WRITE_1  0/72  Ram=1
+      ³  ÀÄ@I2C_WRITE_1  0/72  Ram=1
+      ÃÄhien_thi_gia_tri_mod  0/18  Ram=1
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³     ÀÄ*
+      ÃÄDOC_THOI_GIAN_TU_REALTIME  0/214  Ram=0
+      ³  ÀÄ*
+      ÃÄDOC_THOI_GIAN_TU_REALTIME  0/214  Ram=0
+      ³  ÀÄ*
+      ÃÄhien_thi_gia_tri_mod  0/18  Ram=1
+      ³  ÀÄ*
+      ÃÄHIEN_THI_THOI_GIAN_DS13B07  0/268  Ram=1
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_GOTO_XY  0/28  Ram=3
+      ³  ³  ÃÄ@const830  0/20  Ram=0
+      ³  ³  ÀÄLCD_COMMAND  0/22  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄ@PSTRINGC_813  0/32  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³     ÀÄ*
+      ÃÄphim_mod  0/42  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄhien_thi_gia_tri_mod  0/18  Ram=1
+      ³     ÀÄ*
+      ÃÄphim_up  0/246  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÃÄNAP_THOI_GIAN_HTAI_VAO_DS13B07  0/134  Ram=0
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄHIEN_THI_THOI_GIAN_DS13B07  0/268  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_tang  0/24  Ram=2
+      ³  ÀÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³     ÀÄ*
+      ÃÄphim_dw  0/242  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÃÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄhieu_chinh_so_bcd_giam  0/24  Ram=2
+      ³  ÀÄluu_giai_ma_hien_thi_sau_khi_chinh  0/6  Ram=0
+      ³     ÀÄ*
+      ÀÄnhap_nhay_con_tro  0/80  Ram=0
+         ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ÀÄ*
+         ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ÀÄ*
+         ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ÀÄ*
+         ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ÀÄ*
+         ÃÄLCD_COMMAND  0/22  Ram=1
+         ³  ÀÄ*
+         ÀÄLCD_COMMAND  0/22  Ram=1
+            ÀÄ*

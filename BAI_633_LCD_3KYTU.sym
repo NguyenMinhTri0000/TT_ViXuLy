@@ -105,12 +105,12 @@ Project Directory:
     C:\Users\NguyenMinhTri\Desktop\TT VXL\
 
 Project Files:
-    BAI_633_LCD_3KYTU.c                                     [18-Oct-22 08:30  CRC=DD0E84BE]
+    BAI_633_LCD_3KYTU.c                                     [29-Nov-22 09:17  CRC=7063FED5]
     tv_pickit2_shift_1.c                                    [15-Feb-22 14:01  CRC=A6D453BE]
     ..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.H  [12-Nov-13 14:35  CRC=5337E248]
-    tv_pickit2_shift_lcd.c                                  [03-Oct-22 14:26  CRC=3316A17B]
+    tv_pickit2_shift_lcd.c                                  [29-Nov-22 09:13  CRC=901D5249]
 
-Source signature=3D47FDBA
+Source signature=8AAAD96D
 
 Units:
     BAI_633_LCD_3KYTU (main)

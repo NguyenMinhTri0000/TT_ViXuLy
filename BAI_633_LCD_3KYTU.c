@@ -20,7 +20,7 @@ const UNSIGNED char hang3[]={0x04,0X0A,0X11,0X0A,0x04,0,0,0};     //hinh thoi
 //!0 0 0 0 0      0×00
 //!0 0 0 0 0              0×00
 //!0 0 0 0 0               0×00  
-const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh thoi\
+const UNSIGNED char hang4[]={0x1f,0x11,0X11,0x11,0x1f,0,0,0};     //hinh vuong
 //!1 1 1 1 1      0x1f
 //!1 0 0 0 1      0x11
 //!1 0 0 0 1      0x11

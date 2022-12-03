@@ -1,0 +1,207 @@
+ÀÄBT_ON_TAP_TUAN15
+   ÀÄMAIN  0/112  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄSET_UP_PORT_IC_CHOT  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³     ³  ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄSETUP_LCD  0/72  Ram=0
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
+      ³  ³     ÃÄXUAT_LCD20X4  0/16  Ram=2
+      ³  ³     ³  ÀÄXUAT_GLCD_LCD  0/36  Ram=0
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÃÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ³     ÀÄXUAT_1BYTE  0/38  Ram=2
+      ³  ³     ÀÄXUAT_LCD20X4  0/16  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄLCD_COMMAND  0/22  Ram=1
+      ³     ÀÄ*
+      ÃÄKHOI_TAO_DS18B20  0/156  Ram=0
+      ³  ÃÄtouch_present  0/78  Ram=2
+      ³  ³  ÃÄ@delay_us1  0/26  Ram=1
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄtouch_write_bit  0/112  Ram=1
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_present  0/78  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_present  0/78  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_present  0/78  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_present  0/78  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄtouch_write_byte  0/46  Ram=3
+      ³     ÀÄ*
+      ÃÄtouch_present  0/78  Ram=2
+      ³  ÀÄ*
+      ÃÄDOC_GIATRI_DS18B20  0/50  Ram=0
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_present  0/78  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_write_byte  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄtouch_read_byte  0/34  Ram=2
+      ³  ³  ÀÄtouch_read_bit  0/60  Ram=1
+      ³  ÀÄtouch_read_byte  0/34  Ram=2
+      ³     ÀÄ*
+      ÃÄHIEN_THI_LCD  0/1036  Ram=2
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const844  0/80  Ram=0
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄLCD_XUAT_8BIT  0/26  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
+      ³  ³  ³  ÃÄ@const850  0/20  Ram=0
+      ³  ³  ³  ÀÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÃÄLCD_GOTO_XY  0/26  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@MUL88  0/76  Ram=2
+      ³  ³  ÃÄ@const836  0/106  Ram=0
+      ³  ³  ÀÄLCD_DATA  0/22  Ram=1
+      ³  ³     ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MUL1616  0/30  Ram=5
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const844  0/80  Ram=0
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MUL1616  0/30  Ram=5
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const844  0/80  Ram=0
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MUL1616  0/30  Ram=5
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const844  0/80  Ram=0
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MUL1616  0/30  Ram=5
+      ³  ÃÄLCD_COMMAND  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@const844  0/80  Ram=0
+      ³  ÃÄLCD_DATA  0/22  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÃÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ÀÄlcd_hienthi_so_z_toado_xy  0/96  Ram=5
+      ³     ÀÄ*
+      ÀÄphim_tt  0/38  Ram=1
+         ÀÄ@delay_ms1  0/38  Ram=1

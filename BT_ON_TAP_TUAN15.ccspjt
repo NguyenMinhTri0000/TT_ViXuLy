@@ -1,0 +1,24 @@
+[PROJECT]
+Target=BT_ON_TAP_TUAN15.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BT_ON_TAP_TUAN15.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BT_ON_TAP_TUAN15.c]
+Type=4
+[mru-list]
+1=BT_ON_TAP_TUAN15.c
+[Opened Files]
+1=BAI_803_I2C_RT_LCD_3KEY_HT_THU.c
+2=BT_ON_TAP_TUAN15.c
+3=TV_PICKIT2_SHIFT_DS18B20.c
+4=tv_pickit2_shift_lcd.c
+5=
+6=tv_pickit2_shift_lcd.c
+7=
+[Units]
+Count=1
+1=BT_ON_TAP_TUAN15 (main)

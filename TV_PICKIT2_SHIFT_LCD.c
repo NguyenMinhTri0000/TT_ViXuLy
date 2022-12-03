@@ -50,7 +50,7 @@ VOID SETUP_LCD ()
          DELAY_US(40);                
 }
 
-CONST UNSIGNED CHAR LCD_SO_X[11][6] ={
+CONST UNSIGNED CHAR LCD_SO_X[15][6] ={    //May so nay o duoi co LCD_MA_8DOAN, hoac trang 152
                   0,1,2,5,3,4,               // SO 0
                   1,2,32,3,7,3,              // SO 1
                   6,6,2,5,3,3,               // SO 2
@@ -60,8 +60,13 @@ CONST UNSIGNED CHAR LCD_SO_X[11][6] ={
                   0,6,6,5,3,4,               // SO 6
                   1,1,7,32,32,7,             // SO 7
                   0,6,2,5,3,4,               // SO 8
-                  0,6,2,3,3,4,
-                  32,32,32,32,32,32};             // SO 9
+                  0,6,2,3,3,4,               // SO 9
+                  32,32,32,32,32,32        //space   - 10
+                  0, 1, 32, 4, 3, 32,        //Chu C  - 11
+                  0, 1, 2, 4, 32, 5,          //Chu N - 12
+                  7, 6, 7, 32, 32, 32,        //Dau do C - 13
+                  32, 32, 32, 32, 3, 32      //Dau cham  - 14
+                  };     
                   
 CONST UNSIGNED CHAR LCD_SO_XX[10][9] ={
                   0,1,2,7,32,7,5,3,4,               // SO 0

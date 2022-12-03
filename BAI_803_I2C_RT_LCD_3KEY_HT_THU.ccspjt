@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_803_I2C_RT_LCD_3KEY_HT_THU.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_803_I2C_RT_LCD_3KEY_HT_THU.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_803_I2C_RT_LCD_3KEY_HT_THU.c]
+Type=4
+[mru-list]
+1=BAI_803_I2C_RT_LCD_3KEY_HT_THU.c
+[Opened Files]
+1=BAI_803_I2C_RT_LCD_3KEY_HT_THU.c
+2=BT_ON_TAP_TUAN15.c
+3=TV_PICKIT2_SHIFT_DS1307_I2C.c
+4=BAI_702_LM35A_BUZZ.c
+5=
+6=
+[Units]
+Count=1
+1=BAI_803_I2C_RT_LCD_3KEY_HT_THU (main)

@@ -1,0 +1,23 @@
+[PROJECT]
+Target=BAI_809_I2C_RT_LCD_TO_NHO.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=BAI_809_I2C_RT_LCD_TO_NHO.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[BAI_809_I2C_RT_LCD_TO_NHO.c]
+Type=4
+[mru-list]
+1=BAI_809_I2C_RT_LCD_TO_NHO.c
+[Opened Files]
+1=BAI_803_I2C_RT_LCD_3KEY_HT_THU.c
+2=BAI_808_I2C_RT_LCD_TO.c
+3=BAI_809_I2C_RT_LCD_TO_NHO.c
+4=TV_PICKIT2_SHIFT_DS1307_I2C.c
+5=
+6=
+[Units]
+Count=1
+1=BAI_809_I2C_RT_LCD_TO_NHO (main)

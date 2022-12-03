@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:30
+CCS PCH C Compiler, Version 5.015, 5967               29-Nov-22 09:17
 
                Filename:   C:\Users\NguyenMinhTri\Desktop\TT VXL\BAI_633_LCD_3KYTU.lst
 
@@ -11,7 +11,7 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:30
 
 *
 0000:  GOTO   0326
-....................  
+.................... //tim. thoi. vuong 
 .................... #include <tv_pickit2_shift_1.c> 
 .................... #INCLUDE    <18F4550.H> 
 .................... //////////// Standard Header file for the PIC18F4550 device //////////////// 
@@ -870,7 +870,7 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:30
 ....................  
 .................... #DEFINE LCD_FUNCTION_SET       0X38 
 .................... #DEFINE LCD_DISPLAY_CONTROL    0X0C 
-.................... #DEFINE LCD_CLEAR_DISPLAY      0X01 
+.................... #DEFINE LCD_CLEAR_DISPLAY        0X01 
 .................... #DEFINE LCD_ENTRY_MODE         0X06 
 .................... #DEFINE LCD_SHIFT_LEFT         0X18 
 .................... #DEFINE LCD_SHIFT_RIGHT        0X1C 
@@ -980,7 +980,7 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:30
 0212:  GOTO   0368 (RETURN)
 .................... } 
 ....................  
-.................... CONST UNSIGNED CHAR LCD_SO_X[11][6] ={ 
+.................... CONST UNSIGNED CHAR LCD_SO_X[13][6] ={ 
 ....................                   0,1,2,5,3,4,               // SO 0 
 ....................                   1,2,32,3,7,3,              // SO 1 
 ....................                   6,6,2,5,3,3,               // SO 2 
@@ -990,8 +990,10 @@ CCS PCH C Compiler, Version 5.015, 5967               18-Oct-22 08:30
 ....................                   0,6,6,5,3,4,               // SO 6 
 ....................                   1,1,7,32,32,7,             // SO 7 
 ....................                   0,6,2,5,3,4,               // SO 8 
-....................                   0,6,2,3,3,4, 
-....................                   32,32,32,32,32,32};             // SO 9 
+....................                   0,6,2,3,3,4,               // SO 9 
+....................                   32,32,32,32,32,32        //space    
+....................                   0, 1, 32, 4, 3, 32,        //Chu C 
+....................                   0, 1, 2, 4, 32, 5};      //Chu N 
 ....................                    
 .................... CONST UNSIGNED CHAR LCD_SO_XX[10][9] ={ 
 ....................                   0,1,2,7,32,7,5,3,4,               // SO 0 

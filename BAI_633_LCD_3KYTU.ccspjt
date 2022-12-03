@@ -12,9 +12,9 @@ Type=4
 [mru-list]
 1=BAI_633_LCD_3KYTU.c
 [Opened Files]
-1=BAI_633_LCD_3KYTU.c
-2=
-3=BAI_632_LCD_20_TRAITIM.c
+1=BAI_803_I2C_RT_LCD_3KEY_HT_THU.c
+2=BT_ON_TAP_TUAN15.c
+3=tv_pickit2_shift_lcd.c
 4=BAI_633_LCD_3KYTU.c
 5=
 [Units]
